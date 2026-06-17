@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T11:43:45.259177+00:00",
+  "generatedAt": "2026-06-17T11:47:16.204093+00:00",
   "count": 89,
   "totalBytes": 125616223,
   "items": [
@@ -3945,9 +3945,9 @@
       "sortKey": "2026-06-17|sehwa-2024-q14_상세형_pipeline-test-01_attempt11|04|0002|일반형|00|0000",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -3975,8 +3975,11 @@
         "scripts/render_sehwa_2024_q14_attempt11_imagegen_reference.py"
       ],
       "reviewLogRefs": [
-        "work/agents/pipeline-test-sehwa-2024-q14/attempt11/agent_review_addendum.md"
-      ]
+        "work/agents/pipeline-test-sehwa-2024-q14/attempt11/agent_review_addendum.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-17"
     }
   ]
 }
