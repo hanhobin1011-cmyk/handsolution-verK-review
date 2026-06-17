@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>손풀이 verK 결과물</title>
+    <meta
+      name="description"
+      content="손풀이 verK 프로젝트 결과물 갤러리"
+    />
+    <link rel="stylesheet" href="assets/site.css?v=20260612-feedback" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">handsolution-verK</p>
+        <h1>손풀이 결과물</h1>
+        <p id="siteSummary" class="summary">결과물을 불러오는 중입니다.</p>
+      </div>
+      <div class="topbar-actions">
+        <div class="view-switch" aria-label="화면 전환">
+          <button id="galleryTab" class="segment active" type="button">갤러리</button>
+          <button id="reviewTab" class="segment" type="button">검수</button>
+        </div>
+        <a
+          class="button secondary"
+          href="https://github.com/hanhobin1011-cmyk/handsolution-verK-review/tree/main/outputs"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub outputs 폴더 열기"
+        >폴더</a>
+        <button id="copyPageLink" class="button" type="button">링크 복사</button>
+      </div>
+    </header>
+
+    <main id="galleryView" class="layout">
+      <aside class="filters" aria-label="결과물 필터">
+        <label class="search-box">
+          <span>검색</span>
+          <input
+            id="searchInput"
+            type="search"
+            autocomplete="off"
+            placeholder="문항, 과목, 파일명"
+          />
+        </label>
+
+        <section class="filter-block">
+          <h2>자료</h2>
+          <div id="sourceFilters" class="filter-options"></div>
+        </section>
+
+        <section class="filter-block">
+          <h2>과목</h2>
+          <div id="categoryFilters" class="filter-options compact"></div>
+        </section>
+
+        <section class="filter-block">
+          <h2>형식</h2>
+          <div id="modeFilters" class="filter-options compact"></div>
+        </section>
+      </aside>
+
+      <section class="content" aria-label="결과물 목록">
+        <div class="toolbar">
+          <div>
+            <strong id="resultCount">0개</strong>
+            <span id="activeSummary"></span>
+          </div>
+          <div class="toolbar-controls">
+            <select id="sortSelect" aria-label="정렬">
+              <option value="recent">최근 작업순</option>
+              <option value="source">자료순</option>
+              <option value="problem">문항순</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="gallery" class="gallery"></div>
+        <p id="emptyState" class="empty" hidden>조건에 맞는 결과물이 없습니다.</p>
+      </section>
+    </main>
+
+    <main id="reviewView" class="review-layout" hidden>
+      <section class="review-controls" aria-label="검수 필터">
+        <div>
+          <p class="eyebrow">review queue</p>
+          <h2>검수 큐</h2>
+          <p id="reviewSummary" class="summary">검수 큐를 불러오는 중입니다.</p>
+        </div>
+        <div id="reviewStats" class="review-stats"></div>
+        <div class="review-filter-grid">
+          <label>
+            <span>분류</span>
+            <select id="reviewBucketSelect"></select>
+          </label>
+          <label>
+            <span>자료</span>
+            <select id="reviewSourceSelect"></select>
+          </label>
+          <label>
+            <span>상태</span>
+            <select id="reviewStatusSelect"></select>
+          </label>
+          <label>
+            <span>검색</span>
+            <input id="reviewSearchInput" type="search" autocomplete="off" placeholder="문항, 파일명" />
+          </label>
+        </div>
+      </section>
+
+      <section class="review-board" aria-label="검수 작업대">
+        <aside class="review-list-panel">
+          <div class="review-list-head">
+            <strong id="reviewCount">0개</strong>
+            <span id="reviewProgress"></span>
+          </div>
+          <div id="reviewList" class="review-list"></div>
+        </aside>
+
+        <section id="reviewDetail" class="review-detail">
+          <p class="empty">검수할 항목을 선택하세요.</p>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="viewer" class="viewer">
+      <div class="viewer-panel">
+        <div class="viewer-head">
+          <div>
+            <p id="viewerMeta" class="eyebrow"></p>
+            <h2 id="viewerTitle"></h2>
+          </div>
+          <form method="dialog">
+            <button class="icon-button" aria-label="닫기" type="submit">×</button>
+          </form>
+        </div>
+        <img id="viewerImage" alt="" />
+        <div class="viewer-actions">
+          <a id="viewerOpen" class="button secondary" target="_blank" rel="noreferrer">원본 열기</a>
+          <a id="viewerDownload" class="button" download>다운로드</a>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="assets/db-config.js?v=20260617-staging" defer></script>
+    <script src="assets/site.js?v=20260617-staging" defer></script>
+  </body>
+</html>
