@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T05:11:40.809202+00:00",
+  "generatedAt": "2026-06-17T11:19:30.191595+00:00",
   "count": 87,
   "totalBytes": 123574535,
   "items": [
@@ -3769,9 +3769,9 @@
       "sortKey": "2026-06-16|sehwa-2024-q14_상세형_pipeline-test-01_attempt09|04|0001|일반형|00|0000",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page1",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page1.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -3799,9 +3799,11 @@
         "scripts/render_sehwa_2024_q14_attempt09_imagegen_reference.py"
       ],
       "reviewLogRefs": [
-        "work/agents/pipeline-test-sehwa-2024-q14/decision.json"
+        "work/agents/pipeline-test-sehwa-2024-q14/decision.json",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ],
-      "approvedByUser": true
+      "approvedByUser": true,
+      "approvedAt": "2026-06-17"
     },
     {
       "id": "2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page2",
@@ -3826,10 +3828,10 @@
       "searchText": "2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page2 sehwa-2024-q14_상세형_pipeline-test-01_attempt09 기타 page2 일반형  작업00",
       "sortKey": "2026-06-16|sehwa-2024-q14_상세형_pipeline-test-01_attempt09|04|0002|일반형|00|0000",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page2",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page2.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -3857,9 +3859,9 @@
         "scripts/render_sehwa_2024_q14_attempt09_imagegen_reference.py"
       ],
       "reviewLogRefs": [
-        "work/agents/pipeline-test-sehwa-2024-q14/decision.json"
-      ],
-      "approvedByUser": true
+        "work/agents/pipeline-test-sehwa-2024-q14/decision.json",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
     }
   ]
 }
