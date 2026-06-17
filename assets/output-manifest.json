@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-17T11:33:01.973737+00:00",
-  "count": 88,
-  "totalBytes": 124547773,
+  "generatedAt": "2026-06-17T11:43:45.259177+00:00",
+  "count": 89,
+  "totalBytes": 125616223,
   "items": [
     {
       "id": "2026-06-11_Photo-1_18_상세형_작업08",
@@ -3886,10 +3886,10 @@
       "searchText": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2 sehwa-2024-q14_상세형_pipeline-test-01_attempt10 기타 page2 일반형  작업00",
       "sortKey": "2026-06-17|sehwa-2024-q14_상세형_pipeline-test-01_attempt10|04|0002|일반형|00|0000",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -3917,7 +3917,65 @@
         "scripts/render_sehwa_2024_q14_attempt10_imagegen_reference.py"
       ],
       "reviewLogRefs": [
-        "work/agents/pipeline-test-sehwa-2024-q14/attempt10/agent_review_addendum.md"
+        "work/agents/pipeline-test-sehwa-2024-q14/attempt10/agent_review_addendum.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
+    },
+    {
+      "id": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2",
+      "fileName": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2.png",
+      "path": "outputs/2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2.png",
+      "date": "2026-06-17",
+      "source": "sehwa-2024-q14_상세형_pipeline-test-01_attempt11",
+      "category": "기타",
+      "problem": "page2",
+      "problemSort": 2,
+      "mode": "일반형",
+      "pageLabel": "",
+      "pageNumber": 0,
+      "work": "작업00",
+      "workNumber": 0,
+      "groupKey": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2",
+      "title": "sehwa-2024-q14_상세형_pipeline-test-01_attempt11 · page2번 · 일반형 · 작업00",
+      "width": 1055,
+      "height": 1491,
+      "bytes": 1068450,
+      "modifiedAt": "2026-06-17T11:42:43.875923+00:00",
+      "searchText": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2 sehwa-2024-q14_상세형_pipeline-test-01_attempt11 기타 page2 일반형  작업00",
+      "sortKey": "2026-06-17|sehwa-2024-q14_상세형_pipeline-test-01_attempt11|04|0002|일반형|00|0000",
+      "isPrintReady": false,
+      "isLatestInGroup": true,
+      "status": "검수 후보",
+      "registryId": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2",
+      "registryStatus": "검수 후보",
+      "registryPrimaryFile": "outputs/2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt11_page2.png",
+      "processGateVersion": "4",
+      "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
+      "explanationReviewRef": "work/agents/pipeline-test-sehwa-2024-q14/decision.json",
+      "explanationReviewResult": "pass",
+      "curriculumCheck": "pass",
+      "gradeLevelCheck": "pass",
+      "solutionValidation": "pass",
+      "answerCheck": "pass",
+      "problemTextCheck": "pass",
+      "problemSourceCheck": "pass",
+      "coreConditionCheck": "pass",
+      "fixedLabelCheck": "pass",
+      "visualKind": "graph",
+      "visualSpecRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
+      "visualValidation": "work/agents/pipeline-test-sehwa-2024-q14/attempt11/visual_validation.json",
+      "visualPurposeCheck": "pass",
+      "visualLegendCheck": "pass",
+      "visualLabelGlyphCheck": "pass",
+      "renderingPolicy": "gpt-image-2 image_gen handwritten worksheet; prompt-locked Korean/math text; non-graph text is image-generated handwriting; visually reviewed for purple concept-emphasis block and page1 stroke consistency.",
+      "blindReviewRef": "work/agents/pipeline-test-sehwa-2024-q14/attempt11/agent_review_addendum.md",
+      "blindReviewResult": "pass",
+      "sourcePacket": "work/agents/pipeline-test-sehwa-2024-q14/generation_packet.md",
+      "harnessRefs": [
+        "scripts/render_sehwa_2024_q14_attempt11_imagegen_reference.py"
+      ],
+      "reviewLogRefs": [
+        "work/agents/pipeline-test-sehwa-2024-q14/attempt11/agent_review_addendum.md"
       ]
     }
   ]
