@@ -615,7 +615,25 @@ function reviewDbButtonTemplate() {
   return [
     '<button class="button" type="button" data-save-feedback>DB 저장</button>',
     '<button class="button secondary" type="button" data-reset-review-token>DB 키 재입력</button>',
+    reviewDbStatusTemplate(),
   ].join("");
+}
+
+function reviewDbStatusTemplate(message = "") {
+  const keyed = hasStoredReviewToken();
+  const label = message || (keyed ? "키 입력됨 · DB 저장 가능" : "키 미입력 · DB 저장 때 입력");
+  const status = keyed ? "ready" : "empty";
+  return `<span class="review-db-status ${status}" data-review-db-status>${escapeHtml(label)}</span>`;
+}
+
+function hasStoredReviewToken() {
+  return Boolean(window.localStorage.getItem(REVIEW_TOKEN_KEY));
+}
+
+function updateReviewDbStatus(button, message = "") {
+  const container = button.closest(".review-actions");
+  const status = container?.querySelector("[data-review-db-status]");
+  if (status) status.outerHTML = reviewDbStatusTemplate(message);
 }
 
 function isReviewDbConfigured() {
@@ -687,6 +705,8 @@ async function saveReviewFeedback(button) {
   const originalText = button.textContent;
   button.disabled = true;
   button.textContent = "저장 중";
+  button.title = "DB에 저장하는 중입니다.";
+  updateReviewDbStatus(button, "저장 중…");
 
   try {
     const client = getReviewDbClient();
@@ -696,7 +716,9 @@ async function saveReviewFeedback(button) {
       .from(config.table || "handsolution_review_feedback")
       .insert(payload, { returning: "minimal" });
     if (error) throw error;
-    button.textContent = "DB 저장됨";
+    button.textContent = "저장 완료";
+    button.title = "DB 저장이 완료되었습니다.";
+    updateReviewDbStatus(button, "키 입력됨 · 방금 저장 완료");
   } catch (error) {
     console.error(error);
     button.textContent = "저장 실패";
@@ -705,14 +727,16 @@ async function saveReviewFeedback(button) {
       reviewDbClient = null;
       reviewDbClientKey = "";
       button.title = "검수 저장 키가 맞지 않아 초기화했습니다. DB 키 재입력 후 다시 저장하세요.";
+      updateReviewDbStatus(button, "저장 실패 · 키 다시 입력 필요");
     } else {
       button.title = error.message ?? "DB 저장에 실패했습니다.";
+      updateReviewDbStatus(button, "저장 실패 · 다시 시도 필요");
     }
   } finally {
     window.setTimeout(() => {
       button.disabled = false;
       button.textContent = originalText;
-    }, 1800);
+    }, 2200);
   }
 }
 
@@ -733,6 +757,7 @@ function resetReviewToken(button) {
   const originalText = button.textContent;
   button.textContent = "키 초기화됨";
   button.title = "검수 저장 키를 초기화했습니다. 다음 DB 저장 때 새 키를 입력하세요.";
+  updateReviewDbStatus(button, "키 미입력 · 다음 DB 저장 때 입력");
   window.setTimeout(() => {
     button.textContent = originalText;
   }, 1800);
