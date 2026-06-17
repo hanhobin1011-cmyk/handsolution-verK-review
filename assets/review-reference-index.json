@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-17T11:19:30.243720+00:00",
-  "sourceReviewQueueGeneratedAt": "2026-06-17T11:19:30.220640+00:00",
+  "generatedAt": "2026-06-17T11:33:02.145089+00:00",
+  "sourceReviewQueueGeneratedAt": "2026-06-17T11:33:02.119635+00:00",
   "approvedCount": 39,
   "reworkCount": 5,
-  "pendingReviewCount": 0,
+  "pendingReviewCount": 1,
   "approvedReferences": [
     {
       "id": "2026-06-16_sehwa-2024-q14_상세형_pipeline-test-01_attempt09_page1",
@@ -1241,5 +1241,38 @@
       "blindReviewResult": "pass"
     }
   ],
-  "pendingReview": []
+  "pendingReview": [
+    {
+      "id": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2",
+      "fileName": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2.png",
+      "path": "outputs/2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2.png",
+      "title": "sehwa-2024-q14_상세형_pipeline-test-01_attempt10 · page2번 · 일반형 · 작업00",
+      "status": "검수 후보",
+      "action": "사용자 검수 요청",
+      "date": "2026-06-17",
+      "source": "sehwa-2024-q14_상세형_pipeline-test-01_attempt10",
+      "category": "기타",
+      "problem": "page2",
+      "mode": "일반형",
+      "work": "작업00",
+      "width": 1055,
+      "height": 1491,
+      "isPrintReady": false,
+      "isLatestInGroup": true,
+      "groupKey": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2",
+      "reviewGroupKey": "sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2",
+      "registryId": "2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2",
+      "registryStatus": "검수 후보",
+      "registryPrimaryFile": "outputs/2026-06-17_sehwa-2024-q14_상세형_pipeline-test-01_attempt10_page2.png",
+      "processGateVersion": "4",
+      "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
+      "explanationReviewRef": "work/agents/pipeline-test-sehwa-2024-q14/decision.json",
+      "explanationReviewResult": "pass",
+      "visualKind": "graph",
+      "visualSpecRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
+      "visualValidation": "work/agents/pipeline-test-sehwa-2024-q14/attempt10/visual_validation.json",
+      "blindReviewRef": "work/agents/pipeline-test-sehwa-2024-q14/attempt10/agent_review_addendum.md",
+      "blindReviewResult": "pass"
+    }
+  ]
 }
