@@ -1,5 +1,8 @@
 const REVIEW_DECISIONS_KEY = "handsolution-review-decisions-v1";
 const REVIEW_TOKEN_KEY = "handsolution-review-token-v1";
+const MAX_FEEDBACK_IMAGES = 4;
+const FEEDBACK_IMAGE_MAX_DIMENSION = 1100;
+const FEEDBACK_IMAGE_QUALITY = 0.82;
 
 let reviewDbClient = null;
 let reviewDbClientKey = "";
@@ -313,6 +316,21 @@ function bindEvents() {
       return;
     }
 
+    const feedbackImageBrowseButton = event.target.closest("[data-feedback-image-browse]");
+    if (feedbackImageBrowseButton) {
+      feedbackImageBrowseButton
+        .closest(".feedback-image-panel")
+        ?.querySelector("[data-feedback-image-input]")
+        ?.click();
+      return;
+    }
+
+    const clearFeedbackImagesButton = event.target.closest("[data-clear-feedback-images]");
+    if (clearFeedbackImagesButton) {
+      clearReviewFeedbackImages();
+      return;
+    }
+
     const viewButton = event.target.closest("[data-view]");
     if (viewButton) {
       const item = findItem(viewButton.dataset.view);
@@ -365,6 +383,16 @@ function bindEvents() {
       updatedAt: new Date().toISOString(),
     };
     saveReviewDecisions();
+  });
+
+  els.reviewDetail.addEventListener("paste", (event) => {
+    handleReviewImagePaste(event);
+  });
+
+  els.reviewDetail.addEventListener("change", (event) => {
+    if (!event.target.matches("[data-feedback-image-input]")) return;
+    addReviewImageFiles([...event.target.files]);
+    event.target.value = "";
   });
 
   els.copy.addEventListener("click", async () => {
@@ -517,10 +545,11 @@ function reviewDetailTemplate(item) {
         </div>
         <label class="review-note">
           <span>검수 메모</span>
-          <textarea id="reviewNote" rows="7" placeholder="원문, 정답, 그래프, 배치, 글씨 상태를 기록">${escapeHtml(
+          <textarea id="reviewNote" rows="7" placeholder="원문, 정답, 그래프, 배치, 글씨 상태를 기록. 이미지 캡처는 이 칸을 클릭한 뒤 Ctrl+V로 붙여넣기 가능.">${escapeHtml(
             note,
           )}</textarea>
         </label>
+        ${feedbackImagePanelTemplate(item)}
         <div class="review-actions">
           <button class="button secondary" type="button" data-view="${escapeHtml(item.id)}">확대</button>
           <a class="button secondary" href="${src}" target="_blank" rel="noreferrer">원본 열기</a>
@@ -529,6 +558,39 @@ function reviewDetailTemplate(item) {
         </div>
       </div>
     </div>
+  `;
+}
+
+function feedbackImagePanelTemplate(item) {
+  const images = reviewFeedbackImages(item);
+  const previews = images
+    .map(
+      (image, index) => `
+        <figure class="feedback-image-preview">
+          <img src="${image.dataUrl}" alt="첨부 피드백 이미지 ${index + 1}" />
+          <figcaption>${escapeHtml(image.name || `첨부 ${index + 1}`)}</figcaption>
+        </figure>
+      `,
+    )
+    .join("");
+  const countLabel = images.length
+    ? `첨부 이미지 ${images.length}/${MAX_FEEDBACK_IMAGES}`
+    : "첨부 이미지 없음";
+  return `
+    <section class="feedback-image-panel" aria-label="피드백 첨부 이미지">
+      <div class="feedback-image-head">
+        <strong>수정지시 이미지</strong>
+        <span>${escapeHtml(countLabel)}</span>
+      </div>
+      <div class="feedback-image-dropzone" tabindex="0" data-feedback-image-dropzone>
+        <p>검수 메모 칸 또는 이 영역에 커서를 두고 <strong>Ctrl+V</strong>로 캡처 이미지를 붙여넣으세요.</p>
+        <p class="feedback-image-help">이미지는 자동으로 축소되어 DB 피드백의 item_payload.feedbackImages에 함께 저장됩니다.</p>
+        <input type="file" accept="image/*" multiple hidden data-feedback-image-input />
+        <button class="button secondary" type="button" data-feedback-image-browse>파일 선택</button>
+        ${images.length ? '<button class="button secondary" type="button" data-clear-feedback-images>첨부 지우기</button>' : ""}
+      </div>
+      <div class="feedback-image-grid" data-feedback-image-list>${previews}</div>
+    </section>
   `;
 }
 
@@ -667,6 +729,92 @@ function nextActionForDecision(code) {
   return "보류 사유 확인 후 재검수";
 }
 
+function reviewFeedbackImages(item) {
+  const decision = state.reviewDecisions[item.fileName] ?? {};
+  return Array.isArray(decision.feedbackImages) ? decision.feedbackImages : [];
+}
+
+function feedbackImageSummary(item) {
+  const images = reviewFeedbackImages(item);
+  if (!images.length) return "없음";
+  return images.map((image, index) => `${index + 1}. ${image.name || "붙여넣은 이미지"}`).join(", ");
+}
+
+function setReviewFeedbackImages(item, images) {
+  const existing = state.reviewDecisions[item.fileName] ?? {};
+  state.reviewDecisions[item.fileName] = {
+    ...existing,
+    feedbackImages: images.slice(0, MAX_FEEDBACK_IMAGES),
+    updatedAt: new Date().toISOString(),
+  };
+  saveReviewDecisions();
+  renderReview();
+}
+
+async function handleReviewImagePaste(event) {
+  const files = [...(event.clipboardData?.items ?? [])]
+    .filter((item) => item.kind === "file" && item.type.startsWith("image/"))
+    .map((item) => item.getAsFile())
+    .filter(Boolean);
+  if (!files.length) return;
+  event.preventDefault();
+  await addReviewImageFiles(files);
+}
+
+async function addReviewImageFiles(files) {
+  const item = currentReviewItem();
+  if (!item || !files.length) return;
+  const current = reviewFeedbackImages(item);
+  const slots = Math.max(0, MAX_FEEDBACK_IMAGES - current.length);
+  if (!slots) return;
+  const converted = [];
+  for (const file of files.filter((entry) => entry?.type?.startsWith("image/")).slice(0, slots)) {
+    converted.push(await resizeReviewImageFile(file));
+  }
+  if (converted.length) setReviewFeedbackImages(item, [...current, ...converted]);
+}
+
+function clearReviewFeedbackImages() {
+  const item = currentReviewItem();
+  if (!item) return;
+  setReviewFeedbackImages(item, []);
+}
+
+function resizeReviewImageFile(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("이미지를 읽지 못했습니다."));
+    reader.onload = () => {
+      const image = new Image();
+      image.onerror = () => reject(new Error("이미지를 불러오지 못했습니다."));
+      image.onload = () => {
+        const scale = Math.min(1, FEEDBACK_IMAGE_MAX_DIMENSION / Math.max(image.width, image.height));
+        const width = Math.max(1, Math.round(image.width * scale));
+        const height = Math.max(1, Math.round(image.height * scale));
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const context = canvas.getContext("2d");
+        context.fillStyle = "#fff";
+        context.fillRect(0, 0, width, height);
+        context.drawImage(image, 0, 0, width, height);
+        const dataUrl = canvas.toDataURL("image/jpeg", FEEDBACK_IMAGE_QUALITY);
+        resolve({
+          name: file.name || `paste-${new Date().toISOString()}.jpg`,
+          type: "image/jpeg",
+          originalType: file.type,
+          width,
+          height,
+          dataUrl,
+          attachedAt: new Date().toISOString(),
+        });
+      };
+      image.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
 function reviewFeedbackText(item, channel = "inbox") {
   const decision = reviewDecision(item);
   const registryId = item.registryId || item.id || "";
@@ -681,6 +829,7 @@ function reviewFeedbackText(item, channel = "inbox") {
     `- 현재 상태: ${item.status}`,
     `- 판정: ${decision.label}`,
     `- 검수 메모: ${decision.note}`,
+    `- 첨부 이미지: ${feedbackImageSummary(item)}`,
     `- 다음 조치: ${decision.nextAction}`,
     `- 반영 경로: ${route}`,
     "- 반영 명령: 검수항목 반영해줘",
@@ -803,6 +952,7 @@ function getReviewToken() {
 function buildReviewDbPayload(item) {
   const decision = reviewDecision(item);
   const registryId = item.registryId || item.id || null;
+  const feedbackImages = reviewFeedbackImages(item);
   return {
     source_app: reviewDbConfig().sourceApp || "handsolution-verK-staging",
     target_path: item.path,
@@ -834,6 +984,7 @@ function buildReviewDbPayload(item) {
       reviewGroupKey: item.reviewGroupKey,
       bucketKey: item.bucketKey,
       bucketLabel: item.bucketLabel,
+      feedbackImages,
     },
   };
 }
