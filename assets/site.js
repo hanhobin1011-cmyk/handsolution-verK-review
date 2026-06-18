@@ -1,4 +1,5 @@
 const REVIEW_DECISIONS_KEY = "handsolution-review-decisions-v1";
+const REVIEW_DB_SAVES_KEY = "handsolution-review-db-saves-v1";
 const REVIEW_TOKEN_KEY = "handsolution-review-token-v1";
 const MAX_FEEDBACK_IMAGES = 4;
 const FEEDBACK_IMAGE_MAX_DIMENSION = 1100;
@@ -27,6 +28,7 @@ const state = {
   reviewQuery: "",
   reviewIndex: 0,
   reviewDecisions: loadReviewDecisions(),
+  reviewDbSaves: loadReviewDbSaves(),
   sourceMdIndex: {},
 };
 
@@ -36,6 +38,7 @@ const decisionLabels = {
   approve: "승인",
   fix: "수정 필요",
   hold: "보류",
+  exclude: "기준 제외",
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -521,11 +524,13 @@ function renderReview() {
 
 function reviewListItemTemplate(item, index) {
   const decision = state.reviewDecisions[item.fileName]?.decision;
+  const saved = reviewDbSaveState(item);
   const active = index === state.reviewIndex ? " active" : "";
   return `
     <button class="review-list-item${active}" type="button" data-review-index="${index}">
       <span class="pill ${statusClass(item.status)}">${escapeHtml(item.status)}</span>
       ${decision ? `<span class="pill ${decisionClass(decision)}">${escapeHtml(decisionLabels[decision] ?? decision)}</span>` : ""}
+      ${saved ? `<span class="pill ok">DB 저장됨</span>` : ""}
       <strong>${escapeHtml(item.title)}</strong>
       <small>${escapeHtml(item.fileName)}</small>
     </button>
@@ -560,11 +565,13 @@ function reviewDetailTemplate(item) {
           <span class="pill">${item.width}×${item.height}</span>
         </div>
         <p class="review-action">${escapeHtml(item.action)}</p>
+        ${reviewDbSavedStateTemplate(item)}
         ${solutionMarkdownPanelTemplate(item)}
         <div class="decision-row" aria-label="검수 판정">
           ${decisionButton("approve", decision.decision)}
           ${decisionButton("fix", decision.decision)}
           ${decisionButton("hold", decision.decision)}
+          ${decisionButton("exclude", decision.decision)}
         </div>
         <label class="review-note">
           <span>검수 메모</span>
@@ -576,7 +583,7 @@ function reviewDetailTemplate(item) {
         <div class="review-actions">
           <button class="button secondary" type="button" data-view="${escapeHtml(item.id)}">확대</button>
           <a class="button secondary" href="${src}" target="_blank" rel="noreferrer">원본 열기</a>
-          ${reviewDbButtonTemplate()}
+          ${reviewDbButtonTemplate(item)}
           <button class="button" type="button" data-copy-feedback>피드백 복사</button>
         </div>
       </div>
@@ -756,19 +763,27 @@ function setReviewDecision(decision) {
   renderReview();
 }
 
-function reviewDbButtonTemplate() {
+function reviewDbButtonTemplate(item) {
   if (!isReviewDbConfigured()) return "";
+  const saved = reviewDbSaveState(item);
   return [
-    '<button class="button" type="button" data-save-feedback>DB 저장</button>',
+    `<button class="button" type="button" data-save-feedback>${saved ? "DB 재저장" : "DB 저장"}</button>`,
     '<button class="button secondary" type="button" data-reset-review-token>DB 키 재입력</button>',
-    reviewDbStatusTemplate(),
+    reviewDbStatusTemplate("", item),
   ].join("");
 }
 
-function reviewDbStatusTemplate(message = "") {
+function reviewDbStatusTemplate(message = "", item = null) {
   const keyed = hasStoredReviewToken();
-  const label = message || (keyed ? "키 입력됨 · DB 저장 가능" : "키 미입력 · DB 저장 때 입력");
-  const status = keyed ? "ready" : "empty";
+  const saved = item ? reviewDbSaveState(item) : null;
+  const label =
+    message ||
+    (saved
+      ? `DB 저장됨 · ${saved.decisionLabel || "판정"} · ${formatDateTime(saved.savedAt)}`
+      : keyed
+        ? "키 입력됨 · DB 저장 가능"
+        : "키 미입력 · DB 저장 때 입력");
+  const status = saved || message.includes("완료") ? "saved" : keyed ? "ready" : "empty";
   return `<span class="review-db-status ${status}" data-review-db-status>${escapeHtml(label)}</span>`;
 }
 
@@ -779,7 +794,7 @@ function hasStoredReviewToken() {
 function updateReviewDbStatus(button, message = "") {
   const container = button.closest(".review-actions");
   const status = container?.querySelector("[data-review-db-status]");
-  if (status) status.outerHTML = reviewDbStatusTemplate(message);
+  if (status) status.outerHTML = reviewDbStatusTemplate(message, currentReviewItem());
 }
 
 function isReviewDbConfigured() {
@@ -810,6 +825,7 @@ function reviewDecision(item) {
 function nextActionForDecision(code) {
   if (code === "approve") return "기준 후보 승격 검토";
   if (code === "fix") return "수정 필요로 내리고 새 작업번호 전체 재생성";
+  if (code === "exclude") return "기준/최종 후보에서 제외하고 이력 전용 또는 이전 후보로 하향";
   return "보류 사유 확인 후 재검수";
 }
 
@@ -949,9 +965,11 @@ async function saveReviewFeedback(button) {
       .from(config.table || "handsolution_review_feedback")
       .insert(payload, { returning: "minimal" });
     if (error) throw error;
+    markReviewDbSaved(item, payload);
     button.textContent = "저장 완료";
-    button.title = "DB 저장이 완료되었습니다.";
-    updateReviewDbStatus(button, "키 입력됨 · 방금 저장 완료");
+    button.title = "DB 저장이 완료되었습니다. 이 항목은 저장됨으로 표시됩니다.";
+    updateReviewDbStatus(button, "DB 저장됨 · 방금 저장 완료");
+    renderReview();
   } catch (error) {
     console.error(error);
     button.textContent = "저장 실패";
@@ -971,6 +989,42 @@ async function saveReviewFeedback(button) {
       button.textContent = originalText;
     }, 2200);
   }
+}
+
+
+function reviewDbSaveState(item) {
+  if (!item) return null;
+  return state.reviewDbSaves[item.fileName] ?? state.reviewDbSaves[item.path] ?? null;
+}
+
+function reviewDbSavedStateTemplate(item) {
+  const saved = reviewDbSaveState(item);
+  if (!saved) {
+    return `<section class="review-saved-state empty" aria-label="DB 저장 상태">
+      <strong>DB 저장 상태</strong>
+      <p>아직 이 브라우저에서 DB 저장한 기록이 없습니다. 저장하면 여기와 왼쪽 목록에 표시됩니다.</p>
+    </section>`;
+  }
+  return `<section class="review-saved-state saved" aria-label="DB 저장 상태">
+    <strong>DB 저장됨</strong>
+    <p>${escapeHtml(formatDateTime(saved.savedAt))} · ${escapeHtml(saved.decisionLabel || "판정 저장")}</p>
+    ${saved.note ? `<p class="review-saved-note">메모: ${escapeHtml(saved.note)}</p>` : ""}
+  </section>`;
+}
+
+function markReviewDbSaved(item, payload) {
+  const decision = reviewDecision(item);
+  const saved = {
+    savedAt: new Date().toISOString(),
+    decisionCode: decision.code,
+    decisionLabel: decision.label,
+    note: decision.note,
+    targetPath: payload.target_path,
+    targetFile: payload.target_file,
+  };
+  state.reviewDbSaves[item.fileName] = saved;
+  state.reviewDbSaves[item.path] = saved;
+  saveReviewDbSaves();
 }
 
 function isReviewTokenError(error) {
@@ -1121,7 +1175,7 @@ function statusClass(status) {
 
 function decisionClass(decision) {
   if (decision === "approve") return "ok";
-  if (decision === "fix") return "warn";
+  if (["fix", "exclude"].includes(decision)) return "warn";
   return "";
 }
 
@@ -1144,6 +1198,25 @@ function loadReviewDecisions() {
 
 function saveReviewDecisions() {
   window.localStorage.setItem(REVIEW_DECISIONS_KEY, JSON.stringify(state.reviewDecisions));
+}
+
+function loadReviewDbSaves() {
+  try {
+    return JSON.parse(window.localStorage.getItem(REVIEW_DB_SAVES_KEY) ?? "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveReviewDbSaves() {
+  window.localStorage.setItem(REVIEW_DB_SAVES_KEY, JSON.stringify(state.reviewDbSaves));
+}
+
+function formatDateTime(value) {
+  if (!value) return "시간 미상";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value);
+  return date.toLocaleString("ko-KR", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
 }
 
 function escapeHtml(value) {

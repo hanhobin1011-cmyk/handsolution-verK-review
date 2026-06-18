@@ -650,7 +650,8 @@ select {
   font-weight: 800;
 }
 
-.review-db-status.ready {
+.review-db-status.ready,
+.review-db-status.saved {
   border-color: #bbf7d0;
   background: #ecfdf5;
   color: #047857;
@@ -658,6 +659,32 @@ select {
 
 .review-db-status.empty {
   border-color: #fed7aa;
+}
+
+.review-saved-state {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff7ed;
+  color: #92400e;
+}
+
+.review-saved-state.saved {
+  border-color: #bbf7d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.review-saved-state strong,
+.review-saved-state p {
+  margin: 0;
+}
+
+.review-saved-note {
+  overflow-wrap: anywhere;
+  color: var(--ink);
 }
 
 .review-stage {
