@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-18T17:42:27.099065+00:00",
-  "count": 113,
-  "totalBytes": 161875394,
+  "generatedAt": "2026-06-18T17:50:22.490409+00:00",
+  "count": 114,
+  "totalBytes": 162925996,
   "items": [
     {
       "id": "2026-06-11_Photo-1_18_상세형_작업08",
@@ -4184,10 +4184,10 @@
       "searchText": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업02 majeongo-g2-june 기타 q01-q02 기본형  작업02",
       "sortKey": "2026-06-18|majeongo-g2-june|04|0001|기본형|00|0002",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업02",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q01-q02_기본형_작업02.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q01-q02_combined_packet.md",
@@ -4215,7 +4215,65 @@
         "scripts/validate_majeongo_g2_june_revision_work02.py"
       ],
       "reviewLogRefs": [
-        "REVIEW_FEEDBACK_LOG.md"
+        "REVIEW_FEEDBACK_LOG.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
+    },
+    {
+      "id": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업03",
+      "fileName": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업03.png",
+      "path": "outputs/2026-06-18_majeongo-g2-june_q01-q02_기본형_작업03.png",
+      "date": "2026-06-18",
+      "source": "majeongo-g2-june",
+      "category": "기타",
+      "problem": "q01-q02",
+      "problemSort": 1,
+      "mode": "기본형",
+      "pageLabel": "",
+      "pageNumber": 0,
+      "work": "작업03",
+      "workNumber": 3,
+      "groupKey": "2026-06-18_majeongo-g2-june_q01-q02_기본형",
+      "title": "majeongo-g2-june · q01-q02번 · 기본형 · 작업03",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1050602,
+      "modifiedAt": "2026-06-18T17:49:21.315846+00:00",
+      "searchText": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업03 majeongo-g2-june 기타 q01-q02 기본형  작업03",
+      "sortKey": "2026-06-18|majeongo-g2-june|04|0001|기본형|00|0003",
+      "isPrintReady": false,
+      "isLatestInGroup": true,
+      "status": "검수 후보",
+      "registryId": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업03",
+      "registryStatus": "검수 후보",
+      "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q01-q02_기본형_작업03.png",
+      "processGateVersion": "4",
+      "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q01-q02_combined_packet.md",
+      "explanationReviewRef": "work/pdf-analysis/majeongo-g2-june/q01-q02_work03_internal_review.md#해설-md-검수",
+      "explanationReviewResult": "pass",
+      "curriculumCheck": "2022 개정 수학 I 삼각함수의 그래프/삼각방정식·부등식 기본 확인",
+      "gradeLevelCheck": "고2 수학 I 수준 풀이",
+      "solutionValidation": "1번 sin x=-√3/2 범위 확인, 2번 cos x≤√2/2 해 구간 및 β-α 검산 pass",
+      "answerCheck": "1번 ⑤ 4π/3, 2번 ④ 3π/2 확인",
+      "problemTextCheck": "1번/2번 원문 조건·수식·보기 ①~⑤·질문 재작성 확인",
+      "problemSourceCheck": "pass: 비그래프 영역은 image_gen 손글씨형 원천이며 PDF 크롭/OCR/로컬 텍스트 오버레이가 아님",
+      "coreConditionCheck": "핵심식 sin x=-√3/2, cos x≤√2/2와 기준각/범위 이유 표시 확인",
+      "fixedLabelCheck": "호빈T의 팁, 정답 박스, 보기 번호 표기 확인",
+      "visualKind": "graph",
+      "visualSpecRef": "scripts/render_majeongo_g2_june_q01_q02_work03_visual_harness.py",
+      "visualValidation": "cosine graph threshold y=√2/2, boundary x=π/4 and x=7π/4, interval shading reaches threshold line",
+      "visualPurposeCheck": "2번 cos x≤√2/2의 해 구간을 그래프로 이해시키기 위한 보조 그래프",
+      "visualLegendCheck": "y=cos x, y=√2/2, π/4, 7π/4 및 음영 구간 확인",
+      "visualLabelGlyphCheck": "raw handwritten labels retained; graph-only harness adds no extra text glyph layer",
+      "renderingPolicy": "non-graph handwriting image_gen; graph safe-box data harness only",
+      "blindReviewRef": "work/pdf-analysis/majeongo-g2-june/q01-q02_work03_internal_review.md#블라인드-출력-검수",
+      "blindReviewResult": "pass",
+      "harnessRefs": [
+        "scripts/render_majeongo_g2_june_q01_q02_work03_visual_harness.py",
+        "scripts/validate_majeongo_g2_june_q01_q02_work03.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     },
     {
@@ -4299,9 +4357,9 @@
       "sortKey": "2026-06-18|majeongo-g2-june|04|0003|기본형|00|0002",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-18_majeongo-g2-june_q03-q04_기본형_작업02",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q03-q04_기본형_작업02.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q03-q04_combined_packet.md",
@@ -4329,8 +4387,11 @@
         "scripts/validate_majeongo_g2_june_revision_work02.py"
       ],
       "reviewLogRefs": [
-        "REVIEW_FEEDBACK_LOG.md"
-      ]
+        "REVIEW_FEEDBACK_LOG.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-18"
     },
     {
       "id": "2026-06-18_majeongo-g2-june_q05_상세형_작업01",
@@ -4521,9 +4582,9 @@
       "sortKey": "2026-06-18|majeongo-g2-june|04|0008|기본형|00|0002",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-18_majeongo-g2-june_q08-q09_기본형_작업02",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q08-q09_기본형_작업02.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q08-q09_combined_packet.md",
@@ -4551,8 +4612,11 @@
         "scripts/validate_majeongo_g2_june_revision_work02.py"
       ],
       "reviewLogRefs": [
-        "REVIEW_FEEDBACK_LOG.md"
-      ]
+        "REVIEW_FEEDBACK_LOG.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-18"
     },
     {
       "id": "2026-06-18_majeongo-g2-june_q10_상세형_작업01",
