@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:55:55.334653+00:00",
+  "generatedAt": "2026-06-18T14:03:14.898667+00:00",
   "count": 99,
   "totalBytes": 139390551,
   "items": [
@@ -1592,10 +1592,13 @@
       "sortKey": "2026-06-14|final-exam-1|04|0016|기본형|00|0001",
       "isPrintReady": true,
       "isLatestInGroup": true,
-      "status": "기준 후보",
+      "status": "이전 후보",
       "registryId": "2026-06-14_final-exam-1_16-19_기본형_작업01",
-      "registryStatus": "기준 후보",
-      "registryPrimaryFile": "outputs/2026-06-14_final-exam-1_16-19_기본형_작업01.png"
+      "registryStatus": "이전 후보",
+      "registryPrimaryFile": "outputs/2026-06-14_final-exam-1_16-19_기본형_작업01.png",
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
     },
     {
       "id": "2026-06-14_final-exam-1_20-21_기본형_작업01",
@@ -2102,9 +2105,9 @@
       "sortKey": "2026-06-15|calculus-hard|04|0001|상세형|00|0002",
       "isPrintReady": true,
       "isLatestInGroup": true,
-      "status": "기준 후보",
+      "status": "이전 후보",
       "registryId": "2026-06-15_calculus-hard_01_상세형_작업02",
-      "registryStatus": "기준 후보",
+      "registryStatus": "이전 후보",
       "registryPrimaryFile": "outputs/2026-06-15_calculus-hard_01_상세형_작업02.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-15_calculus-hard_01-02_work02.md",
@@ -2134,9 +2137,7 @@
       ],
       "reviewLogRefs": [
         "REVIEW_FEEDBACK_LOG.md#활성-피드백"
-      ],
-      "approvedByUser": true,
-      "approvedAt": "2026-06-15"
+      ]
     },
     {
       "id": "2026-06-15_calculus-hard_02_상세형_작업01",
@@ -3144,7 +3145,8 @@
         "work/generated_raw/2026-06-15_derivative-application-hard/01_work03_tipfix_harness_source.png"
       ],
       "reviewLogRefs": [
-        "inputs/explanations/2026-06-15_derivative-application-hard_01-02_work03_tip-title-fix_blind-output-review.md"
+        "inputs/explanations/2026-06-15_derivative-application-hard_01-02_work03_tip-title-fix_blind-output-review.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ],
       "approvedByUser": true,
       "approvedAt": "2026-06-15"
@@ -3300,7 +3302,8 @@
         "work/generated_raw/2026-06-15_derivative-application-hard/02_work03_tipfix_harness_source.png"
       ],
       "reviewLogRefs": [
-        "inputs/explanations/2026-06-15_derivative-application-hard_01-02_work03_tip-title-fix_blind-output-review.md"
+        "inputs/explanations/2026-06-15_derivative-application-hard_01-02_work03_tip-title-fix_blind-output-review.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ],
       "approvedByUser": true,
       "approvedAt": "2026-06-15"
