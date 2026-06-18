@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T16:37:08.870273+00:00",
+  "generatedAt": "2026-06-18T16:48:57.188121+00:00",
   "count": 106,
   "totalBytes": 149722950,
   "items": [
@@ -4127,10 +4127,10 @@
       "searchText": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01 majeongo-g2-june 기타 q01-q02 기본형  작업01",
       "sortKey": "2026-06-18|majeongo-g2-june|04|0001|기본형|00|0001",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q01-q02_combined_packet.md",
@@ -4156,6 +4156,9 @@
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q01-q02_combined_packet.md",
       "harnessRefs": [
         "scripts/validate_majeongo_g2_june_q01_q02_work01.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     },
     {
@@ -4181,10 +4184,10 @@
       "searchText": "2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01 majeongo-g2-june 기타 q03-q04 기본형  작업01",
       "sortKey": "2026-06-18|majeongo-g2-june|04|0003|기본형|00|0001",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q03-q04_combined_packet.md",
@@ -4210,6 +4213,9 @@
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q03-q04_combined_packet.md",
       "harnessRefs": [
         "scripts/validate_majeongo_g2_june_compact_work01.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     },
     {
@@ -4235,10 +4241,10 @@
       "searchText": "2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01 majeongo-g2-june 기타 q08-q09 기본형  작업01",
       "sortKey": "2026-06-18|majeongo-g2-june|04|0008|기본형|00|0001",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q08-q09_combined_packet.md",
@@ -4264,6 +4270,9 @@
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q08-q09_combined_packet.md",
       "harnessRefs": [
         "scripts/validate_majeongo_g2_june_compact_work01.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     },
     {

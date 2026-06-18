@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-18T16:37:09.008474+00:00",
-  "sourceManifestGeneratedAt": "2026-06-18T16:37:08.870273+00:00",
+  "generatedAt": "2026-06-18T16:48:57.223156+00:00",
+  "sourceManifestGeneratedAt": "2026-06-18T16:48:57.188121+00:00",
   "totalItems": 106,
   "groupCount": 66,
   "statusCounts": {
-    "수정 필요": 34,
-    "검수 후보": 6,
+    "수정 필요": 37,
+    "검수 후보": 3,
     "기준 후보": 44,
     "최종본": 1,
     "이전 후보": 6,
     "폐기": 15
   },
   "currentStatusCounts": {
-    "검수 후보": 3,
+    "수정 필요": 3,
     "기준 후보": 44,
     "최종본": 1,
     "이전 후보": 6,
@@ -21,11 +21,6 @@
   "buckets": {
     "needsFix": {
       "label": "즉시 재생성 필요",
-      "count": 0,
-      "items": []
-    },
-    "reviewPending": {
-      "label": "사용자 검수 대기",
       "count": 3,
       "items": [
         {
@@ -33,8 +28,8 @@
           "fileName": "2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01.png",
           "path": "outputs/2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01.png",
           "title": "majeongo-g2-june · q08-q09번 · 기본형 · 작업01",
-          "status": "검수 후보",
-          "action": "사용자 검수 요청",
+          "status": "수정 필요",
+          "action": "새 작업번호로 전체 재생성",
           "date": "2026-06-18",
           "source": "majeongo-g2-june",
           "category": "기타",
@@ -44,11 +39,11 @@
           "width": 1055,
           "height": 1491,
           "isPrintReady": false,
-          "isLatestInGroup": true,
+          "isLatestInGroup": false,
           "groupKey": "2026-06-18_majeongo-g2-june_q08-q09_기본형",
           "reviewGroupKey": "majeongo-g2-june_q08-q09_기본형",
           "registryId": "2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01",
-          "registryStatus": "검수 후보",
+          "registryStatus": "수정 필요",
           "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q08-q09_기본형_작업01.png",
           "processGateVersion": "4",
           "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q08-q09_combined_packet.md",
@@ -65,8 +60,8 @@
           "fileName": "2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01.png",
           "path": "outputs/2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01.png",
           "title": "majeongo-g2-june · q03-q04번 · 기본형 · 작업01",
-          "status": "검수 후보",
-          "action": "사용자 검수 요청",
+          "status": "수정 필요",
+          "action": "새 작업번호로 전체 재생성",
           "date": "2026-06-18",
           "source": "majeongo-g2-june",
           "category": "기타",
@@ -76,11 +71,11 @@
           "width": 1055,
           "height": 1491,
           "isPrintReady": false,
-          "isLatestInGroup": true,
+          "isLatestInGroup": false,
           "groupKey": "2026-06-18_majeongo-g2-june_q03-q04_기본형",
           "reviewGroupKey": "majeongo-g2-june_q03-q04_기본형",
           "registryId": "2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01",
-          "registryStatus": "검수 후보",
+          "registryStatus": "수정 필요",
           "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q03-q04_기본형_작업01.png",
           "processGateVersion": "4",
           "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q03-q04_combined_packet.md",
@@ -97,8 +92,8 @@
           "fileName": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01.png",
           "path": "outputs/2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01.png",
           "title": "majeongo-g2-june · q01-q02번 · 기본형 · 작업01",
-          "status": "검수 후보",
-          "action": "사용자 검수 요청",
+          "status": "수정 필요",
+          "action": "새 작업번호로 전체 재생성",
           "date": "2026-06-18",
           "source": "majeongo-g2-june",
           "category": "기타",
@@ -108,11 +103,11 @@
           "width": 978,
           "height": 1608,
           "isPrintReady": false,
-          "isLatestInGroup": true,
+          "isLatestInGroup": false,
           "groupKey": "2026-06-18_majeongo-g2-june_q01-q02_기본형",
           "reviewGroupKey": "majeongo-g2-june_q01-q02_기본형",
           "registryId": "2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01",
-          "registryStatus": "검수 후보",
+          "registryStatus": "수정 필요",
           "registryPrimaryFile": "outputs/2026-06-18_majeongo-g2-june_q01-q02_기본형_작업01.png",
           "processGateVersion": "4",
           "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q01-q02_combined_packet.md",
@@ -125,6 +120,11 @@
           "blindReviewResult": "pass"
         }
       ]
+    },
+    "reviewPending": {
+      "label": "사용자 검수 대기",
+      "count": 0,
+      "items": []
     },
     "baselines": {
       "label": "기준/최종 후보",
