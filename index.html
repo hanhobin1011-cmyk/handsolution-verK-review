@@ -143,8 +143,26 @@
       </div>
     </dialog>
 
+    <dialog id="solutionMdViewer" class="viewer solution-md-viewer">
+      <div class="viewer-panel solution-md-modal-panel">
+        <div class="viewer-head">
+          <div>
+            <p id="solutionMdMeta" class="eyebrow"></p>
+            <h2 id="solutionMdTitle">풀이 MD</h2>
+          </div>
+          <form method="dialog">
+            <button class="icon-button" aria-label="닫기" type="submit">×</button>
+          </form>
+        </div>
+        <article id="solutionMdContent" class="solution-md-content solution-md-modal-content"></article>
+        <div class="viewer-actions">
+          <a id="solutionMdOpen" class="button secondary" target="_blank" rel="noreferrer">MD 원본 열기</a>
+        </div>
+      </div>
+    </dialog>
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="assets/db-config.js?v=20260617-staging" defer></script>
-    <script src="assets/site.js?v=20260618-md-viewer" defer></script>
+    <script src="assets/site.js?v=20260618-md-modal" defer></script>
   </body>
 </html>

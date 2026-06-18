@@ -72,6 +72,11 @@ const els = {
   viewerImage: $("#viewerImage"),
   viewerOpen: $("#viewerOpen"),
   viewerDownload: $("#viewerDownload"),
+  solutionMdViewer: $("#solutionMdViewer"),
+  solutionMdTitle: $("#solutionMdTitle"),
+  solutionMdMeta: $("#solutionMdMeta"),
+  solutionMdContent: $("#solutionMdContent"),
+  solutionMdOpen: $("#solutionMdOpen"),
 };
 
 async function init() {
@@ -347,6 +352,14 @@ function bindEvents() {
     }
   });
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    const openSolutionMdPanel = event.target.closest?.("[data-open-solution-md]");
+    if (!openSolutionMdPanel) return;
+    event.preventDefault();
+    openSolutionMarkdown(openSolutionMdPanel.dataset.openSolutionMd);
+  });
+
   els.search.addEventListener("input", () => {
     state.query = els.search.value.trim().toLowerCase();
     applyFilters();
@@ -581,13 +594,13 @@ function solutionMarkdownPanelTemplate(item) {
     return `<section class="solution-md-panel"><strong>풀이 MD</strong><p>${escapeHtml(ref)} 파일이 공개 갤러리에 동기화되지 않았습니다.</p></section>`;
   }
   return `
-    <section class="solution-md-panel" data-solution-md-panel>
+    <section class="solution-md-panel" data-solution-md-panel data-open-solution-md="${escapeHtml(ref)}" role="button" tabindex="0" aria-label="풀이 MD 보기">
       <div class="solution-md-head">
         <strong>풀이 MD</strong>
-        <button class="button secondary" type="button" data-open-solution-md="${escapeHtml(ref)}">보기</button>
+        <span class="button secondary solution-md-open-chip" aria-hidden="true">팝업으로 보기</span>
       </div>
       <p>${escapeHtml(ref)}</p>
-      <div class="solution-md-content" data-solution-md-content="${escapeHtml(ref)}" hidden></div>
+      <p class="solution-md-hint">이 영역을 클릭하면 풀이 MD가 모달 팝업으로 열립니다.</p>
     </section>
   `;
 }
@@ -598,22 +611,27 @@ function solutionMarkdownRef(item) {
 
 async function openSolutionMarkdown(ref) {
   const publicPath = state.sourceMdIndex[ref];
-  if (!publicPath) return;
-  const panel = document.querySelector(`[data-solution-md-content="${cssEscape(ref)}"]`);
-  if (!panel) return;
-  if (!panel.dataset.loaded) {
-    panel.textContent = "풀이 MD를 불러오는 중입니다…";
-    panel.hidden = false;
+  if (!publicPath || !els.solutionMdViewer) return;
+
+  els.solutionMdTitle.textContent = "풀이 MD";
+  els.solutionMdMeta.textContent = ref;
+  els.solutionMdOpen.href = publicPath;
+  els.solutionMdContent.textContent = "풀이 MD를 불러오는 중입니다…";
+
+  if (typeof els.solutionMdViewer.showModal === "function" && !els.solutionMdViewer.open) {
+    els.solutionMdViewer.showModal();
+  }
+
+  try {
     const response = await fetch(publicPath, { cache: "no-store" });
     if (!response.ok) {
-      panel.textContent = "풀이 MD를 불러오지 못했습니다.";
+      els.solutionMdContent.textContent = "풀이 MD를 불러오지 못했습니다.";
       return;
     }
     const markdown = await response.text();
-    panel.innerHTML = renderMarkdown(markdown);
-    panel.dataset.loaded = "true";
-  } else {
-    panel.hidden = !panel.hidden;
+    els.solutionMdContent.innerHTML = renderMarkdown(markdown);
+  } catch (error) {
+    els.solutionMdContent.textContent = "풀이 MD를 불러오지 못했습니다.";
   }
 }
 
@@ -625,11 +643,6 @@ function renderMarkdown(markdown) {
     .replace(/^# (.*)$/gm, '<h2>$1</h2>')
     .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
     .replace(/\n/g, '<br />');
-}
-
-function cssEscape(value) {
-  if (window.CSS?.escape) return CSS.escape(value);
-  return String(value).replaceAll('"', '\\"');
 }
 
 function feedbackImagePanelTemplate(item) {

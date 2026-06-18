@@ -460,6 +460,16 @@ select {
   border-radius: 8px;
   background: #f8f7ff;
   padding: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.solution-md-panel:hover,
+.solution-md-panel:focus-visible {
+  border-color: #818cf8;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.16);
+  outline: none;
+  transform: translateY(-1px);
 }
 
 .solution-md-head {
@@ -474,6 +484,24 @@ select {
   color: var(--muted);
   font-size: 12px;
   overflow-wrap: anywhere;
+}
+
+.solution-md-hint {
+  color: #4f46e5 !important;
+  font-weight: 700;
+}
+
+.solution-md-viewer {
+  width: min(980px, calc(100vw - 32px));
+}
+
+.solution-md-modal-panel {
+  max-height: calc(100vh - 32px);
+}
+
+.solution-md-modal-content {
+  min-height: 280px;
+  white-space: normal;
 }
 
 .solution-md-content {
@@ -500,6 +528,10 @@ select {
   border-radius: 6px;
   background: #f6f8fa;
   padding: 8px;
+}
+
+.solution-md-modal-content {
+  max-height: 68vh;
 }
 
 .review-board {
