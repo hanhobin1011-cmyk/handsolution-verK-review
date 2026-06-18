@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:44:20.568133+00:00",
+  "generatedAt": "2026-06-18T14:44:41.820488+00:00",
   "count": 101,
   "totalBytes": 141619350,
   "items": [
@@ -4562,7 +4562,7 @@
       "renderingPolicy": "nonGraphText=handwritten_image_generation; graph=not_applicable",
       "blindReviewRef": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_work02_internal_review.md",
       "blindReviewResult": "pass",
-      "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_problem_packet.md"
+      "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md"
     },
     {
       "id": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_2쪽_작업01",
@@ -4669,7 +4669,7 @@
       "renderingPolicy": "nonGraphText=handwritten_image_generation; graph=data_harness_with_kyunghoonmath_labels",
       "blindReviewRef": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_work02_internal_review.md",
       "blindReviewResult": "pass",
-      "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_problem_packet.md",
+      "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md",
       "harnessRefs": [
         "scripts/render_sehwa_q14_variant_a01_work02_graph_harness.py"
       ]
