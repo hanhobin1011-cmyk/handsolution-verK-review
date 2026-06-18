@@ -27,6 +27,7 @@ const state = {
   reviewQuery: "",
   reviewIndex: 0,
   reviewDecisions: loadReviewDecisions(),
+  sourceMdIndex: {},
 };
 
 const categoryOrder = ["공통", "확률과통계", "미적분", "기하", "기타"];
@@ -74,12 +75,14 @@ const els = {
 };
 
 async function init() {
-  const [manifestResponse, queueResponse] = await Promise.all([
+  const [manifestResponse, queueResponse, sourceMdResponse] = await Promise.all([
     fetch("assets/output-manifest.json", { cache: "no-store" }),
     fetch("assets/review-queue.json", { cache: "no-store" }).catch(() => null),
+    fetch("assets/source-md-index.json", { cache: "no-store" }).catch(() => null),
   ]);
   const manifest = await manifestResponse.json();
   const queue = queueResponse?.ok ? await queueResponse.json() : null;
+  state.sourceMdIndex = sourceMdResponse?.ok ? await sourceMdResponse.json() : {};
 
   state.items = manifest.items;
   state.groups = buildGroups(manifest.items);
@@ -307,6 +310,12 @@ function bindEvents() {
     const reviewSaveButton = event.target.closest("[data-save-feedback]");
     if (reviewSaveButton) {
       saveReviewFeedback(reviewSaveButton);
+      return;
+    }
+
+    const openSolutionMdButton = event.target.closest("[data-open-solution-md]");
+    if (openSolutionMdButton) {
+      openSolutionMarkdown(openSolutionMdButton.dataset.openSolutionMd);
       return;
     }
 
@@ -538,6 +547,7 @@ function reviewDetailTemplate(item) {
           <span class="pill">${item.width}×${item.height}</span>
         </div>
         <p class="review-action">${escapeHtml(item.action)}</p>
+        ${solutionMarkdownPanelTemplate(item)}
         <div class="decision-row" aria-label="검수 판정">
           ${decisionButton("approve", decision.decision)}
           ${decisionButton("fix", decision.decision)}
@@ -559,6 +569,67 @@ function reviewDetailTemplate(item) {
       </div>
     </div>
   `;
+}
+
+function solutionMarkdownPanelTemplate(item) {
+  const ref = solutionMarkdownRef(item);
+  const publicPath = ref ? state.sourceMdIndex[ref] : "";
+  if (!ref) {
+    return '<section class="solution-md-panel"><strong>풀이 MD</strong><p>연결된 풀이 MD가 없습니다.</p></section>';
+  }
+  if (!publicPath) {
+    return `<section class="solution-md-panel"><strong>풀이 MD</strong><p>${escapeHtml(ref)} 파일이 공개 갤러리에 동기화되지 않았습니다.</p></section>`;
+  }
+  return `
+    <section class="solution-md-panel" data-solution-md-panel>
+      <div class="solution-md-head">
+        <strong>풀이 MD</strong>
+        <button class="button secondary" type="button" data-open-solution-md="${escapeHtml(ref)}">보기</button>
+      </div>
+      <p>${escapeHtml(ref)}</p>
+      <div class="solution-md-content" data-solution-md-content="${escapeHtml(ref)}" hidden></div>
+    </section>
+  `;
+}
+
+function solutionMarkdownRef(item) {
+  return item.explanationMdRef || item.sourcePacket || "";
+}
+
+async function openSolutionMarkdown(ref) {
+  const publicPath = state.sourceMdIndex[ref];
+  if (!publicPath) return;
+  const panel = document.querySelector(`[data-solution-md-content="${cssEscape(ref)}"]`);
+  if (!panel) return;
+  if (!panel.dataset.loaded) {
+    panel.textContent = "풀이 MD를 불러오는 중입니다…";
+    panel.hidden = false;
+    const response = await fetch(publicPath, { cache: "no-store" });
+    if (!response.ok) {
+      panel.textContent = "풀이 MD를 불러오지 못했습니다.";
+      return;
+    }
+    const markdown = await response.text();
+    panel.innerHTML = renderMarkdown(markdown);
+    panel.dataset.loaded = "true";
+  } else {
+    panel.hidden = !panel.hidden;
+  }
+}
+
+function renderMarkdown(markdown) {
+  const escaped = escapeHtml(markdown);
+  return escaped
+    .replace(/^### (.*)$/gm, '<h4>$1</h4>')
+    .replace(/^## (.*)$/gm, '<h3>$1</h3>')
+    .replace(/^# (.*)$/gm, '<h2>$1</h2>')
+    .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+    .replace(/\n/g, '<br />');
+}
+
+function cssEscape(value) {
+  if (window.CSS?.escape) return CSS.escape(value);
+  return String(value).replaceAll('"', '\\"');
 }
 
 function feedbackImagePanelTemplate(item) {
