@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:03:28.089757+00:00",
+  "generatedAt": "2026-06-18T15:03:40.737939+00:00",
   "count": 103,
   "totalBytes": 144134219,
   "items": [
@@ -4624,7 +4624,7 @@
         "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ],
       "approvedByUser": true,
-      "approvedAt": "2026-06-18T15:03:28.048097+00:00"
+      "approvedAt": "2026-06-18"
     },
     {
       "id": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_2쪽_작업01",
@@ -4796,7 +4796,7 @@
         "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ],
       "approvedByUser": true,
-      "approvedAt": "2026-06-18T15:03:28.048114+00:00"
+      "approvedAt": "2026-06-18"
     }
   ]
 }
