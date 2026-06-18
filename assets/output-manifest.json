@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T08:12:23.408007+00:00",
+  "generatedAt": "2026-06-18T09:10:29.670425+00:00",
   "count": 95,
   "totalBytes": 134985047,
   "items": [
@@ -4243,9 +4243,9 @@
       "sortKey": "2026-06-18|sehwa-2024-q14_상세형_pipeline-test-01_attempt18|04|0001|일반형|00|0000",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt18_page1",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt18_page1.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -4273,8 +4273,11 @@
         "scripts/validate_sehwa_2024_q14_attempt18_gate.py"
       ],
       "reviewLogRefs": [
-        "work/generated_raw/sehwa-q14-attempt18-20260618/internal-review-report.md"
-      ]
+        "work/generated_raw/sehwa-q14-attempt18-20260618/internal-review-report.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-18"
     },
     {
       "id": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt18_page2",
@@ -4300,9 +4303,9 @@
       "sortKey": "2026-06-18|sehwa-2024-q14_상세형_pipeline-test-01_attempt18|04|0002|일반형|00|0000",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt18_page2",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt18_page2.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -4330,8 +4333,11 @@
         "scripts/validate_sehwa_2024_q14_attempt18_gate.py"
       ],
       "reviewLogRefs": [
-        "work/generated_raw/sehwa-q14-attempt18-20260618/internal-review-report.md"
-      ]
+        "work/generated_raw/sehwa-q14-attempt18-20260618/internal-review-report.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-18"
     }
   ]
 }
