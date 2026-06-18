@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T06:16:17.987511+00:00",
+  "generatedAt": "2026-06-18T06:24:47.828721+00:00",
   "count": 91,
   "totalBytes": 128760232,
   "items": [
@@ -4004,10 +4004,10 @@
       "searchText": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt12b_page1 sehwa-2024-q14_상세형_pipeline-test-01_attempt12b 기타 page1 일반형  작업00",
       "sortKey": "2026-06-18|sehwa-2024-q14_상세형_pipeline-test-01_attempt12b|04|0001|일반형|00|0000",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt12b_page1",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt12b_page1.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -4036,7 +4036,8 @@
         "/opt/data/agent-office-v2/handsolution/runs/sehwa-q14-attempt12b-generation-execution-20260618055715/05-verification-report.md"
       ],
       "reviewLogRefs": [
-        "work/generated_raw/sehwa-q14-attempt12b-20260618/internal-review-report.md"
+        "work/generated_raw/sehwa-q14-attempt12b-20260618/internal-review-report.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     },
     {
@@ -4062,10 +4063,10 @@
       "searchText": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt12b_page2 sehwa-2024-q14_상세형_pipeline-test-01_attempt12b 기타 page2 일반형  작업00",
       "sortKey": "2026-06-18|sehwa-2024-q14_상세형_pipeline-test-01_attempt12b|04|0002|일반형|00|0000",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt12b_page2",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_sehwa-2024-q14_상세형_pipeline-test-01_attempt12b_page2.png",
       "processGateVersion": "4",
       "explanationMdRef": "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
@@ -4094,7 +4095,8 @@
         "/opt/data/agent-office-v2/handsolution/runs/sehwa-q14-attempt12b-generation-execution-20260618055715/05-verification-report.md"
       ],
       "reviewLogRefs": [
-        "work/generated_raw/sehwa-q14-attempt12b-20260618/internal-review-report.md"
+        "work/generated_raw/sehwa-q14-attempt12b-20260618/internal-review-report.md",
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     }
   ]
