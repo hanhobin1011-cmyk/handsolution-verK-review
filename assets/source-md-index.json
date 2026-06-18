@@ -1,8 +1,5 @@
 {
   "REVIEW_FEEDBACK_LOG.md": "source-md/REVIEW_FEEDBACK_LOG.md",
-  "inputs/desktop_imports/2026-06-14_25년-1학기-기말-내신기출-1회_마전고/IMPORT_MANIFEST.md": "source-md/inputs/desktop_imports/2026-06-14_25년-1학기-기말-내신기출-1회_마전고/IMPORT_MANIFEST.md",
-  "inputs/desktop_imports/2026-06-14_trig-graph-hard/IMPORT_MANIFEST.md": "source-md/inputs/desktop_imports/2026-06-14_trig-graph-hard/IMPORT_MANIFEST.md",
-  "inputs/desktop_imports/2026-06-14_trig-graph-hard/problem_contract.md": "source-md/inputs/desktop_imports/2026-06-14_trig-graph-hard/problem_contract.md",
   "inputs/explanations/2026-06-14_final-exam-1-majeon_05-07_work01.md": "source-md/inputs/explanations/2026-06-14_final-exam-1-majeon_05-07_work01.md",
   "inputs/explanations/2026-06-14_final-exam-1-majeon_05-07_work01_blind-output-review.md": "source-md/inputs/explanations/2026-06-14_final-exam-1-majeon_05-07_work01_blind-output-review.md",
   "inputs/explanations/2026-06-14_final-exam-1-majeon_pilot_01-04_15-16_work01.md": "source-md/inputs/explanations/2026-06-14_final-exam-1-majeon_pilot_01-04_15-16_work01.md",
@@ -40,17 +37,6 @@
   "inputs/explanations/2026-06-16_calculus-hard_02_work10_handwriting_input_packet.md": "source-md/inputs/explanations/2026-06-16_calculus-hard_02_work10_handwriting_input_packet.md",
   "inputs/explanations/2026-06-16_calculus-hard_02_work10_regeneration_packet.md": "source-md/inputs/explanations/2026-06-16_calculus-hard_02_work10_regeneration_packet.md",
   "inputs/explanations/2026-06-18_calculus-hard_02_work10_blind-output-review.md": "source-md/inputs/explanations/2026-06-18_calculus-hard_02_work10_blind-output-review.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/attempt05/user_rejection.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/attempt05/user_rejection.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/attempt07/agent_review_addendum.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/attempt07/agent_review_addendum.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/attempt08/agent_review_addendum.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/attempt08/agent_review_addendum.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/attempt10/agent_review_addendum.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/attempt10/agent_review_addendum.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/attempt11/agent_review_addendum.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/attempt11/agent_review_addendum.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/generation_packet.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/generation_packet.md",
-  "work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md": "source-md/work/agents/pipeline-test-sehwa-2024-q14/solution_packet.md",
-  "work/generated_raw/sehwa-q14-attempt12b-20260618/internal-review-report.md": "source-md/work/generated_raw/sehwa-q14-attempt12b-20260618/internal-review-report.md",
-  "work/generated_raw/sehwa-q14-attempt14-20260618/internal-review-report.md": "source-md/work/generated_raw/sehwa-q14-attempt14-20260618/internal-review-report.md",
-  "work/generated_raw/sehwa-q14-attempt18-20260618/internal-review-report.md": "source-md/work/generated_raw/sehwa-q14-attempt18-20260618/internal-review-report.md",
-  "work/regeneration-packets/sehwa-2024-q14-attempt13-regeneration-plan.md": "source-md/work/regeneration-packets/sehwa-2024-q14-attempt13-regeneration-plan.md",
-  "work/regeneration-packets/sehwa-2024-q14-regeneration-packet.md": "source-md/work/regeneration-packets/sehwa-2024-q14-regeneration-packet.md",
-  "work/review-feedback/attempt14-page2/user-feedback.md": "source-md/work/review-feedback/attempt14-page2/user-feedback.md"
+  "inputs/explanations/2026-06-18_sehwa-2024-q14_solution_packet.md": "source-md/inputs/explanations/2026-06-18_sehwa-2024-q14_solution_packet.md",
+  "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md": "source-md/inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md"
 }
