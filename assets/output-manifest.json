@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:44:41.820488+00:00",
+  "generatedAt": "2026-06-18T14:50:26.241794+00:00",
   "count": 101,
   "totalBytes": 141619350,
   "items": [
@@ -4541,10 +4541,10 @@
       "searchText": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_1쪽_작업02 미분류 기타 sehwa-2024-q14-variant-a-01 상세확장형 1쪽 작업02",
       "sortKey": "2026-06-18|미분류|04|2024|상세확장형|01|0002",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_1쪽_작업02",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_1쪽_작업02.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md",
@@ -4562,7 +4562,10 @@
       "renderingPolicy": "nonGraphText=handwritten_image_generation; graph=not_applicable",
       "blindReviewRef": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_work02_internal_review.md",
       "blindReviewResult": "pass",
-      "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md"
+      "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md",
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
     },
     {
       "id": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_2쪽_작업01",
@@ -4643,10 +4646,10 @@
       "searchText": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_2쪽_작업02 미분류 기타 sehwa-2024-q14-variant-a-01 상세확장형 2쪽 작업02",
       "sortKey": "2026-06-18|미분류|04|2024|상세확장형|02|0002",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_2쪽_작업02",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-18_sehwa-2024-q14-variant-a-01_상세확장형_2쪽_작업02.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md",
@@ -4672,6 +4675,9 @@
       "sourcePacket": "inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md",
       "harnessRefs": [
         "scripts/render_sehwa_q14_variant_a01_work02_graph_harness.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
     }
   ]
