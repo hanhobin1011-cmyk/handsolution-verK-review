@@ -829,6 +829,14 @@ function nextActionForDecision(code) {
   return "보류 사유 확인 후 재검수";
 }
 
+function dbCompatibleReviewDecision(decision) {
+  // The current Supabase table check constraint only accepts approve/fix/hold.
+  // Keep the user-facing 기준 제외 intent in next_action and item_payload, while
+  // inserting a DB-compatible hold row so save does not fail.
+  if (decision.code === "exclude") return { code: "hold", label: "보류" };
+  return { code: decision.code, label: decision.label };
+}
+
 function reviewFeedbackImages(item) {
   const decision = state.reviewDecisions[item.fileName] ?? {};
   return Array.isArray(decision.feedbackImages) ? decision.feedbackImages : [];
@@ -1091,19 +1099,22 @@ function buildReviewDbPayload(item) {
   const decision = reviewDecision(item);
   const registryId = item.registryId || item.id || null;
   const feedbackImages = reviewFeedbackImages(item);
+  const dbDecision = dbCompatibleReviewDecision(decision);
   return {
     source_app: reviewDbConfig().sourceApp || "handsolution-verK-staging",
     target_path: item.path,
     target_file: item.fileName,
     current_status: item.status,
-    decision: decision.label,
-    decision_code: decision.code,
+    decision: dbDecision.label,
+    decision_code: dbDecision.code,
     note: decision.note,
     next_action: decision.nextAction,
     reviewer: reviewDbConfig().reviewer || null,
     page_url: window.location.href,
     feedback_text: reviewFeedbackText(item, "db"),
     item_payload: {
+      requestedDecisionCode: decision.code,
+      requestedDecisionLabel: decision.label,
       registryId,
       registryStatus: item.registryStatus || item.status,
       registryPrimaryFile: item.registryPrimaryFile || item.path,
