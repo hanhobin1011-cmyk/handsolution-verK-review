@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T01:10:28.440194+00:00",
+  "generatedAt": "2026-06-19T01:14:00.774172+00:00",
   "count": 122,
-  "totalBytes": 170310097,
+  "totalBytes": 170490873,
   "items": [
     {
       "id": "2026-06-11_Photo-1_18_상세형_작업08",
@@ -5667,8 +5667,8 @@
       "title": "majeongo-g2-june · q01-q02번 · 기본형 · 작업04",
       "width": 1055,
       "height": 1491,
-      "bytes": 938069,
-      "modifiedAt": "2026-06-19T01:09:13.499017+00:00",
+      "bytes": 1118845,
+      "modifiedAt": "2026-06-19T01:12:30.264285+00:00",
       "searchText": "2026-06-19_majeongo-g2-june_q01-q02_기본형_작업04 majeongo-g2-june 기타 q01-q02 기본형  작업04",
       "sortKey": "2026-06-19|majeongo-g2-june|04|0001|기본형|00|0004",
       "isPrintReady": false,
@@ -5702,10 +5702,38 @@
       "sortKey": "2026-06-19|majeongo-g2-june|04|0007|상세형|00|0005",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "미기록",
+      "status": "검수 후보",
       "registryId": "2026-06-19_majeongo-g2-june_q07_상세형_작업05",
-      "registryStatus": "미기록",
-      "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q07_상세형_작업05.png"
+      "registryStatus": "검수 후보",
+      "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q07_상세형_작업05.png",
+      "processGateVersion": "4",
+      "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q07_solution_packet.md",
+      "explanationReviewRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_internal_review.md",
+      "explanationReviewResult": "pass",
+      "curriculumCheck": "2022 교육과정 삼각함수 그래프/방정식 활용 범위 확인",
+      "gradeLevelCheck": "고2 삼각함수 그래프 내신형 풀이로 적합",
+      "solutionValidation": "a=20π/13, b=28π/13, a+b=48π/13 검산",
+      "answerCheck": "정답 ② 48π/13 확인",
+      "problemTextCheck": "문제 원문과 보기 전체 재작성 확인",
+      "problemSourceCheck": "비그래프 영역은 손글씨형 raw 기반, 그래프 영역만 하네스 합성",
+      "coreConditionCheck": "절댓값으로 좌우 함수식 분리 및 A,C 좌표 관계 강조 확인",
+      "fixedLabelCheck": "호빈T의 팁, 풀이, 정답 라벨 확인",
+      "visualKind": "graph",
+      "visualSpecRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_visual_spec.md",
+      "visualValidation": "visual contract gate passed; all points inside, B>2π, stacked fraction",
+      "visualPurposeCheck": "x=2π 전후 그래프와 △AOB:△BCP=7:3 관계를 설명하기 위한 그래프",
+      "visualLegendCheck": "A/B/C/O/P, x=2π, 2π, 4π, 28π/13 라벨과 음영 역할 확인",
+      "visualLabelGlyphCheck": "π는 실제 파이 글리프, 28π/13 세로분수, tofu 없음 확인",
+      "renderingPolicy": "비그래프 텍스트 렌더링 금지; 그래프/도형 영역만 데이터 기반 렌더링",
+      "blindReviewRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_internal_review.md",
+      "blindReviewResult": "pass",
+      "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q07_solution_packet.md",
+      "harnessRefs": [
+        "scripts/render_majeongo_g2_june_q07_work05_visual_harness.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
     },
     {
       "id": "2026-06-19_majeongo-g2-june_q10_상세형_작업03",
