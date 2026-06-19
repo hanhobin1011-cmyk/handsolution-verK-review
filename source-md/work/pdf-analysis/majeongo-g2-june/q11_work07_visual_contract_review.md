@@ -1,11 +1,11 @@
 # Visual Contract Review
 
-visualSpec: work/visual-specs/majeongo-g2-june-full-batch-20260618161108/q07_work08_visual_spec.md
-output: outputs/2026-06-19_majeongo-g2-june_q07_상세형_작업08.png
+visualSpec: work/visual-specs/majeongo-g2-june-full-batch-20260618161108/q11_work07_visual_spec.md
+output: outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업07.png
 reviewDecision: pass
 
 mathInvariantCheck:
-- Q07 work08 pass: axes restored, triangle regions are hatched not filled, P/4π separated, original tangent graph remains visible, final answer ② 48π/13.
+- Q11 work07 pass: h(n) definition and g(10) visible, intersections highlighted, h labels readable, final answer 224.
 
 layoutCheck:
 - Graph area remains inside the reserved box and does not cover the handwritten solution.
