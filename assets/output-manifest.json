@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T05:06:29.046683+00:00",
-  "count": 129,
-  "totalBytes": 176482809,
+  "generatedAt": "2026-06-19T05:08:56.307528+00:00",
+  "count": 127,
+  "totalBytes": 174796752,
   "items": [
     {
       "id": "2026-06-11_Photo-1_18_상세형_작업08",
@@ -5708,35 +5708,6 @@
       ]
     },
     {
-      "id": "2026-06-19_majeongo-g2-june_q05_상세형_작업03",
-      "fileName": "2026-06-19_majeongo-g2-june_q05_상세형_작업03.png",
-      "path": "outputs/2026-06-19_majeongo-g2-june_q05_상세형_작업03.png",
-      "date": "2026-06-19",
-      "source": "majeongo-g2-june",
-      "category": "기타",
-      "problem": "q05",
-      "problemSort": 5,
-      "mode": "상세형",
-      "pageLabel": "",
-      "pageNumber": 0,
-      "work": "작업03",
-      "workNumber": 3,
-      "groupKey": "2026-06-19_majeongo-g2-june_q05_상세형",
-      "title": "majeongo-g2-june · q05번 · 상세형 · 작업03",
-      "width": 1055,
-      "height": 1491,
-      "bytes": 859669,
-      "modifiedAt": "2026-06-19T05:02:08.951776+00:00",
-      "searchText": "2026-06-19_majeongo-g2-june_q05_상세형_작업03 majeongo-g2-june 기타 q05 상세형  작업03",
-      "sortKey": "2026-06-19|majeongo-g2-june|04|0005|상세형|00|0003",
-      "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "미기록",
-      "registryId": "2026-06-19_majeongo-g2-june_q05_상세형_작업03",
-      "registryStatus": "미기록",
-      "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q05_상세형_작업03.png"
-    },
-    {
       "id": "2026-06-19_majeongo-g2-june_q07_상세형_작업05",
       "fileName": "2026-06-19_majeongo-g2-june_q07_상세형_작업05.png",
       "path": "outputs/2026-06-19_majeongo-g2-june_q07_상세형_작업05.png",
@@ -6198,35 +6169,6 @@
       "reviewLogRefs": [
         "REVIEW_FEEDBACK_LOG.md#활성-피드백"
       ]
-    },
-    {
-      "id": "2026-06-19_majeongo-g2-june_q11_상세형_작업07",
-      "fileName": "2026-06-19_majeongo-g2-june_q11_상세형_작업07.png",
-      "path": "outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업07.png",
-      "date": "2026-06-19",
-      "source": "majeongo-g2-june",
-      "category": "기타",
-      "problem": "q11",
-      "problemSort": 11,
-      "mode": "상세형",
-      "pageLabel": "",
-      "pageNumber": 0,
-      "work": "작업07",
-      "workNumber": 7,
-      "groupKey": "2026-06-19_majeongo-g2-june_q11_상세형",
-      "title": "majeongo-g2-june · q11번 · 상세형 · 작업07",
-      "width": 1055,
-      "height": 1491,
-      "bytes": 826388,
-      "modifiedAt": "2026-06-19T05:02:08.645778+00:00",
-      "searchText": "2026-06-19_majeongo-g2-june_q11_상세형_작업07 majeongo-g2-june 기타 q11 상세형  작업07",
-      "sortKey": "2026-06-19|majeongo-g2-june|04|0011|상세형|00|0007",
-      "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "미기록",
-      "registryId": "2026-06-19_majeongo-g2-june_q11_상세형_작업07",
-      "registryStatus": "미기록",
-      "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업07.png"
     }
   ]
 }
