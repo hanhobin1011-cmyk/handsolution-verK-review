@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T12:37:13.785835+00:00",
-  "count": 147,
-  "totalBytes": 190233359,
+  "generatedAt": "2026-06-19T12:59:20.130768+00:00",
+  "count": 148,
+  "totalBytes": 190443587,
   "items": [
     {
       "id": "2026-06-11_Photo-1_18_상세형_작업08",
@@ -6081,9 +6081,9 @@
       "sortKey": "2026-06-19|majeongo-g2-june|04|0005|상세형|00|0009",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-19_majeongo-g2-june_q05_상세형_작업09",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q05_상세형_작업09.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q05_solution_packet.md",
@@ -6109,7 +6109,12 @@
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q05_solution_packet.md",
       "harnessRefs": [
         "scripts/render_majeongo_g2_june_full_regen_graph_harness.py"
-      ]
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-19"
     },
     {
       "id": "2026-06-19_majeongo-g2-june_q07_상세형_작업05",
@@ -6661,9 +6666,9 @@
       "sortKey": "2026-06-19|majeongo-g2-june|04|0007|상세형|00|0014",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-19_majeongo-g2-june_q07_상세형_작업14",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q07_상세형_작업14.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q07_solution_packet.md",
@@ -6689,7 +6694,12 @@
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q07_solution_packet.md",
       "harnessRefs": [
         "scripts/render_majeongo_g2_june_full_regen_graph_harness.py"
-      ]
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-19"
     },
     {
       "id": "2026-06-19_majeongo-g2-june_q10_상세형_작업03",
@@ -7292,10 +7302,10 @@
       "searchText": "2026-06-19_majeongo-g2-june_q11_상세형_작업13 majeongo-g2-june 기타 q11 상세형  작업13",
       "sortKey": "2026-06-19|majeongo-g2-june|04|0011|상세형|00|0013",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-19_majeongo-g2-june_q11_상세형_작업13",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업13.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
@@ -7317,6 +7327,63 @@
       "visualLabelGlyphCheck": "kyunghoonmath graph labels and no tofu/box labels",
       "renderingPolicy": "nonGraphText=image_gen_handwritten_only; graph=kyunghoonmath_data_visual; 전체 재생성; graph_feedback_recheck",
       "blindReviewRef": "work/review-reports/2026-06-19_majeongo_q05_q07_q11_graph_feedback_recheck.md",
+      "blindReviewResult": "pass",
+      "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
+      "harnessRefs": [
+        "scripts/render_majeongo_g2_june_full_regen_graph_harness.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
+    },
+    {
+      "id": "2026-06-19_majeongo-g2-june_q11_상세형_작업14",
+      "fileName": "2026-06-19_majeongo-g2-june_q11_상세형_작업14.png",
+      "path": "outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업14.png",
+      "date": "2026-06-19",
+      "source": "majeongo-g2-june",
+      "category": "기타",
+      "problem": "q11",
+      "problemSort": 11,
+      "mode": "상세형",
+      "pageLabel": "",
+      "pageNumber": 0,
+      "work": "작업14",
+      "workNumber": 14,
+      "groupKey": "2026-06-19_majeongo-g2-june_q11_상세형",
+      "title": "majeongo-g2-june · q11번 · 상세형 · 작업14",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 210228,
+      "modifiedAt": "2026-06-19T12:58:28.767109+00:00",
+      "searchText": "2026-06-19_majeongo-g2-june_q11_상세형_작업14 majeongo-g2-june 기타 q11 상세형  작업14",
+      "sortKey": "2026-06-19|majeongo-g2-june|04|0011|상세형|00|0014",
+      "isPrintReady": false,
+      "isLatestInGroup": true,
+      "status": "검수 후보",
+      "registryId": "2026-06-19_majeongo-g2-june_q11_상세형_작업14",
+      "registryStatus": "검수 후보",
+      "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업14.png",
+      "processGateVersion": "4",
+      "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
+      "explanationReviewRef": "solution packet reviewed during Q11 enlarged graph regeneration",
+      "explanationReviewResult": "pass",
+      "curriculumCheck": "고2 삼각함수/함수 그래프 내신 범위 적합",
+      "gradeLevelCheck": "고2 6월 학교시험 수준 적합",
+      "solutionValidation": "sin(9π/a)=1 gives a=18/5; c=25/4; g(10)=224",
+      "answerCheck": "정답 224 confirmed",
+      "problemTextCheck": "원문 조건과 h(n) 집합 조건 손글씨 재작성 확인",
+      "problemSourceCheck": "image_gen_handwritten_non_graph_text; no_pdf_crop_or_code_text",
+      "coreConditionCheck": "h(n)을 수평선 교점 개수로 해석하는 핵심 발상 강조",
+      "fixedLabelCheck": "호빈T의 팁, 풀이), 정답 라벨 확인",
+      "visualKind": "graph",
+      "visualSpecRef": "work/visual-specs/majeongo-g2-june-full-batch-20260618161108/q11_work14_visual_spec.md",
+      "visualValidation": "larger graph; h(1)~h(5) labels and intersection-count guides visible; h(4)=2 dashed guide and two intersections visible",
+      "visualPurposeCheck": "h(n)을 수평선-그래프 교점 개수로 읽는 구조를 크게 보여 줌",
+      "visualLegendCheck": "h(1)~h(5), h(4)=2 dotted guide, a=18/5, (4,-1), g(3)=1 확인",
+      "visualLabelGlyphCheck": "kyunghoonmath graph labels and no tofu/box labels",
+      "renderingPolicy": "nonGraphText=image_gen_handwritten_only; graph=kyunghoonmath_data_visual; 전체 재생성; enlarged_intersection_count_graph",
+      "blindReviewRef": "work/review-reports/2026-06-19_majeongo_q11_work14_blind_review.md",
       "blindReviewResult": "pass",
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
       "harnessRefs": [
