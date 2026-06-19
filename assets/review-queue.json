@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-19T01:15:58.543719+00:00",
-  "sourceManifestGeneratedAt": "2026-06-19T01:15:58.402452+00:00",
+  "generatedAt": "2026-06-19T01:16:23.689320+00:00",
+  "sourceManifestGeneratedAt": "2026-06-19T01:16:23.553005+00:00",
   "totalItems": 122,
   "groupCount": 70,
   "statusCounts": {
@@ -116,12 +116,12 @@
           "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q07_상세형_작업05.png",
           "processGateVersion": "4",
           "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q07_solution_packet.md",
-          "explanationReviewRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_visual_contract_review.md",
+          "explanationReviewRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_internal_review.md",
           "explanationReviewResult": "pass",
           "visualKind": "graph",
-          "visualSpecRef": "work/visual-specs/majeongo-g2-june-full-batch-20260618161108/q07_work05_visual_spec.md",
-          "visualValidation": "visual contract pass",
-          "blindReviewRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_visual_contract_review.md",
+          "visualSpecRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_visual_spec.md",
+          "visualValidation": "visual contract gate passed; all points inside, B>2π, stacked fraction",
+          "blindReviewRef": "work/pdf-analysis/majeongo-g2-june/q07_work05_internal_review.md",
           "blindReviewResult": "pass"
         },
         {
