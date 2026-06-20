@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T12:44:04.296419+00:00",
+  "generatedAt": "2026-06-20T13:01:18.730394+00:00",
   "count": 151,
   "totalBytes": 194201225,
   "items": [
@@ -7417,9 +7417,9 @@
       "sortKey": "2026-06-19|majeongo-g2-june|04|0011|상세형|00|0015",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-19_majeongo-g2-june_q11_상세형_작업15",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-19_majeongo-g2-june_q11_상세형_작업15.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
@@ -7445,7 +7445,12 @@
       "sourcePacket": "inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
       "harnessRefs": [
         "scripts/render_majeongo_g2_june_full_regen_graph_harness.py"
-      ]
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-20"
     },
     {
       "id": "2026-06-20_majeongo-g2-june_q01-q02_기본형_작업05",
@@ -7471,9 +7476,9 @@
       "sortKey": "2026-06-20|majeongo-g2-june|04|0001|기본형|00|0005",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "검수 후보",
+      "status": "기준 후보",
       "registryId": "2026-06-20_majeongo-g2-june_q01-q02_기본형_작업05",
-      "registryStatus": "검수 후보",
+      "registryStatus": "기준 후보",
       "registryPrimaryFile": "outputs/2026-06-20_majeongo-g2-june_q01-q02_기본형_작업05.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-20_majeongo-g2-june_q01-q02_work05_regeneration_packet.md",
@@ -7502,7 +7507,9 @@
       ],
       "reviewLogRefs": [
         "REVIEW_FEEDBACK_LOG.md#활성-피드백"
-      ]
+      ],
+      "approvedByUser": true,
+      "approvedAt": "2026-06-20"
     },
     {
       "id": "2026-06-20_majeongo-g2-june_q10_상세형_작업04",
@@ -7527,10 +7534,10 @@
       "searchText": "2026-06-20_majeongo-g2-june_q10_상세형_작업04 majeongo-g2-june 기타 q10 상세형  작업04",
       "sortKey": "2026-06-20|majeongo-g2-june|04|0010|상세형|00|0004",
       "isPrintReady": false,
-      "isLatestInGroup": true,
-      "status": "검수 후보",
+      "isLatestInGroup": false,
+      "status": "수정 필요",
       "registryId": "2026-06-20_majeongo-g2-june_q10_상세형_작업04",
-      "registryStatus": "검수 후보",
+      "registryStatus": "수정 필요",
       "registryPrimaryFile": "outputs/2026-06-20_majeongo-g2-june_q10_상세형_작업04.png",
       "processGateVersion": "4",
       "explanationMdRef": "inputs/explanations/2026-06-20_majeongo-g2-june_q10_work04_regeneration_packet.md",
