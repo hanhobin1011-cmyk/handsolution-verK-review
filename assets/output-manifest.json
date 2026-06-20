@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T12:43:32.368183+00:00",
+  "generatedAt": "2026-06-20T12:44:04.296419+00:00",
   "count": 151,
   "totalBytes": 194201225,
   "items": [
@@ -7471,10 +7471,38 @@
       "sortKey": "2026-06-20|majeongo-g2-june|04|0001|기본형|00|0005",
       "isPrintReady": false,
       "isLatestInGroup": true,
-      "status": "미기록",
+      "status": "검수 후보",
       "registryId": "2026-06-20_majeongo-g2-june_q01-q02_기본형_작업05",
-      "registryStatus": "미기록",
-      "registryPrimaryFile": "outputs/2026-06-20_majeongo-g2-june_q01-q02_기본형_작업05.png"
+      "registryStatus": "검수 후보",
+      "registryPrimaryFile": "outputs/2026-06-20_majeongo-g2-june_q01-q02_기본형_작업05.png",
+      "processGateVersion": "4",
+      "explanationMdRef": "inputs/explanations/2026-06-20_majeongo-g2-june_q01-q02_work05_regeneration_packet.md",
+      "explanationReviewRef": "work/reviews/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q01-q02_work05_blind_review.md",
+      "explanationReviewResult": "pass",
+      "curriculumCheck": "고2 삼각방정식/삼각부등식 기본 문항 적합",
+      "gradeLevelCheck": "고2 기본형 2문항 묶음 수준 적합",
+      "solutionValidation": "Q01 sin x=-√3/2 -> 4π/3, Q02 cos x≤√2/2 -> β-α=3π/2 검산",
+      "answerCheck": "Q01 정답 ⑤ 4π/3, Q02 정답 ④ 3π/2 확인",
+      "problemTextCheck": "Q01/Q02 원문과 보기 전체 재작성 확인",
+      "problemSourceCheck": "image_gen_handwritten_problem_block",
+      "coreConditionCheck": "기준각과 범위 확인, Q02 해구간 읽기 연결 확인",
+      "fixedLabelCheck": "호빈T의 Tip, 1번/2번 정답, 보기 라벨 확인",
+      "visualKind": "graph",
+      "visualSpecRef": "work/visual-specs/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q01-q02_work05_visual_spec.md",
+      "visualValidation": "scripts/validate_majeongo_g2_june_q01_q02_work05.py pass",
+      "visualPurposeCheck": "Q02 부등식 해집합을 x축 구간으로 읽게 함",
+      "visualLegendCheck": "y=cos x, y=√2/2, π/4, 7π/4, 해구간 라벨 확인",
+      "visualLabelGlyphCheck": "handwritten math labels readable; no tofu boxes observed",
+      "renderingPolicy": "nonGraphText=image_gen_handwritten_only; graph=handdrawn_style_checked_against_visual_spec",
+      "blindReviewRef": "work/reviews/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q01-q02_work05_blind_review.md",
+      "blindReviewResult": "pass",
+      "sourcePacket": "inputs/explanations/2026-06-20_majeongo-g2-june_q01-q02_work05_regeneration_packet.md",
+      "harnessRefs": [
+        "scripts/validate_majeongo_g2_june_q01_q02_work05.py"
+      ],
+      "reviewLogRefs": [
+        "REVIEW_FEEDBACK_LOG.md#활성-피드백"
+      ]
     },
     {
       "id": "2026-06-20_majeongo-g2-june_q10_상세형_작업04",
