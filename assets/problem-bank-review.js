@@ -75,7 +75,7 @@ function normalizeProblem(problem) {
   const classification = classifications[0] ?? {};
   const packets = problem.solutionPackets ?? [];
   const packet = packets[0] ?? {};
-  const source = problem.metadata?.source || problem.metadata?.sourceName || sourceFromCode(problem.stable_problem_code);
+  const source = stringValue(problem.metadata?.source) || stringValue(problem.metadata?.sourceName) || sourceFromCode(problem.stable_problem_code);
   const searchText = [
     problem.stable_problem_code,
     source,
@@ -677,6 +677,10 @@ function firstLine(text = "") {
 function asList(value) {
   if (Array.isArray(value)) return value.filter(Boolean).join(", ");
   return value || "";
+}
+
+function stringValue(value) {
+  return typeof value === "string" ? value : "";
 }
 
 function unique(values) {
