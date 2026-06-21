@@ -75,7 +75,12 @@ function normalizeProblem(problem) {
   const classification = classifications[0] ?? {};
   const packets = problem.solutionPackets ?? [];
   const packet = packets[0] ?? {};
-  const source = stringValue(problem.metadata?.source) || stringValue(problem.metadata?.sourceName) || sourceFromCode(problem.stable_problem_code);
+  const source =
+    stringValue(problem.metadata?.source?.sourceLabel) ||
+    stringValue(problem.metadata?.source?.sourceSlug) ||
+    stringValue(problem.metadata?.source) ||
+    stringValue(problem.metadata?.sourceName) ||
+    sourceFromCode(problem.stable_problem_code);
   const searchText = [
     problem.stable_problem_code,
     source,
