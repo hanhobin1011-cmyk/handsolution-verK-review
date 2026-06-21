@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>손풀이 verK 결과물</title>
+    <title>handsolution 검수센터</title>
     <meta
       name="description"
-      content="손풀이 verK 프로젝트 결과물 갤러리"
+      content="브라우저에서 바로 확인하고 피드백을 저장하는 handsolution 검수센터"
     />
-    <link rel="stylesheet" href="assets/site.css?v=20260618-db-save-state" />
+    <link rel="stylesheet" href="assets/site.css?v=20260621-review-center" />
   </head>
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">handsolution-verK</p>
-        <h1>손풀이 결과물</h1>
-        <p id="siteSummary" class="summary">결과물을 불러오는 중입니다.</p>
+        <p class="eyebrow">handsolution review center</p>
+        <h1>손풀이 검수센터</h1>
+        <p id="siteSummary" class="summary">경로 대신 브라우저에서 바로 확인하도록 검수 작업대를 불러오는 중입니다.</p>
       </div>
       <div class="topbar-actions">
         <div class="view-switch" aria-label="화면 전환">
-          <button id="galleryTab" class="segment active" type="button">갤러리</button>
-          <button id="reviewTab" class="segment" type="button">검수</button>
+          <button id="reviewTab" class="segment active" type="button">검수 작업대</button>
+          <button id="galleryTab" class="segment" type="button">산출물 보관함</button>
         </div>
         <a
           class="button secondary"
@@ -28,8 +28,8 @@
           target="_blank"
           rel="noreferrer"
           aria-label="GitHub outputs 폴더 열기"
-        >폴더</a>
-        <button id="copyPageLink" class="button" type="button">링크 복사</button>
+        >GitHub 폴더</a>
+        <button id="copyPageLink" class="button" type="button">현재 화면 링크 복사</button>
       </div>
     </header>
 
@@ -82,11 +82,25 @@
     </main>
 
     <main id="reviewView" class="review-layout" hidden>
+      <section class="review-hero" aria-label="검수센터 안내">
+        <div class="review-hero-copy">
+          <p class="eyebrow">new workflow</p>
+          <h2>검수할 후보를 웹에서 바로 열고, 피드백은 DB로 남깁니다.</h2>
+          <p>VPS 경로나 파일 경로를 직접 열 필요 없이 이 페이지에서 이미지 확대, 풀이 MD 확인, 수정 메모·캡처 첨부, DB 저장까지 처리합니다.</p>
+        </div>
+        <div class="workflow-cards" aria-label="운영 흐름">
+          <article><strong>1. 문제은행</strong><span>원문/OCR·가벼운 분류 상태</span></article>
+          <article><strong>2. 선택 미션</strong><span>호빈님이 고른 문항만 깊은 풀이 설계</span></article>
+          <article><strong>3. 손풀이 후보</strong><span>검수 후보만 이 작업대에 노출</span></article>
+          <article><strong>4. 피드백 저장</strong><span>수정·승인·보류를 DB에 기록</span></article>
+        </div>
+      </section>
+
       <section class="review-controls" aria-label="검수 필터">
         <div>
           <p class="eyebrow">review queue</p>
           <h2>검수 큐</h2>
-          <p id="reviewSummary" class="summary">검수 큐를 불러오는 중입니다.</p>
+          <p id="reviewSummary" class="summary">경로 전달 없이 확인할 수 있는 검수 큐를 불러오는 중입니다.</p>
         </div>
         <div id="reviewStats" class="review-stats"></div>
         <div class="review-filter-grid">
@@ -163,6 +177,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="assets/db-config.js?v=20260617-staging" defer></script>
-    <script src="assets/site.js?v=20260618-db-save-state" defer></script>
+    <script src="assets/site.js?v=20260621-review-center" defer></script>
   </body>
 </html>

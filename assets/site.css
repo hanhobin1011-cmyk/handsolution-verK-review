@@ -9,6 +9,8 @@
   --accent-strong: #0b57d0;
   --red: #d1242f;
   --green: #2da44e;
+  --purple: #6f42c1;
+  --warm: #fff7ed;
   --shadow: 0 12px 34px rgba(31, 36, 40, 0.09);
 }
 
@@ -287,6 +289,56 @@ select {
   display: grid;
   gap: 18px;
   padding: 24px clamp(18px, 4vw, 48px) 48px;
+}
+
+.review-hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(320px, 1.1fr);
+  gap: 18px;
+  align-items: stretch;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fffdf8 0%, #eef5ff 52%, #fff7ed 100%);
+  box-shadow: var(--shadow);
+}
+
+.review-hero h2 {
+  margin-bottom: 10px;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.16;
+}
+
+.review-hero-copy p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.workflow-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.workflow-cards article {
+  display: grid;
+  gap: 6px;
+  min-height: 96px;
+  border: 1px solid rgba(31, 111, 235, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 14px;
+}
+
+.workflow-cards strong {
+  color: var(--accent-strong);
+}
+
+.workflow-cards span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .review-controls {
@@ -718,6 +770,42 @@ select {
   gap: 14px;
 }
 
+.review-flow-panel {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #f8fbff;
+  padding: 12px;
+}
+
+.review-flow-panel strong,
+.review-flow-panel p {
+  margin: 0;
+}
+
+.review-flow-panel p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.flow-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.flow-pills span {
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #fff;
+  color: #1d4ed8;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .review-action {
   margin: 0;
   padding: 12px;
@@ -938,9 +1026,14 @@ select {
   }
 
   .layout,
+  .review-hero,
   .review-controls,
   .review-board,
   .review-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-cards {
     grid-template-columns: 1fr;
   }
 

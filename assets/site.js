@@ -23,6 +23,7 @@ const state = {
   reviewItems: [],
   reviewFiltered: [],
   reviewBucket: "reviewPending",
+  requestedReviewItemId: "",
   reviewSource: "전체",
   reviewStatus: "전체",
   reviewQuery: "",
@@ -101,12 +102,16 @@ async function init() {
     manifest.totalBytes,
   )} · ${new Date(manifest.generatedAt).toLocaleString("ko-KR")}`;
 
+  state.requestedReviewItemId = initialRequestedReviewItemId();
+  state.reviewBucket = initialReviewBucket(queue, state.requestedReviewItemId);
+
   renderFilters();
   renderReviewControls();
   bindEvents();
   applyFilters();
   applyReviewFilters();
-  setView(window.location.hash === "#review" ? "review" : "gallery", { updateHash: false });
+  selectRequestedReviewItem(state.requestedReviewItemId);
+  setView(initialView(), { updateHash: false });
 }
 
 function buildGroups(items) {
@@ -207,6 +212,38 @@ function renderFilterGroup(container, key, values) {
     .join("");
 }
 
+function initialView() {
+  return window.location.hash.startsWith("#gallery") ? "gallery" : "review";
+}
+
+function initialRequestedReviewItemId() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("item") || params.get("id")) return params.get("item") || params.get("id");
+  if (!window.location.hash.startsWith("#review/")) return "";
+  return decodeURIComponent(window.location.hash.replace(/^#review\/?/, ""));
+}
+
+function initialReviewBucket(queue, requestedItemId = "") {
+  if (requestedItemId && queue?.buckets) {
+    const found = flattenReviewQueue(queue).find((item) => item.id === requestedItemId || item.fileName === requestedItemId);
+    if (found?.bucketKey) return found.bucketKey;
+  }
+  const buckets = queue?.buckets ?? {};
+  for (const key of ["reviewPending", "needsFix", "baselines", "reviewAssets", "other", "historyOnly"]) {
+    if ((buckets[key]?.count ?? 0) > 0) return key;
+  }
+  return "reviewPending";
+}
+
+function selectRequestedReviewItem(requestedItemId) {
+  if (!requestedItemId || !state.reviewFiltered.length) return;
+  const index = state.reviewFiltered.findIndex((item) => item.id === requestedItemId || item.fileName === requestedItemId);
+  if (index >= 0) {
+    state.reviewIndex = index;
+    renderReview();
+  }
+}
+
 function renderReviewControls() {
   if (!state.reviewQueue) {
     els.reviewSummary.textContent = "검수 큐를 불러오지 못했습니다.";
@@ -259,7 +296,7 @@ function bindEvents() {
   els.galleryTab.addEventListener("click", () => setView("gallery"));
   els.reviewTab.addEventListener("click", () => setView("review"));
   window.addEventListener("hashchange", () => {
-    setView(window.location.hash === "#review" ? "review" : "gallery", { updateHash: false });
+    setView(window.location.hash.startsWith("#review") ? "review" : "gallery", { updateHash: false });
   });
 
   document.addEventListener("click", (event) => {
@@ -306,6 +343,12 @@ function bindEvents() {
     const reviewNavButton = event.target.closest("[data-review-nav]");
     if (reviewNavButton) {
       moveReview(reviewNavButton.dataset.reviewNav === "next" ? 1 : -1);
+      return;
+    }
+
+    const itemLinkButton = event.target.closest("[data-copy-item-link]");
+    if (itemLinkButton) {
+      copyReviewItemLink(itemLinkButton);
       return;
     }
 
@@ -424,7 +467,7 @@ function bindEvents() {
     await navigator.clipboard.writeText(window.location.href);
     els.copy.textContent = "복사됨";
     window.setTimeout(() => {
-      els.copy.textContent = "링크 복사";
+      els.copy.textContent = "현재 화면 링크 복사";
     }, 1400);
   });
 }
@@ -439,9 +482,9 @@ function setView(view, options = {}) {
 
   if (options.updateHash === false) return;
   if (review) {
-    window.history.replaceState(null, "", "#review");
+    window.history.replaceState(null, "", reviewUrlForItem(currentReviewItem(), { relative: true }));
   } else {
-    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#gallery`);
   }
 }
 
@@ -520,6 +563,9 @@ function renderReview() {
     return;
   }
   els.reviewDetail.innerHTML = reviewDetailTemplate(item);
+  if (state.view === "review") {
+    window.history.replaceState(null, "", reviewUrlForItem(item, { relative: true }));
+  }
 }
 
 function reviewListItemTemplate(item, index) {
@@ -550,6 +596,7 @@ function reviewDetailTemplate(item) {
       <div class="review-nav">
         <button class="button secondary" type="button" data-review-nav="prev">이전</button>
         <button class="button secondary" type="button" data-review-nav="next">다음</button>
+        <button class="button" type="button" data-copy-item-link>이 후보 링크 복사</button>
       </div>
     </div>
     <div class="review-stage">
@@ -564,6 +611,7 @@ function reviewDetailTemplate(item) {
           <span class="pill">${escapeHtml(item.work)}</span>
           <span class="pill">${item.width}×${item.height}</span>
         </div>
+        ${reviewFlowPanelTemplate(item)}
         <p class="review-action">${escapeHtml(item.action)}</p>
         ${reviewDbSavedStateTemplate(item)}
         ${solutionMarkdownPanelTemplate(item)}
@@ -591,6 +639,27 @@ function reviewDetailTemplate(item) {
   `;
 }
 
+function reviewFlowPanelTemplate(item) {
+  const hasSolution = Boolean(solutionMarkdownRef(item));
+  const visualLabel = item.visualKind ? `시각자료: ${item.visualKind}` : "시각자료: 필요 시 확인";
+  const latestLabel = item.isLatestInGroup === false ? "최신 후보 아님" : "현재 검토 대상";
+  return `
+    <section class="review-flow-panel" aria-label="작업 흐름 상태">
+      <div>
+        <strong>운영 상태</strong>
+        <p>문제은행에 들어간 모든 문항이 손풀이 제작 대상은 아닙니다. 이 화면에는 검수·보관 대상 산출물만 표시됩니다.</p>
+      </div>
+      <div class="flow-pills">
+        <span>문제은행: ${escapeHtml(item.bank_status || item.bankStatus || "분리 관리")}</span>
+        <span>풀이 설계: ${hasSolution ? "연결됨" : "미연결"}</span>
+        <span>손풀이: ${escapeHtml(item.status || "상태 없음")}</span>
+        <span>${escapeHtml(visualLabel)}</span>
+        <span>${escapeHtml(latestLabel)}</span>
+      </div>
+    </section>
+  `;
+}
+
 function solutionMarkdownPanelTemplate(item) {
   const ref = solutionMarkdownRef(item);
   const publicPath = ref ? state.sourceMdIndex[ref] : "";
@@ -614,6 +683,24 @@ function solutionMarkdownPanelTemplate(item) {
 
 function solutionMarkdownRef(item) {
   return item.explanationMdRef || item.sourcePacket || "";
+}
+
+function reviewUrlForItem(item, options = {}) {
+  if (!item) return `${window.location.pathname}#review`;
+  const params = new URLSearchParams(window.location.search);
+  params.set("item", item.id);
+  const query = params.toString();
+  return `${options.relative ? window.location.pathname : `${window.location.origin}${window.location.pathname}`}${query ? `?${query}` : ""}#review`;
+}
+
+async function copyReviewItemLink(button) {
+  const item = currentReviewItem();
+  if (!item) return;
+  await navigator.clipboard.writeText(reviewUrlForItem(item));
+  button.textContent = "후보 링크 복사됨";
+  window.setTimeout(() => {
+    button.textContent = "이 후보 링크 복사";
+  }, 1400);
 }
 
 async function openSolutionMarkdown(ref) {
