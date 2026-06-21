@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>handsolution 문제DB 검수센터</title>
+    <meta
+      name="description"
+      content="DB화된 문항 정보와 HWPX export를 조회하고 승인/반려/손풀이 요청을 저장하는 문제은행 검수센터"
+    />
+    <link rel="stylesheet" href="assets/site.css?v=20260621-problem-bank-review" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">handsolution problem bank review</p>
+        <h1>문제DB 검수센터</h1>
+        <p id="problemBankSummary" class="summary">DB화된 문항 정보를 불러오는 중입니다.</p>
+      </div>
+      <div class="topbar-actions">
+        <a class="button secondary" href="index.html#review">손풀이 검수센터</a>
+        <button id="copyProblemBankLink" class="button" type="button">현재 문항 링크 복사</button>
+      </div>
+    </header>
+
+    <main class="problem-bank-layout">
+      <aside class="problem-bank-sidebar" aria-label="문제DB 필터와 목록">
+        <label class="search-box">
+          <span>검색</span>
+          <input id="problemBankSearch" type="search" autocomplete="off" placeholder="문항코드, 단원, 유형, 발문" />
+        </label>
+        <div class="problem-bank-filter-grid">
+          <label>
+            <span>자료</span>
+            <select id="problemBankSourceFilter"></select>
+          </label>
+          <label>
+            <span>상태</span>
+            <select id="problemBankStatusFilter"></select>
+          </label>
+          <label>
+            <span>난이도</span>
+            <select id="problemBankDifficultyFilter"></select>
+          </label>
+        </div>
+        <section class="selected-review-actions" aria-label="선택 문항 작업">
+          <strong>선택 문항</strong>
+          <p id="selectedProblemSummary">0개 선택됨</p>
+          <div class="selected-action-row">
+            <button id="clearSelectedProblems" class="button secondary" type="button">선택 해제</button>
+            <button id="showSelectedExports" class="button secondary" type="button">HWPX 찾기</button>
+          </div>
+        </section>
+        <div class="review-list-head">
+          <strong id="problemBankCount">0개</strong>
+          <span id="problemBankProgress"></span>
+        </div>
+        <div id="problemBankList" class="review-list problem-bank-list"></div>
+      </aside>
+
+      <section id="problemBankDetail" class="problem-bank-detail" aria-label="문항 상세 검수">
+        <p class="empty">검수할 문항을 선택하세요.</p>
+      </section>
+    </main>
+
+    <dialog id="selectedExportsDialog" class="viewer problem-bank-dialog">
+      <div class="viewer-panel">
+        <div class="viewer-head">
+          <div>
+            <p class="eyebrow">selected HWPX exports</p>
+            <h2>선택 문항 HWPX</h2>
+          </div>
+          <form method="dialog">
+            <button class="icon-button" aria-label="닫기" type="submit">×</button>
+          </form>
+        </div>
+        <div id="selectedExportsContent" class="problem-bank-dialog-content"></div>
+      </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="assets/db-config.js?v=20260621-problem-bank-review" defer></script>
+    <script src="assets/problem-bank-review.js?v=20260621-problem-bank-review" defer></script>
+  </body>
+</html>

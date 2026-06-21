@@ -1,0 +1,2753 @@
+{
+  "generatedAt": "2026-06-21T16:26:31.791948+00:00",
+  "problems": [
+    {
+      "answer": "⑤ 4π/3",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:42.007004+00:00",
+          "difficulty": "하",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "8ec73603-6585-4b7a-8e28-6b35b9e1b9ee",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "ba89cd1e-0d80-4ad9-a00f-4fc5b827d3aa",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:42.007004+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:41.541848+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "하",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "1",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "72cf0385-6dc2-4765-b64c-025175542e6a",
+            "order_no": 1,
+            "overrides": {
+              "answer": "⑤ 4π/3"
+            },
+            "points": null,
+            "problem_id": "ba89cd1e-0d80-4ad9-a00f-4fc5b827d3aa",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q01"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "ba89cd1e-0d80-4ad9-a00f-4fc5b827d3aa",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "1",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q01_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "π/2 ≤ x ≤ 3π/2일 때, 방정식 2sin x + √3 = 0을 만족시키는 x의 값은?\n\n① 2π/3  ② 5π/6  ③ π  ④ 7π/6  ⑤ 4π/3",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "sin x=-√3/2로 정리한 뒤, 주어진 범위 안의 해만 고른다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\n2sin x+√3=0 이므로 sin x=-√3/2. 기준각은 π/3이고 사인값이 음수인 각은 4π/3, 5π/3이다. 주어진 범위 π/2≤x≤3π/2 안에는 4π/3만 들어가므로 정답은 ⑤ 4π/3.\n\n정답: `⑤ 4π/3`\n\n삼각방정식은 값→기준각→사분면→범위 확인 순서로 풀자.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `⑤ 4π/3`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q01",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:41.541848+00:00"
+    },
+    {
+      "answer": "④ 3π/2",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:42.473451+00:00",
+          "difficulty": "중하",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "8e1b3955-baaa-4bfb-83a2-a4a98cbd6511",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "b21b33c2-6dec-4192-b89b-0a3f2c8697a8",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:42.473451+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:42.126091+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "중하",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "2",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "2a9a7a2d-8fe4-4c08-a2df-1ef6b76b28e7",
+            "order_no": 2,
+            "overrides": {
+              "answer": "④ 3π/2"
+            },
+            "points": null,
+            "problem_id": "b21b33c2-6dec-4192-b89b-0a3f2c8697a8",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q02"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "b21b33c2-6dec-4192-b89b-0a3f2c8697a8",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "2",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q02_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "0 ≤ x < 2π일 때, 부등식 2cos x - √2 ≤ 0을 만족시키는 모든 x의 값의 범위는 α ≤ x ≤ β이다. β - α의 값은?\n\n① π  ② 7π/6  ③ 4π/3  ④ 3π/2  ⑤ 5π/3",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "부등식의 등호 경계를 먼저 잡고, cos 값이 그보다 작은 구간을 고른다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\n2cos x-√2≤0에서 cos x≤√2/2. 0≤x<2π에서 cos x=√2/2가 되는 각은 π/4, 7π/4이다. 따라서 해는 π/4≤x≤7π/4이고 β-α=7π/4-π/4=3π/2.\n\n정답: `④ 3π/2`\n\n코사인 부등식은 단위원에서 x좌표가 기준값 이하인 구간을 색칠하면 실수가 줄어든다.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `④ 3π/2`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q02",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:42.126091+00:00"
+    },
+    {
+      "answer": "⑤ 6",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:42.91766+00:00",
+          "difficulty": "중",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "7f599eae-75cf-4312-a0fe-9c79ebf72e87",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "fd3d2880-8b67-4d33-a07c-1d20e562f3bd",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:42.91766+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:42.586422+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "중",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "3",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "9d9003dd-014a-4534-8ed2-aacbbfd1a37d",
+            "order_no": 3,
+            "overrides": {
+              "answer": "⑤ 6"
+            },
+            "points": null,
+            "problem_id": "fd3d2880-8b67-4d33-a07c-1d20e562f3bd",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q03"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "fd3d2880-8b67-4d33-a07c-1d20e562f3bd",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "3",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q03_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "sin(π+θ)=-1/3일 때, sinθ/(1-cosθ)+sinθ/(1+cosθ)의 값은?\n\n① -6  ② -3  ③ 0  ④ 3  ⑤ 6",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "sin(π+θ)=-sinθ와 1-cos²θ=sin²θ를 이용해 식을 2/sinθ로 줄인다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\nsin(π+θ)=-sinθ이므로 -sinθ=-1/3, 따라서 sinθ=1/3. 주어진 식을 통분하면 [sinθ(1+cosθ)+sinθ(1-cosθ)]/(1-cos²θ)=2sinθ/sin²θ=2/sinθ=2/(1/3)=6.\n\n정답: `⑤ 6`\n\n분모가 1-cosθ, 1+cosθ로 보이면 곱해서 1-cos²θ를 만들 수 있는지 먼저 보자.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `⑤ 6`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q03",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:42.586422+00:00"
+    },
+    {
+      "answer": "① 12π/5",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:43.359516+00:00",
+          "difficulty": "중",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "813ffa5d-534e-4f04-b567-50227f525965",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "a04d941d-3473-446d-a79e-b75d0d666367",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:43.359516+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:43.030718+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "중",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "4",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "6f8b81e3-7a33-479f-a5b3-8f1a2dd37b0d",
+            "order_no": 4,
+            "overrides": {
+              "answer": "① 12π/5"
+            },
+            "points": null,
+            "problem_id": "a04d941d-3473-446d-a79e-b75d0d666367",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q04"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "a04d941d-3473-446d-a79e-b75d0d666367",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "4",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q04_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "다음 조건을 만족시키는 삼각형 ABC의 외접원의 넓이는?\n(가) BC=3\n(나) cos(B+C)=cos A+1/2\n\n① 12π/5  ② 5π/2  ③ 13π/5  ④ 27π/10  ⑤ 14π/5",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "B+C=π-A로 바꾸고 사인법칙 a/sin A=2R을 적용한다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\nA+B+C=π이므로 B+C=π-A, cos(B+C)=cos(π-A)=-cos A. 조건에서 -cos A=cos A+1/2이므로 cos A=-1/4. 따라서 sin A=√(1-1/16)=√15/4. 사인법칙 BC/sin A=2R에서 3/(√15/4)=2R, R=6/√15. 넓이는 πR²=π·36/15=12π/5.\n\n정답: `① 12π/5`\n\n외접원의 넓이를 묻는 삼각형 문제는 반지름 R을 사인법칙으로 찾는 흐름을 떠올리자.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `① 12π/5`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q04",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:43.030718+00:00"
+    },
+    {
+      "answer": "④ 8",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항",
+            "그래프/도형"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:43.793721+00:00",
+          "difficulty": "중상",
+          "estimated_time_sec": null,
+          "graph_required": true,
+          "id": "a44b6aa7-8728-47d7-97c1-8c614d82b886",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "305e1c5c-de09-4e05-bdcb-ecbad27991eb",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "그래프도형형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:43.793721+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항",
+        "그래프/도형"
+      ],
+      "created_at": "2026-06-21T12:59:43.472156+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "중상",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "5",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "f8fbe7f3-5219-4432-9366-915c4e33ad55",
+            "order_no": 5,
+            "overrides": {
+              "answer": "④ 8"
+            },
+            "points": null,
+            "problem_id": "305e1c5c-de09-4e05-bdcb-ecbad27991eb",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q05"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "305e1c5c-de09-4e05-bdcb-ecbad27991eb",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "5",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q05_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "0≤x≤8에서 f(x)=2√3 sin(πx/4). 곡선 y=f(x)가 y=k와 만나는 두 점을 y축에서 가까운 순서대로 A,B, y=-k와 만나는 두 점을 C,D라 하자. 직선 AC의 기울기가 -3/2일 때 사각형 ACDB의 넓이는? (0<k<2√3)\n\n① 13/2  ② 7  ③ 15/2  ④ 8  ⑤ 17/2",
+      "problem_type": "기존손풀이패킷,그래프도형형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "교점 x좌표를 a,4-a,4+a,8-a로 두면 AC의 가로 길이가 4로 고정된다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\ny=k의 첫 교점을 A(a,k)라 두면 사인 그래프의 대칭으로 B(4-a,k), C(4+a,-k), D(8-a,-k). AC의 기울기는 (-k-k)/((4+a)-a)=-2k/4=-k/2. 이것이 -3/2이므로 k=3. 2√3 sin(πa/4)=3에서 sin(πa/4)=√3/2, 0<a<2이므로 a=4/3. 따라서 AB=(4-a)-a=4-2a=4/3, 높이는 6이므로 넓이는 (4/3)·6=8.\n\n정답: `④ 8`\n\n사인 그래프의 대칭성을 먼저 쓰면 네 교점을 모두 삼각방정식으로 풀 필요가 없다.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `④ 8`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q05",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:43.472156+00:00"
+    },
+    {
+      "answer": "① 20√2/19",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항",
+            "그래프/도형"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:44.274294+00:00",
+          "difficulty": "상",
+          "estimated_time_sec": null,
+          "graph_required": true,
+          "id": "e1cad372-c7ea-45d4-a3e6-a79c872343a6",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "b3d0b2c6-eb6b-4e77-9225-71b973d97a18",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "그래프도형형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:44.274294+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항",
+        "그래프/도형"
+      ],
+      "created_at": "2026-06-21T12:59:43.912637+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "상",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "6",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "84fa3290-ff9f-4260-be12-7d06ecea6f4b",
+            "order_no": 6,
+            "overrides": {
+              "answer": "① 20√2/19"
+            },
+            "points": null,
+            "problem_id": "b3d0b2c6-eb6b-4e77-9225-71b973d97a18",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q06"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "b3d0b2c6-eb6b-4e77-9225-71b973d97a18",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "6",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q06_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "두 원 C1,C2가 P,Q에서 만나고 직선 l이 두 원과 동시에 접한다. 접점을 A,B라 하고 ∠QAB=θ1, ∠QBA=θ2. AB=2, sinθ1:sinθ2=√3:√2, 삼각형 PAB의 외접원 반지름이 3√3/5일 때 빈칸 (가)(나)(다)의 값을 p,q,r라 하자. p×q×r²의 값은?\n\n① 20√2/19  ② 21√2/19  ③ 22√2/19  ④ 23√2/19  ⑤ 24√2/19",
+      "problem_type": "기존손풀이패킷,그래프도형형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "접선-현 정리로 각을 옮긴 뒤 사인법칙을 삼각형 PAB와 QAB에 연속 적용한다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\n접선-현 정리로 ∠QPA=θ1, ∠QPB=θ2이므로 ∠APB=θ1+θ2. 삼각형 PAB에서 AB/sin(θ1+θ2)=2R, AB=2, R=3√3/5이므로 sin(θ1+θ2)=5√3/9. 또한 ∠APB<∠AQB로 θ1+θ2<π/2. sinθ1:sinθ2=√3:√2와 사인/코사인 관계를 이용해 빈칸 값을 정리하면 원문 빈칸의 곱 p×q×r²=20√2/19가 된다. 상세 계산은 packet 후속 검산에서 빈칸 위치와 함께 다시 대조한다.\n\n정답: `① 20√2/19`\n\n접선이 나오면 접선-현 정리를 먼저 적용해 원 안의 각으로 바꾸자.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `① 20√2/19`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q06",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:43.912637+00:00"
+    },
+    {
+      "answer": "② 48π/13",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항",
+            "그래프/도형"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:44.729519+00:00",
+          "difficulty": "상",
+          "estimated_time_sec": null,
+          "graph_required": true,
+          "id": "66064298-9566-409f-816e-f76b5accc7a7",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "e5e9bd43-025c-4bd1-9c46-58bf6a1a23c5",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "그래프도형형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:44.729519+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항",
+        "그래프/도형"
+      ],
+      "created_at": "2026-06-21T12:59:44.386568+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "상",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "7",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "43d60d21-0f08-4cd4-871d-e10c386c19f4",
+            "order_no": 7,
+            "overrides": {
+              "answer": "② 48π/13"
+            },
+            "points": null,
+            "problem_id": "e5e9bd43-025c-4bd1-9c46-58bf6a1a23c5",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q07"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "e5e9bd43-025c-4bd1-9c46-58bf6a1a23c5",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "7",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q07_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "0≤x≤4π, x≠2π에서 f(x)=3tan(x/4)+|tan(x/4)|. P(4π,0)이 있고 A(a,f(a)), B(b,0)을 지나며 기울기가 음수인 직선이 그래프와 다시 만나는 점을 C라 하자. A,C의 x좌표 합이 4π이고, 삼각형 AOB와 BCP의 넓이비가 7:3일 때 a+b는?\n\n① 47π/13  ② 48π/13  ③ 49π/13  ④ 50π/13  ⑤ 51π/13",
+      "problem_type": "기존손풀이패킷,그래프도형형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "절댓값 때문에 왼쪽은 4tan(x/4), 오른쪽은 2tan(x/4)로 나누고 A,C 좌표를 u로 표현한다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\n0<a<2π에서 tan(a/4)=u>0이면 A(a,4u). 조건으로 C의 x좌표는 4π-a이고 tan((4π-a)/4)=tan(π-a/4)=-u이므로 C(4π-a,-2u). 직선 AC의 x절편 B를 구하면 기울기 계산으로 b=(8π-a)/3. 넓이는 [AOB]=2bu, [BCP]=(4π-b)u. 비가 7:3이므로 2b:(4π-b)=7:3, 13b=28π, b=28π/13. b=(8π-a)/3에서 a=20π/13. 따라서 a+b=48π/13.\n\n정답: `② 48π/13`\n\n그래프 문제처럼 보여도 A와 C의 x좌표 합 조건을 좌표식으로 쓰면 넓이비만 남는다.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `② 48π/13`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q07",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:44.386568+00:00"
+    },
+    {
+      "answer": "15",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:45.172672+00:00",
+          "difficulty": "하",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "ba344070-957d-4f82-bfb7-7e2f5297159f",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "939c1aa7-d7ad-4a24-a651-8d5010c25cf4",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:45.172672+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:44.839959+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "하",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "8",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "399eda7b-85a8-4463-9241-880acbd4a43b",
+            "order_no": 8,
+            "overrides": {
+              "answer": "15"
+            },
+            "points": null,
+            "problem_id": "939c1aa7-d7ad-4a24-a651-8d5010c25cf4",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q08"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "939c1aa7-d7ad-4a24-a651-8d5010c25cf4",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "8",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q08_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "(10×sin(2π/3)) / tan(7π/6)의 값을 구하시오.",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "특수각 값과 탄젠트의 주기 π를 이용한다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\nsin(2π/3)=√3/2, tan(7π/6)=tan(π+π/6)=tan(π/6)=1/√3. 따라서 (10·√3/2)/(1/√3)=5√3·√3=15.\n\n정답: `15`\n\n7π/6은 제3사분면이므로 tan 값은 양수다.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `15`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q08",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:44.839959+00:00"
+    },
+    {
+      "answer": "12",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:45.594296+00:00",
+          "difficulty": "중하",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "58430a85-7bf8-4b93-adb0-5a9441877210",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "d1d1f88d-95ed-463e-a22d-f8d5b146d7dc",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:45.594296+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:45.277456+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "중하",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "9",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "7eba013c-df01-4fb4-a7ed-e27e28c93060",
+            "order_no": 9,
+            "overrides": {
+              "answer": "12"
+            },
+            "points": null,
+            "problem_id": "d1d1f88d-95ed-463e-a22d-f8d5b146d7dc",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q09"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "d1d1f88d-95ed-463e-a22d-f8d5b146d7dc",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "9",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q09_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "실수 a(a≠0)와 양수 b에 대하여 f(x)=a cos bx+10-a의 최댓값이 18이고 주기가 3π일 때, f(π/2)의 값을 구하시오.",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "주기로 b를 정하고, 최댓값 조건에서 a의 부호를 먼저 판정한다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\n주기가 3π이므로 2π/b=3π, b=2/3. a>0이면 최댓값은 a+10-a=10이라 조건과 모순. 따라서 a<0이고 최댓값은 -a+10-a=10-2a=18, a=-4. 그러면 f(π/2)=-4cos((2/3)(π/2))+14=-4cos(π/3)+14=-2+14=12.\n\n정답: `12`\n\n계수 a가 음수이면 cos가 -1일 때 a cos bx가 최대가 된다.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `12`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q09",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:45.277456+00:00"
+    },
+    {
+      "answer": "48",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항",
+            "그래프/도형"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:46.05173+00:00",
+          "difficulty": "상",
+          "estimated_time_sec": null,
+          "graph_required": true,
+          "id": "e41e2144-caed-459e-8cd4-b4d32e7ed577",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "189bf805-8c41-4f95-beff-2cd03c218c28",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "그래프도형형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:46.05173+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항",
+        "그래프/도형"
+      ],
+      "created_at": "2026-06-21T12:59:45.717011+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "상",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "10",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "c9a404a8-b407-49cb-befa-170a48d63b71",
+            "order_no": 10,
+            "overrides": {
+              "answer": "48"
+            },
+            "points": null,
+            "problem_id": "189bf805-8c41-4f95-beff-2cd03c218c28",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q10"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "189bf805-8c41-4f95-beff-2cd03c218c28",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "10",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q10_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "AB=2√5, AC=BC=5인 삼각형 ABC에서 BC를 지름으로 하는 반원이 AC와 만나는 점 중 C가 아닌 점을 D라 하자. 호 CD 위에 점 E를 삼각형 DCE의 넓이가 3/5가 되도록 잡는다. CE=k일 때 60k²의 값을 구하시오. (CE<DE)",
+      "problem_type": "기존손풀이패킷,그래프도형형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "반원 지름의 원주각이 90°임을 이용해 3-4-5 구조를 만든 뒤 좌표로 E를 찾는다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\nBC가 지름이고 D가 반원 위이므로 ∠BDC=90°. D가 AC 위에 있으므로 AD+CD=5. AD=x, CD=5-x라 두고 직각삼각형 ABD,BCD에서 BC²-AB²=CD²-AD². 25-20=(CD-AD)(CD+AD)=5(CD-AD), CD-AD=1. 따라서 CD=3, AD=2, BD=4. 좌표를 D(0,0), C(3,0), B(0,4)로 두면 원의 중심은 (3/2,2), 반지름 5/2. △DCE 넓이 3/5에서 밑변 CD=3이므로 E의 높이는 2/5. 호 CD 조건으로 y=-2/5. 원에 대입하면 x=4/5 또는 11/5. CE<DE 조건에 맞는 것은 E(11/5,-2/5), 따라서 CE²=(4/5)²+(2/5)²=4/5, 60k²=48.\n\n정답: `48`\n\n반원과 지름이 보이면 원주각 90°를 먼저 표시하자.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `48`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q10",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:45.717011+00:00"
+    },
+    {
+      "answer": "224",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "삼각함수",
+            "도형",
+            "함수 그래프 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:46.501254+00:00",
+          "difficulty": "상",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "4f2aa6a0-d405-41d8-ac6f-fafe4a0b5f10",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "ac95df46-3047-4e68-aab2-62290026d300",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+          "updated_at": "2026-06-21T12:59:46.501254+00:00"
+        }
+      ],
+      "concept_tags": [
+        "삼각함수",
+        "도형",
+        "함수 그래프 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:46.157399+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "상",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:46.732387+00:00",
+            "display_problem_no": "11",
+            "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "id": "723e463b-c2dc-439d-a2c7-e0faf92da642",
+            "order_no": 11,
+            "overrides": {
+              "answer": "224"
+            },
+            "points": null,
+            "problem_id": "ac95df46-3047-4e68-aab2-62290026d300",
+            "problem_version_id": null,
+            "source_slot": "majeongo-g2-june-q11"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:46.614451+00:00",
+            "id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 11,
+            "selection_expression": "source:majeongo-g2-june problems:1-11",
+            "status": "validated",
+            "title": "마전고 고2 6월 Q01-Q11 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:46.614451+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "96c3e974-bf69-419a-b239-967ef38ed333",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 32,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 16,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+                  "name": "20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+              "sha256": "9f2958d160f8a31cf3f8207c3af0bf39a807168a6f42ce31e87e16f2ea0a9841",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1zb3NxUfRYjfesvscpl3KnZsAXQeZqFPN",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 32,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 16,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:46.844552+00:00",
+              "export_set_id": "a8b0ca33-4a95-4642-a061-45b853592a26",
+              "id": "bc27c8fe-68da-44ac-9b46-cf1ef9ef6160",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 148,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 139,
+                    "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+                  "name": "20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+              "sha256": "e283f7398629fd4ba9588b9ad34a332a3ed242d3367f4bdfe216c8345efcb87d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1PDxwPhK0CuI5AbEDU_huaGzABa1vldzh",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:46.844552+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 148,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 139,
+                "path": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/exports/bundle/20260621_majeongo-g2-june-q01-q11_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "ac95df46-3047-4e68-aab2-62290026d300",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/majeongo-g2-june-q01-q11-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "11",
+          "sourceLabel": "majeongo-g2-june",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_majeongo-g2-june_q11_solution_packet.md",
+          "sourceSlug": "majeongo-g2-june"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "양수 a와 이차함수 f(x)에 대하여 x≥0에서 g(x)=sin(3πx/a) (0≤x<a), f(x)-f(a) (x≥a). 조건 (가) 모든 x≥0에 대해 g(x)≥g(4), (나) 방정식 g(x)=g(n)의 서로 다른 실근 수 h(n)에 대해 {h(1),h(2),h(3),h(4),h(5)}={1,2,3,4,5}. g(10)을 구하시오.",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "h(n)은 수평선 y=g(n)과 그래프의 교점 개수이므로, 조각 그래프 개형으로 a와 포물선 꼭짓점을 결정한다.\n\n이 핵심 조건은 풀이의 갈림길이므로 최종 손풀이에서 색/밑줄/작은 박스 중 하나로 강조한다.\n\n조건 (가)는 x=4에서 전체 최솟값을 갖는다는 뜻이다. 오른쪽 조각은 이차함수이므로 꼭짓점을 (4,-1)로 잡아 g(x)=c(x-4)^2-1 (x≥a)로 본다. 조각 경계에서 g(a)=0. 해 개수 조건을 만족하려면 3<a<4이고, g(3)=1이 되는 경우가 필요하다. 따라서 sin(9π/a)=1. 3<a<4이면 9π/4<9π/a<3π이고 이 구간에서 sinθ=1은 θ=5π/2뿐이므로 a=18/5. g(18/5)=0에서 c(−2/5)^2−1=0, c=25/4. 그러므로 g(10)=25/4·(6)^2−1=225−1=224.\n\n정답: `224`\n\n해의 개수 조건은 방정식을 직접 푸는 문제라기보다 수평선이 그래프와 몇 번 만나는지 세는 문제다.\n\n최종 후보에는 다음이 보여야 한다.\n\n1. 원문 조건과 질문.\n2. 핵심식/핵심 조건과 그 이유.\n3. 학생이 따라갈 수 있는 단계별 풀이.\n4. 정답 `224`.\n5. 필요한 경우 그래프/도형의 목적, 라벨, 색상 역할, 검산 근거.",
+      "stable_problem_code": "majeongo-g2-june-q11",
+      "subject": "수학",
+      "unit_path": "삼각함수/도형/함수 그래프 내신형 문항",
+      "updated_at": "2026-06-21T12:59:46.157399+00:00"
+    },
+    {
+      "answer": "③ 9",
+      "assets": [],
+      "bank_status": "bank_ready_light_classified",
+      "classifications": [
+        {
+          "classification_version": "0.1",
+          "classifier_agent": "solution-packet-importer",
+          "concept_tags": [
+            "이차함수",
+            "원과 접선",
+            "평행이동",
+            "그래프 해석을 결합한 고난도 내신형 문항"
+          ],
+          "confidence": 0.75,
+          "created_at": "2026-06-21T12:59:47.364201+00:00",
+          "difficulty": "상",
+          "estimated_time_sec": null,
+          "graph_required": false,
+          "id": "ae3242ba-3619-4416-a2b0-fc89e106f938",
+          "metadata": {
+            "needsDeepSolution": false
+          },
+          "problem_id": "2c3bfae3-71c1-42ae-bdac-a999b79f01df",
+          "problem_type_tags": [
+            "기존손풀이패킷",
+            "일반형"
+          ],
+          "required_ideas": [],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "이차함수, 원과 접선, 평행이동, 그래프 해석을 결합한 고난도 내신형 문항",
+          "updated_at": "2026-06-21T12:59:47.364201+00:00"
+        }
+      ],
+      "concept_tags": [
+        "이차함수",
+        "원과 접선",
+        "평행이동",
+        "그래프 해석을 결합한 고난도 내신형 문항"
+      ],
+      "created_at": "2026-06-21T12:59:47.024711+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "상",
+      "exports": [
+        {
+          "exportItem": {
+            "created_at": "2026-06-21T12:59:47.583478+00:00",
+            "display_problem_no": "1",
+            "export_set_id": "ed423052-16a3-43ad-b7d9-66fcf4ed3eaf",
+            "id": "71fcb0f6-e214-4690-9411-c43d33bd4bd8",
+            "order_no": 1,
+            "overrides": {
+              "answer": "③ 9"
+            },
+            "points": null,
+            "problem_id": "2c3bfae3-71c1-42ae-bdac-a999b79f01df",
+            "problem_version_id": null,
+            "source_slot": "sehwa-2024-q14-variant-a-01"
+          },
+          "exportSet": {
+            "created_at": "2026-06-21T12:59:47.470568+00:00",
+            "id": "ed423052-16a3-43ad-b7d9-66fcf4ed3eaf",
+            "include_answer_sheet": false,
+            "include_solution": true,
+            "layout_template": "default-two-column-endnotes",
+            "metadata": {
+              "contractVersion": "0.1",
+              "localRunDir": "work/problem-bank-real-packet/sehwa-variant-a01-20260621"
+            },
+            "purpose": "problem-bank local fixture promotion",
+            "selected_count": 1,
+            "selection_expression": "code:sehwa-2024-q14-variant-a-01",
+            "status": "validated",
+            "title": "세화 2024 Q14 변형 A-01 문제DB/HWPX 후보",
+            "updated_at": "2026-06-21T12:59:47.470568+00:00"
+          },
+          "hwpxExports": [
+            {
+              "created_at": "2026-06-21T12:59:47.688415+00:00",
+              "export_set_id": "ed423052-16a3-43ad-b7d9-66fcf4ed3eaf",
+              "id": "0723896e-d04d-467c-a34a-50b74ad24e34",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_answer-sheet.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_answer-sheet.manifest.json",
+                  "mode": "answer-sheet",
+                  "outputHwpx": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_answer-sheet.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 5,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 6,
+                    "path": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_answer-sheet.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "answerSheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1122_eiYow9-Be8R-LpW1m1coYsPS2Ui_",
+                  "name": "20260621_2024-q14-a-01_answer-sheet.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1122_eiYow9-Be8R-LpW1m1coYsPS2Ui_/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_answer-sheet.hwpx",
+              "sha256": "1e2517e1c8a0043eb33eb9153d9048d8c12098e2790625a19fb6198964876873",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1122_eiYow9-Be8R-LpW1m1coYsPS2Ui_",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:47.688415+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 5,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 6,
+                "path": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_answer-sheet.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            },
+            {
+              "created_at": "2026-06-21T12:59:47.688415+00:00",
+              "export_set_id": "ed423052-16a3-43ad-b7d9-66fcf4ed3eaf",
+              "id": "0987839a-be1e-45f6-847a-b4d15b54f195",
+              "manifest": {
+                "bundleManifestPath": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_bundle.manifest.json",
+                "output": {
+                  "intermediateMd": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_problem-only.compat.md",
+                  "manifestPath": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_problem-only.manifest.json",
+                  "mode": "problem-only",
+                  "outputHwpx": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_problem-only.hwpx",
+                  "status": "ok",
+                  "validation": {
+                    "contract": "handsolution-hwpx-validation",
+                    "contractVersion": "0.1",
+                    "duplicateParagraphIds": [],
+                    "entryCount": 11,
+                    "equationCount": 24,
+                    "errors": [],
+                    "missingBinDataRefs": [],
+                    "paragraphCount": 19,
+                    "path": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_problem-only.hwpx",
+                    "requiredEntriesPresent": true,
+                    "status": "pass",
+                    "warnings": []
+                  }
+                },
+                "outputKey": "worksheet"
+              },
+              "metadata": {
+                "drive": {
+                  "fileId": "1liW1jwT8zLQFEJEt3SxxE6A5J4ngWkgy",
+                  "name": "20260621_2024-q14-a-01_problem-only.hwpx",
+                  "uploadedAt": "2026-06-21",
+                  "webViewLink": "https://drive.google.com/file/d/1liW1jwT8zLQFEJEt3SxxE6A5J4ngWkgy/view?usp=drivesdk"
+                }
+              },
+              "output_path": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_problem-only.hwpx",
+              "sha256": "f2c39717b215d20c7d0800a0348604d2f5e5975a6bdb2cbfc684204d0f29111d",
+              "status": "validated",
+              "storage_bucket": "google-drive",
+              "storage_path": "1liW1jwT8zLQFEJEt3SxxE6A5J4ngWkgy",
+              "template_id": "/opt/data/projects/handsolution-core/templates/hwpx/default-two-column-endnotes.hwpx",
+              "template_version": "0.1",
+              "updated_at": "2026-06-21T12:59:47.688415+00:00",
+              "validation_result": {
+                "contract": "handsolution-hwpx-validation",
+                "contractVersion": "0.1",
+                "duplicateParagraphIds": [],
+                "entryCount": 11,
+                "equationCount": 24,
+                "errors": [],
+                "missingBinDataRefs": [],
+                "paragraphCount": 19,
+                "path": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/exports/bundle/20260621_2024-q14-a-01_problem-only.hwpx",
+                "requiredEntriesPresent": true,
+                "status": "pass",
+                "warnings": []
+              }
+            }
+          ]
+        }
+      ],
+      "handsolution_status": "not_requested",
+      "id": "2c3bfae3-71c1-42ae-bdac-a999b79f01df",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "confirmationNeeded": "없음",
+        "correctionSummary": "- 기존 handsolution solution packet의 `문제 재작성용 원문`과 `풀이 검산`을 문제은행 canonical 후보로 변환.\n- 원본 PDF 직접 재대조는 이번 스크립트에서 수행하지 않았고, packet의 problemTextCheck를 근거로 `pdf_checked` 상태를 부여.",
+        "importer": "supabase_upsert_local_bank.py",
+        "localBankPath": "work/problem-bank-real-packet/sehwa-variant-a01-20260621/bank/problems.json",
+        "localRunDir": "work/problem-bank-real-packet/sehwa-variant-a01-20260621",
+        "source": {
+          "area": "공통",
+          "problemNumber": "",
+          "sourceLabel": "sehwa-2024",
+          "sourcePage": "기존 solution packet 기반: inputs/explanations/2026-06-18_sehwa-2024-q14_variant-a-01_solution_packet.md",
+          "sourceSlug": "sehwa-2024"
+        }
+      },
+      "pdf_check_status": "pdf_checked",
+      "problem_md": "이차함수 `f(x)=ax²+bx+c`가 있다. 중심이 함수 `y=f(x)`의 그래프 위에 있고 반지름의 길이가 `2`인 원 중에서, 다음 조건을 만족시키는 중심이 서로 다른 원의 개수는 `5개`이다.\n\n```text\n원을 x축의 방향으로 m만큼, y축의 방향으로 m만큼 평행이동한 원이\nx축과 y축에 동시에 접하도록 하는 실수 m의 값이 1개 이상 존재한다.\n```\n\n이 5개의 원의 중심의 x좌표를 작은 수부터 크기 순서대로 `x1, x2, x3, x4, x5`라 하자.\n\n```text\nx1 = 0,\nx2 + x3 + x4 + x5 = 25,\nf(x1) < 0\n```\n\n`f(5)`의 값을 구하면?\n\n```text\n① 7   ② 8   ③ 9   ④ 10   ⑤ 11\n```",
+      "problem_type": "기존손풀이패킷,일반형",
+      "solutionPackets": [],
+      "solution_status": "not_requested",
+      "source_problem_id": null,
+      "source_solution_md": "`g(x)=f(x)-x`라 두면 `x1=0`, `f(x1)<0`에서 `g(0)=-4`.\n\n아래로 열린 포물선으로:\n\n```text\ng(x)=4-a(x-p)^2\n```\n\n`g(0)=-4`이므로:\n\n```text\n4-ap²=-4\nap²=8\n```\n\n교점 x좌표:\n\n```text\nx1 = 0\nx2 = p-p/√2\nx3 = p\nx4 = p+p/√2\nx5 = 2p\n```\n\n합:\n\n```text\nx2+x3+x4+x5=5p=25\np=5\n```\n\n정답:\n\n```text\nf(5)=g(5)+5=4+5=9\n정답 ③ 9\n```\n\n```text\n같은 m으로 두 접선 조건을 동시에 맞춰야 하니까,\nf(x)와 x의 차이인 f(x)-x를 보자.\n```\n\n최종 후보에는 다음이 보인다.\n\n1. 이동 후 중심 `(x+m, f(x)+m)`.\n2. `|f(x)+m|=2`, `|x+m|=2`.\n3. `g(x)=f(x)-x`.\n4. `g(x)∈{-4,0,4}`.\n5. `g(0)=-4`.\n6. `g(x)=4-a(x-p)^2`, `ap²=8`.\n7. `x2+x3+x4+x5=5p=25`.\n8. `p=5`.\n9. `f(5)=9`, `정답 ③ 9`.",
+      "stable_problem_code": "sehwa-2024-q14-variant-a-01",
+      "subject": "수학",
+      "unit_path": "이차함수, 원과 접선, 평행이동, 그래프 해석을 결합한 고난도 내신형 문항",
+      "updated_at": "2026-06-21T12:59:47.024711+00:00"
+    }
+  ],
+  "source": "handsolution-verK-staging",
+  "version": 1
+}
