@@ -149,7 +149,7 @@ function bindProblemEvents() {
       return;
     }
     const card = event.target.closest("[data-problem-id]");
-    if (card) selectProblem(card.dataset.problemId);
+    if (card) selectProblem(card.dataset.problemId, { scrollToDetail: true });
   });
   problemEls.detail.addEventListener("change", (event) => {
     const decision = event.target.closest("[name='problemReviewDecision']");
@@ -223,6 +223,11 @@ function selectProblem(problemId, options = {}) {
   }
   renderProblemList();
   renderProblemDetail(problem);
+  if (options.scrollToDetail && window.matchMedia("(max-width: 980px)").matches) {
+    window.setTimeout(() => {
+      problemEls.detail.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 40);
+  }
 }
 
 function renderProblemDetail(problem) {
@@ -242,6 +247,8 @@ function renderProblemDetail(problem) {
         ${statusPill("handsolution", problem.handsolution_status)}
       </div>
     </div>
+
+    ${quickHwpxReviewTemplate(problem)}
 
     <section class="problem-info-grid">
       ${infoBox("정답", problem.answer || "미입력")}
@@ -268,7 +275,7 @@ function renderProblemDetail(problem) {
       </div>
     </section>
 
-    <section class="problem-bank-section">
+    <section id="problemBankHwpx" class="problem-bank-section">
       <h3>HWPX 다운로드</h3>
       ${hwpxExportsTemplate(problem)}
     </section>
@@ -290,7 +297,7 @@ function renderProblemDetail(problem) {
       </div>
     </section>
 
-    <section class="problem-bank-section">
+    <section id="problemBankReview" class="problem-bank-section">
       <h3>호빈님 검수</h3>
       <div class="problem-review-options">
         ${reviewRadio("approve_problem", decision.decision)}
@@ -308,6 +315,47 @@ function renderProblemDetail(problem) {
       </div>
     </section>
   </article>`;
+}
+
+function quickHwpxReviewTemplate(problem) {
+  const exports = flattenHwpxExports([problem]).sort((left, right) => hwpxQuickPriority(left, problem) - hwpxQuickPriority(right, problem));
+  if (!exports.length) return "";
+  const buttons = exports
+    .slice(0, 3)
+    .map((entry) => {
+      const drive = entry.hwpx.metadata?.drive ?? {};
+      const publicUrl = entry.hwpx.metadata?.publicUrl || entry.hwpx.metadata?.public_url || "";
+      const viewLink = publicUrl || drive.webViewLink || drive.webContentLink || "";
+      if (!viewLink) return "";
+      return `<a class="button ${hwpxQuickPriority(entry, problem) === 0 ? "" : "secondary"}" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(hwpxQuickLabel(entry, problem))}</a>`;
+    })
+    .filter(Boolean)
+    .join("");
+  if (!buttons) return "";
+  return `<section class="problem-bank-section mobile-priority-actions" aria-label="빠른 HWPX 검수">
+    <div>
+      <p class="eyebrow">mobile quick review</p>
+      <h3>빠른 HWPX 검수</h3>
+      <p class="summary">핸드폰에서는 먼저 문항별 HWPX를 열어보고, 필요하면 아래 검수 메모로 이동합니다.</p>
+    </div>
+    <div class="mobile-quick-links">${buttons}<a class="button secondary" href="#problemBankReview">검수 메모</a></div>
+  </section>`;
+}
+
+function hwpxQuickPriority(entry, problem) {
+  const id = `${entry.hwpx.id || ""} ${entry.hwpx.output_path || ""}`;
+  if (id.includes(problem.stable_problem_code)) return 0;
+  if (id.includes("all-review-endnote") || id.includes("all_46")) return 1;
+  if (id.includes("zip")) return 2;
+  return 3;
+}
+
+function hwpxQuickLabel(entry, problem) {
+  const id = `${entry.hwpx.id || ""} ${entry.hwpx.output_path || ""}`;
+  if (id.includes(problem.stable_problem_code)) return "이 문항 HWPX";
+  if (id.includes("all-review-endnote") || id.includes("all_46")) return "전체 HWPX";
+  if (id.includes("zip")) return "전체 ZIP";
+  return entry.hwpx.metadata?.publicLabel || "HWPX 열기";
 }
 
 function infoBox(label, value) {

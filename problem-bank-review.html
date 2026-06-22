@@ -8,7 +8,7 @@
       name="description"
       content="DB화된 문항 정보와 HWPX export를 조회하고 승인/반려/손풀이 요청을 저장하는 문제은행 검수센터"
     />
-    <link rel="stylesheet" href="assets/site.css?v=20260621-problem-bank-review" />
+    <link rel="stylesheet" href="assets/site.css?v=20260622-mobile-review" />
   </head>
   <body>
     <header class="topbar">
@@ -23,8 +23,15 @@
       </div>
     </header>
 
+    <nav class="problem-bank-mobile-nav" aria-label="문제DB 모바일 빠른 이동">
+      <a href="#problemBankSidebar">목록</a>
+      <a href="#problemBankDetail">상세</a>
+      <a href="#problemBankHwpx">HWPX</a>
+      <a href="#problemBankReview">검수</a>
+    </nav>
+
     <main class="problem-bank-layout">
-      <aside class="problem-bank-sidebar" aria-label="문제DB 필터와 목록">
+      <aside id="problemBankSidebar" class="problem-bank-sidebar" aria-label="문제DB 필터와 목록">
         <label class="search-box">
           <span>검색</span>
           <input id="problemBankSearch" type="search" autocomplete="off" placeholder="문항코드, 단원, 유형, 발문" />
@@ -79,7 +86,7 @@
     </dialog>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-    <script src="assets/db-config.js?v=20260621-problem-bank-review" defer></script>
-    <script src="assets/problem-bank-review.js?v=20260621-problem-bank-review" defer></script>
+    <script src="assets/db-config.js?v=20260622-mobile-review" defer></script>
+    <script src="assets/problem-bank-review.js?v=20260622-mobile-review" defer></script>
   </body>
 </html>
