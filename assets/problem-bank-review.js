@@ -329,7 +329,9 @@ function hwpxExportsTemplate(problem) {
   return `<div class="hwpx-export-list">${exports
     .map((entry) => {
       const drive = entry.hwpx.metadata?.drive ?? {};
-      const viewLink = drive.webViewLink || drive.webContentLink || "";
+      const publicUrl = entry.hwpx.metadata?.publicUrl || entry.hwpx.metadata?.public_url || "";
+      const viewLink = publicUrl || drive.webViewLink || drive.webContentLink || "";
+      const linkLabel = publicUrl ? entry.hwpx.metadata?.publicLabel || "파일 열기" : "Drive 열기";
       const downloadLink = drive.fileId ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(drive.fileId)}` : viewLink;
       const mode = entry.hwpx.manifest?.output?.mode || entry.exportSet.layout_template || entry.hwpx.template_id;
       const validation = entry.hwpx.validation_result?.status || entry.hwpx.manifest?.output?.validation?.status || entry.hwpx.status;
@@ -337,7 +339,7 @@ function hwpxExportsTemplate(problem) {
         <strong>${escapeHtml(drive.name || entry.hwpx.output_path)}</strong>
         <span>${escapeHtml(mode)} · ${escapeHtml(validation || "검증상태 미상")}</span>
         <div class="selected-action-row">
-          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">Drive 열기</a>` : ""}
+          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(linkLabel)}</a>` : ""}
           ${downloadLink ? `<a class="button" href="${escapeHtml(downloadLink)}" target="_blank" rel="noreferrer">다운로드</a>` : ""}
         </div>
       </article>`;
@@ -639,13 +641,15 @@ function hwpxExportEntriesTemplate(exports) {
   return `<div class="hwpx-export-list">${exports
     .map((entry) => {
       const drive = entry.hwpx.metadata?.drive ?? {};
-      const viewLink = drive.webViewLink || drive.webContentLink || "";
+      const publicUrl = entry.hwpx.metadata?.publicUrl || entry.hwpx.metadata?.public_url || "";
+      const viewLink = publicUrl || drive.webViewLink || drive.webContentLink || "";
+      const linkLabel = publicUrl ? entry.hwpx.metadata?.publicLabel || "파일 열기" : "Drive 열기";
       const downloadLink = drive.fileId ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(drive.fileId)}` : viewLink;
       return `<article class="hwpx-export-card">
         <strong>${escapeHtml(drive.name || entry.hwpx.output_path)}</strong>
         <span>${escapeHtml(entry.problem.stable_problem_code)} · ${escapeHtml(entry.hwpx.status || "상태 미상")}</span>
         <div class="selected-action-row">
-          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">Drive 열기</a>` : ""}
+          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(linkLabel)}</a>` : ""}
           ${downloadLink ? `<a class="button" href="${escapeHtml(downloadLink)}" target="_blank" rel="noreferrer">다운로드</a>` : ""}
         </div>
       </article>`;
