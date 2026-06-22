@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 5,
   "kind": "problem-bank-review-snapshot",
-  "generatedAt": "2026-06-22T13:46:54.657049+00:00",
+  "generatedAt": "2026-06-22T14:06:20.115876+00:00",
   "title": "2025 시대인재 서바이벌 수학 3회 문제DB 검수 후보",
   "status": "candidate_not_db_written",
   "source": "survival-math-3",
@@ -25,8 +25,10 @@
     "reviewHwpxMode": "per_problem_student_endnote_review",
     "ocrHelperUserFacing": "excluded_internal_reference_only",
     "perProblemReviewHwpxCount": 46,
-    "studentEndnotePolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
-    "internalNotesUserFacing": "excluded"
+    "studentEndnotePolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
+    "internalNotesUserFacing": "excluded",
+    "fracScriptCount": 0,
+    "fractionRendering": "latex_frac_to_hwp_over"
   },
   "artifacts": {
     "dbCandidate": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/db_candidates/20260622_survival_math_3_v1/problem_bank_db_candidate.json",
@@ -51,19 +53,19 @@
         "source": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1/hwpx/20260622_survival_math_3_all_46_review-endnotes.hwpx",
         "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
         "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-        "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-        "size": 324478,
+        "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+        "size": 324498,
         "label": "전체 46문항 학생용 미주형 검수 HWPX",
-        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized"
+        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions"
       },
       "reviewEndnoteZip": {
         "source": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1/survival_math_3_review_endnote_hwpx_pack.zip",
         "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
         "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-        "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-        "size": 4942443,
+        "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+        "size": 4942548,
         "label": "문항별 학생용 미주형 HWPX 전체 zip",
-        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized"
+        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions"
       }
     },
     "internalReferenceOutputs": {
@@ -178,7 +180,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271033+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -317,7 +319,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -379,11 +381,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -413,11 +415,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -684,7 +686,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271052+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -822,7 +824,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -884,11 +886,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -918,11 +920,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1190,7 +1192,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271064+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -1331,7 +1333,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -1359,11 +1361,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "50f77af0e8067c281591d4e14ae522c765c35b06ab813aceb7c4c02e2d8c0680",
-                "size": 96669
+                "sha256": "0b10715d98db38ec2f91f398e4cf0ea405daa2db382d464d0d3c6ec4f69c2bfd",
+                "size": 96661
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
-              "sha256": "50f77af0e8067c281591d4e14ae522c765c35b06ab813aceb7c4c02e2d8c0680",
+              "sha256": "0b10715d98db38ec2f91f398e4cf0ea405daa2db382d464d0d3c6ec4f69c2bfd",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1393,11 +1395,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1427,11 +1429,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1699,7 +1701,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271077+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -1840,7 +1842,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -1868,11 +1870,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "1fb92d09f2d1f173ca5dd25b2f5cac4e93693609b43f33b10e85af4b197f010e",
+                "sha256": "58e9fa27cb663ef87fad343e74d251b974af4d2f3f71227aa547940b8c1a6547",
                 "size": 124829
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
-              "sha256": "1fb92d09f2d1f173ca5dd25b2f5cac4e93693609b43f33b10e85af4b197f010e",
+              "sha256": "58e9fa27cb663ef87fad343e74d251b974af4d2f3f71227aa547940b8c1a6547",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1902,11 +1904,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1936,11 +1938,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2207,7 +2209,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271086+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -2347,7 +2349,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -2409,11 +2411,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2443,11 +2445,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2715,7 +2717,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271098+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -2856,7 +2858,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -2918,11 +2920,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2952,11 +2954,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3224,7 +3226,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271107+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -3365,7 +3367,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -3427,11 +3429,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3461,11 +3463,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3732,7 +3734,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271117+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -3872,7 +3874,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -3934,11 +3936,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3968,11 +3970,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4240,7 +4242,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271128+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -4381,7 +4383,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -4443,11 +4445,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4477,11 +4479,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4749,7 +4751,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271139+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -4891,7 +4893,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -4919,11 +4921,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "9a879da94cbac43e77d1c4733076c85d6a111d7438dfd4ae026f0bf614d894ee",
+                "sha256": "35a84f036ab90f4705c05bbe6978264de7c4fa3061986209d35281bd15ff8004",
                 "size": 126143
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
-              "sha256": "9a879da94cbac43e77d1c4733076c85d6a111d7438dfd4ae026f0bf614d894ee",
+              "sha256": "35a84f036ab90f4705c05bbe6978264de7c4fa3061986209d35281bd15ff8004",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4953,11 +4955,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4987,11 +4989,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5260,7 +5262,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271151+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -5402,7 +5404,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -5464,11 +5466,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5498,11 +5500,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5804,7 +5806,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271160+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -5963,7 +5965,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -6025,11 +6027,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6059,11 +6061,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6333,7 +6335,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271170+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -6477,7 +6479,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -6539,11 +6541,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6573,11 +6575,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6845,7 +6847,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271181+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -6988,7 +6990,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -7050,11 +7052,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7084,11 +7086,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7391,7 +7393,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271191+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -7552,7 +7554,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -7614,11 +7616,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7648,11 +7650,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7919,7 +7921,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271202+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -8058,7 +8060,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -8120,11 +8122,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8154,11 +8156,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8426,7 +8428,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271215+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -8568,7 +8570,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -8630,11 +8632,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8664,11 +8666,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8935,7 +8937,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271226+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -9074,7 +9076,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -9136,11 +9138,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9170,11 +9172,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9443,7 +9445,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271237+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -9586,7 +9588,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -9648,11 +9650,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9682,11 +9684,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9957,7 +9959,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271264+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -10103,7 +10105,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -10131,11 +10133,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "862aba83b46e4929be45bf831e1f31b0399a208538af2d35f9ed4cbbe1840f29",
-                "size": 126443
+                "sha256": "fcb1eaec007b2ab6ee9db435c47d40cf090fc72e6325d88f3513828e92eeb368",
+                "size": 126438
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
-              "sha256": "862aba83b46e4929be45bf831e1f31b0399a208538af2d35f9ed4cbbe1840f29",
+              "sha256": "fcb1eaec007b2ab6ee9db435c47d40cf090fc72e6325d88f3513828e92eeb368",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10165,11 +10167,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10199,11 +10201,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10505,7 +10507,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271276+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -10665,7 +10667,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -10727,11 +10729,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10761,11 +10763,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11033,7 +11035,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271285+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -11176,7 +11178,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -11238,11 +11240,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11272,11 +11274,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11543,7 +11545,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271294+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -11682,7 +11684,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -11744,11 +11746,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11778,11 +11780,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12051,7 +12053,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271304+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -12192,7 +12194,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -12254,11 +12256,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12288,11 +12290,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12559,7 +12561,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271313+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -12700,7 +12702,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -12728,11 +12730,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "968a2565c930b89710dc1f61cbd0613eaa4f2f1fb679ba66465c59d0ebb1ddbe",
+                "sha256": "04270daaad81bf0b5400a565da3e859b4a6f7945d43baef0ce4e5da8be8e96c8",
                 "size": 143126
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
-              "sha256": "968a2565c930b89710dc1f61cbd0613eaa4f2f1fb679ba66465c59d0ebb1ddbe",
+              "sha256": "04270daaad81bf0b5400a565da3e859b4a6f7945d43baef0ce4e5da8be8e96c8",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12762,11 +12764,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12796,11 +12798,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13068,7 +13070,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271326+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -13209,7 +13211,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -13271,11 +13273,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13305,11 +13307,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13583,7 +13585,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271337+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -13732,7 +13734,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -13760,11 +13762,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "1ff53868b6c3115bc87e8efab80b5a54d6e4696c0ff3dfa5700fab27a3367f7d",
+                "sha256": "cad07e1c5c2d99acceef2868877a5f04d10a345ab6186e957482adc04d83588e",
                 "size": 118961
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
-              "sha256": "1ff53868b6c3115bc87e8efab80b5a54d6e4696c0ff3dfa5700fab27a3367f7d",
+              "sha256": "cad07e1c5c2d99acceef2868877a5f04d10a345ab6186e957482adc04d83588e",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13794,11 +13796,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13828,11 +13830,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14100,7 +14102,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271347+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -14242,7 +14244,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -14304,11 +14306,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14338,11 +14340,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14610,7 +14612,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271357+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -14752,7 +14754,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -14814,11 +14816,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14848,11 +14850,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15123,7 +15125,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271369+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -15269,7 +15271,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -15331,11 +15333,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15365,11 +15367,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15639,7 +15641,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271381+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -15781,7 +15783,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -15843,11 +15845,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15877,11 +15879,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16151,7 +16153,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271390+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -16294,7 +16296,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -16356,11 +16358,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16390,11 +16392,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16663,7 +16665,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271398+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -16805,7 +16807,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -16833,11 +16835,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "77646056e2e2d8d454a45c6ed189846803e41776cede647b2c177923fbbefc49",
-                "size": 96969
+                "sha256": "fdc58a4c20463152fdeec6597302d612d938d20f1bfac1a3433e6aa639dd4edf",
+                "size": 96964
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
-              "sha256": "77646056e2e2d8d454a45c6ed189846803e41776cede647b2c177923fbbefc49",
+              "sha256": "fdc58a4c20463152fdeec6597302d612d938d20f1bfac1a3433e6aa639dd4edf",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16867,11 +16869,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16901,11 +16903,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17173,7 +17175,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271412+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -17317,7 +17319,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -17379,11 +17381,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17413,11 +17415,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17687,7 +17689,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271421+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -17831,7 +17833,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -17893,11 +17895,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17927,11 +17929,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18233,7 +18235,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271431+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -18394,7 +18396,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -18456,11 +18458,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18490,11 +18492,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18767,7 +18769,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271441+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -18916,7 +18918,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -18978,11 +18980,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19012,11 +19014,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19321,7 +19323,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271451+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -19487,7 +19489,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -19515,11 +19517,11 @@
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
                 "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "92ccc8cb81178d568e990852049292d77a3d0be7b9575069eb2ff303d67a2a25",
-                "size": 98857
+                "sha256": "d8f92f10758231875babf90ab383d65dd014a351d9afb569bf5de6fcac03b9c7",
+                "size": 98895
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
-              "sha256": "92ccc8cb81178d568e990852049292d77a3d0be7b9575069eb2ff303d67a2a25",
+              "sha256": "d8f92f10758231875babf90ab383d65dd014a351d9afb569bf5de6fcac03b9c7",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19549,11 +19551,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19583,11 +19585,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19855,7 +19857,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271463+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -19996,7 +19998,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -20058,11 +20060,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20092,11 +20094,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20363,7 +20365,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271472+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -20502,7 +20504,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -20564,11 +20566,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20598,11 +20600,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20870,7 +20872,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271482+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -21010,7 +21012,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -21072,11 +21074,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21106,11 +21108,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21378,7 +21380,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271493+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -21520,7 +21522,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -21582,11 +21584,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21616,11 +21618,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21890,7 +21892,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271503+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -22036,7 +22038,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -22098,11 +22100,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22132,11 +22134,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22440,7 +22442,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271512+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -22602,7 +22604,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -22664,11 +22666,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22698,11 +22700,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22976,7 +22978,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271522+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -23126,7 +23128,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -23188,11 +23190,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23222,11 +23224,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23531,7 +23533,7 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271531+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외. frac 계열 LaTeX는 한글 수식 분수 형태로 변환.",
         "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
@@ -23695,7 +23697,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -23757,11 +23759,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
                 "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
-                "size": 324478
+                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
+                "size": 324498
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+              "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23791,11 +23793,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
-                "size": 4942443
+                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
+                "size": 4942548
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+              "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
