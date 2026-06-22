@@ -1,7 +1,7 @@
 {
-  "version": 5,
+  "version": 6,
   "kind": "problem-bank-review-snapshot",
-  "generatedAt": "2026-06-22T14:06:20.115876+00:00",
+  "generatedAt": "2026-06-22T15:53:19.027429+00:00",
   "title": "2025 시대인재 서바이벌 수학 3회 문제DB 검수 후보",
   "status": "candidate_not_db_written",
   "source": "survival-math-3",
@@ -25,10 +25,14 @@
     "reviewHwpxMode": "per_problem_student_endnote_review",
     "ocrHelperUserFacing": "excluded_internal_reference_only",
     "perProblemReviewHwpxCount": 46,
-    "studentEndnotePolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions",
+    "studentEndnotePolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized with segment bars; frac commands converted to HWP over fractions; tan/parallel spacing fixed",
     "internalNotesUserFacing": "excluded",
     "fracScriptCount": 0,
-    "fractionRendering": "latex_frac_to_hwp_over"
+    "fractionRendering": "latex_frac_to_hwp_over",
+    "mathRenderingFix": "tan_spacing_parallel_symbol_segment_bars",
+    "tanSpacingStatus": "k_tan_p_spaced",
+    "parallelRendering": "hwp_parallel_keyword",
+    "segmentBarRendering": "two_letter_segments_use_bar_rm"
   },
   "artifacts": {
     "dbCandidate": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/db_candidates/20260622_survival_math_3_v1/problem_bank_db_candidate.json",
@@ -53,19 +57,18 @@
         "source": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1/hwpx/20260622_survival_math_3_all_46_review-endnotes.hwpx",
         "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
         "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-        "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-        "size": 324498,
+        "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+        "size": 324512,
         "label": "전체 46문항 학생용 미주형 검수 HWPX",
-        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions"
+        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized with segment bars; frac commands converted to HWP over fractions; tan/parallel spacing fixed"
       },
       "reviewEndnoteZip": {
         "source": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1/survival_math_3_review_endnote_hwpx_pack.zip",
         "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
         "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-        "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-        "size": 4942548,
-        "label": "문항별 학생용 미주형 HWPX 전체 zip",
-        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry labels romanized; frac commands converted to HWP over fractions"
+        "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+        "size": 4923767,
+        "label": "문항별 학생용 미주형 검수 HWPX ZIP"
       }
     },
     "internalReferenceOutputs": {
@@ -345,10 +348,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_01_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "298d95cea90bed7b8db47c064817fe74eadd1df1c06bcaca6b8715a8bdc3c250",
-                "size": 96382
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_01_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "48bf2823be42c76c33c6d4f6e41e26dc493d8915ec8f3a1c3eb24c67ccea81a9",
+                "size": 96385
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_01_review-endnote.hwpx",
               "sha256": "298d95cea90bed7b8db47c064817fe74eadd1df1c06bcaca6b8715a8bdc3c250",
@@ -361,7 +364,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_01_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -379,10 +383,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -395,7 +399,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -413,10 +418,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -429,7 +434,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -850,10 +856,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_02_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "4d9ce5bc42e4f9f6cfc3f2f3eb07091ef3bbff5db5855f824be9ef129b15cc20",
-                "size": 96434
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_02_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "85d568a829958fd9e838e0b6bf696bcae1de9e8cacc03a532ae6f6d30ce600ad",
+                "size": 96438
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_02_review-endnote.hwpx",
               "sha256": "4d9ce5bc42e4f9f6cfc3f2f3eb07091ef3bbff5db5855f824be9ef129b15cc20",
@@ -866,7 +872,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_02_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -884,10 +891,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -900,7 +907,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -918,10 +926,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -934,7 +942,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -1359,10 +1368,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "0b10715d98db38ec2f91f398e4cf0ea405daa2db382d464d0d3c6ec4f69c2bfd",
-                "size": 96661
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "a01661bc89e974006a8e24f9d9268af3ba5689724a1ff478c95722d65b061ebe",
+                "size": 96664
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
               "sha256": "0b10715d98db38ec2f91f398e4cf0ea405daa2db382d464d0d3c6ec4f69c2bfd",
@@ -1375,7 +1384,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -1393,10 +1403,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -1409,7 +1419,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -1427,10 +1438,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -1443,7 +1454,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -1868,10 +1880,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "58e9fa27cb663ef87fad343e74d251b974af4d2f3f71227aa547940b8c1a6547",
-                "size": 124829
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "4067dbff62740a842ef2de35d1f353c08093ee3d2b9e4402f8afade2bb15b070",
+                "size": 124834
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
               "sha256": "58e9fa27cb663ef87fad343e74d251b974af4d2f3f71227aa547940b8c1a6547",
@@ -1884,7 +1896,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -1902,10 +1915,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -1918,7 +1931,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -1936,10 +1950,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -1952,7 +1966,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -2375,10 +2390,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_05_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "7244ef9a36ef48e1f586c068fdbeb5440f7e2e3905b9fbafee279ce51d7a6647",
-                "size": 96716
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_05_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "fd49551db6c48be360629d0a87e674ad1ff4cd425e7872dbf93993904687d416",
+                "size": 96723
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_05_review-endnote.hwpx",
               "sha256": "7244ef9a36ef48e1f586c068fdbeb5440f7e2e3905b9fbafee279ce51d7a6647",
@@ -2391,7 +2406,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_05_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -2409,10 +2425,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -2425,7 +2441,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -2443,10 +2460,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -2459,7 +2476,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -2884,10 +2902,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_06_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "8db7bd6e78c3958e8fff99c7ff706b91f43cfd40810427ca78cd7951e0dca8ce",
-                "size": 96795
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_06_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "ad2906120652be78ac8d482ef84fae5706d441bf9ba001596f9ac640f4932788",
+                "size": 96804
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_06_review-endnote.hwpx",
               "sha256": "8db7bd6e78c3958e8fff99c7ff706b91f43cfd40810427ca78cd7951e0dca8ce",
@@ -2900,7 +2918,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_06_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -2918,10 +2937,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -2934,7 +2953,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -2952,10 +2972,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -2968,7 +2988,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -3393,10 +3414,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_07_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ee0f0cbb57cef7170a5509d1ca0fab38e144e5d988a60c5e75f5ba59719ac4ab",
-                "size": 96808
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_07_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "bfa5b473e50988e04e15d690c76329537625d663a056034b7a660e5c0093ca28",
+                "size": 96812
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_07_review-endnote.hwpx",
               "sha256": "ee0f0cbb57cef7170a5509d1ca0fab38e144e5d988a60c5e75f5ba59719ac4ab",
@@ -3409,7 +3430,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_07_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -3427,10 +3449,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -3443,7 +3465,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -3461,10 +3484,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -3477,7 +3500,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -3900,10 +3924,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_08_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "68866f63c177538b919f223f104f8cd549f412424e934e8e29d9fabd26557171",
-                "size": 97057
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_08_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "66a57c6231e601af38dd4142a08d13b24ebbba5162c95172e4c0b1c4c2b6d5f3",
+                "size": 97060
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_08_review-endnote.hwpx",
               "sha256": "68866f63c177538b919f223f104f8cd549f412424e934e8e29d9fabd26557171",
@@ -3916,7 +3940,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_08_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -3934,10 +3959,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -3950,7 +3975,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -3968,10 +3994,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -3984,7 +4010,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -4409,10 +4436,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_09_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "da81a1034d217c7105a1362dc68e850624202df920c079435c7fe0acff7d9bd2",
-                "size": 96962
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_09_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "3b843536509325df495c901417a7088643b24cd569e25d12ed035a7c50e67374",
+                "size": 96966
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_09_review-endnote.hwpx",
               "sha256": "da81a1034d217c7105a1362dc68e850624202df920c079435c7fe0acff7d9bd2",
@@ -4425,7 +4452,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_09_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -4443,10 +4471,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -4459,7 +4487,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -4477,10 +4506,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -4493,7 +4522,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -4919,10 +4949,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "35a84f036ab90f4705c05bbe6978264de7c4fa3061986209d35281bd15ff8004",
-                "size": 126143
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "2913148d028f9c952a88c49eea0ebd63c0ddd526fc6e5a3749e7985d3d4349a7",
+                "size": 126152
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
               "sha256": "35a84f036ab90f4705c05bbe6978264de7c4fa3061986209d35281bd15ff8004",
@@ -4935,7 +4965,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -4953,10 +4984,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -4969,7 +5000,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -4987,10 +5019,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -5003,7 +5035,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -5430,10 +5463,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_11_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "4ca3e2885853c5bbc4a75330b31a7ef013f44e32800b03a25dc91bf5f3397b50",
-                "size": 97420
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_11_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "862472d3a2c3df3812c4373c9928d12348e5fe427489c730460377f3c7088511",
+                "size": 97421
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_11_review-endnote.hwpx",
               "sha256": "4ca3e2885853c5bbc4a75330b31a7ef013f44e32800b03a25dc91bf5f3397b50",
@@ -5446,7 +5479,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_11_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -5464,10 +5498,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -5480,7 +5514,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -5498,10 +5533,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -5514,7 +5549,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -5991,10 +6027,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_12_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "f822fbe2e735dc04715b27525e5334e51181be9296969b52b6f458987c736144",
-                "size": 97792
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_12_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "d12882cecbadab240c7b5f169d06f0092115f55de2e630e9f12996795e71b1e9",
+                "size": 97796
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_12_review-endnote.hwpx",
               "sha256": "f822fbe2e735dc04715b27525e5334e51181be9296969b52b6f458987c736144",
@@ -6007,7 +6043,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_12_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -6025,10 +6062,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -6041,7 +6078,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -6059,10 +6097,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -6075,7 +6113,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -6505,9 +6544,9 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_13_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ae0104fc2ae119b309144324bb423c49f50c38c460ccaa89370333800c273108",
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_13_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "aa46b9b302e2ac6f8a24222631247fdb11c37881924b550600c9aaf511e46773",
                 "size": 98319
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_13_review-endnote.hwpx",
@@ -6521,7 +6560,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_13_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -6539,10 +6579,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -6555,7 +6595,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -6573,10 +6614,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -6589,7 +6630,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -7016,10 +7058,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_14_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "f00b7d7282193564c75a425a85608917ebaed17f1707518b8d23f93fe62b1a93",
-                "size": 97537
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_14_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "edc4b87872cdbf0c162fae45a00c88eb1e54f7867010b5b08b0ad21ce203fc47",
+                "size": 97547
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_14_review-endnote.hwpx",
               "sha256": "f00b7d7282193564c75a425a85608917ebaed17f1707518b8d23f93fe62b1a93",
@@ -7032,7 +7074,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_14_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -7050,10 +7093,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -7066,7 +7109,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -7084,10 +7128,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -7100,7 +7144,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -7580,9 +7625,9 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_15_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "d9c130514feac49d9ef71cb835d6b6d60dea2c5e17f77aab2de1c40d9344ad3b",
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_15_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "000af3f9067f6fb81e66baa3c40f67cfcb4790a7187d90c6000c83de40383164",
                 "size": 97738
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_15_review-endnote.hwpx",
@@ -7596,7 +7641,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_15_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -7614,10 +7660,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -7630,7 +7676,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -7648,10 +7695,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -7664,7 +7711,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -8086,10 +8134,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_16_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "6ee1ebd182e4d2fd6e688bac4d744de54d84113344bd088c93db7f170ce4ae08",
-                "size": 96442
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_16_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "71252daf788d881f4c05670df8d50204bbbe3189508f2d11c2bf554e0bf1206f",
+                "size": 96448
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_16_review-endnote.hwpx",
               "sha256": "6ee1ebd182e4d2fd6e688bac4d744de54d84113344bd088c93db7f170ce4ae08",
@@ -8102,7 +8150,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_16_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -8120,10 +8169,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -8136,7 +8185,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -8154,10 +8204,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -8170,7 +8220,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -8596,10 +8647,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_17_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ac1772bfa39f321b0dc60d3d68deb7bbdff862d60fcbab8078495119fe097934",
-                "size": 96676
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_17_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "0641a9d4c80858a960c4aff202ce61acb7d8cb2bec2d43407ace7476d30a419e",
+                "size": 96678
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_17_review-endnote.hwpx",
               "sha256": "ac1772bfa39f321b0dc60d3d68deb7bbdff862d60fcbab8078495119fe097934",
@@ -8612,7 +8663,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_17_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -8630,10 +8682,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -8646,7 +8698,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -8664,10 +8717,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -8680,7 +8733,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -9102,10 +9156,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_18_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "f35f6c2f5f0549592d35539ec463431ad1a7d417ad5710ff467f048b0ae47e1b",
-                "size": 96646
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_18_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "5e859fa91f6d7479dd1cbae56de741a5846e2e122412c9c4f3f1eae55a4637b4",
+                "size": 96654
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_18_review-endnote.hwpx",
               "sha256": "f35f6c2f5f0549592d35539ec463431ad1a7d417ad5710ff467f048b0ae47e1b",
@@ -9118,7 +9172,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_18_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -9136,10 +9191,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -9152,7 +9207,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -9170,10 +9226,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -9186,7 +9242,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -9614,10 +9671,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_19_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "9ec4057487bb006df39ee5dc0bfe1544cb4ee2c29f03f5d2419b4589b81b871a",
-                "size": 97292
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_19_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "03773ff21a7f8b35706b8ad24baccc8e76f52befd4301cca681aa38ba1991456",
+                "size": 97293
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_19_review-endnote.hwpx",
               "sha256": "9ec4057487bb006df39ee5dc0bfe1544cb4ee2c29f03f5d2419b4589b81b871a",
@@ -9630,7 +9687,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_19_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -9648,10 +9706,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -9664,7 +9722,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -9682,10 +9741,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -9698,7 +9757,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -10131,10 +10191,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "fcb1eaec007b2ab6ee9db435c47d40cf090fc72e6325d88f3513828e92eeb368",
-                "size": 126438
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "4e563cd2974469b0e39b2480d716b3398616ed0d13fb12d508badb74eb516f9d",
+                "size": 126444
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
               "sha256": "fcb1eaec007b2ab6ee9db435c47d40cf090fc72e6325d88f3513828e92eeb368",
@@ -10147,7 +10207,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -10165,10 +10226,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -10181,7 +10242,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -10199,10 +10261,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -10215,7 +10277,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -10693,10 +10756,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_21_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "bf501bdb286146ddc93b5f532b06d1695e4fc2b39f5e97dc97a9785f3012b25f",
-                "size": 98125
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_21_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "95cd793a74ac45dbb4f0f82f5d6a347a02d25e914e65092ae4a8c3d3fc70ba29",
+                "size": 98129
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_21_review-endnote.hwpx",
               "sha256": "bf501bdb286146ddc93b5f532b06d1695e4fc2b39f5e97dc97a9785f3012b25f",
@@ -10709,7 +10772,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_21_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -10727,10 +10791,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -10743,7 +10807,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -10761,10 +10826,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -10777,7 +10842,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -11204,10 +11270,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_22_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "21f0f660915ce276f713efd2bdffd3c692f8c3e8310295c4a320752f99593648",
-                "size": 97972
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_22_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "2249fc31756c33dfacbe7ad3a91463638d4f987430d337530527e9cd2c898733",
+                "size": 97976
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_22_review-endnote.hwpx",
               "sha256": "21f0f660915ce276f713efd2bdffd3c692f8c3e8310295c4a320752f99593648",
@@ -11220,7 +11286,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_22_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -11238,10 +11305,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -11254,7 +11321,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -11272,10 +11340,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -11288,7 +11356,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -11710,10 +11779,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_23_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ef9e2ee7eacaaac69975280855bb812a830bed82c1fab64a3cea105322a4a17b",
-                "size": 96606
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_23_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "4f1b62834dedaab5bcd5798b4ef5a31d8da4e6c17785db804dee6ed085629241",
+                "size": 96609
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_23_review-endnote.hwpx",
               "sha256": "ef9e2ee7eacaaac69975280855bb812a830bed82c1fab64a3cea105322a4a17b",
@@ -11726,7 +11795,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_23_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -11744,10 +11814,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -11760,7 +11830,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -11778,10 +11849,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -11794,7 +11865,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -12220,10 +12292,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_24_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "8569822ac64b1e8a677cbf1ac46b7976dffd49d0f6ecaf1b28bbfb28fe4d6972",
-                "size": 96940
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_24_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "4d0e32eb6f9f78a89ad9d700bac4a261e9b7a8434d7f28e77787c2d3dcd67cea",
+                "size": 96944
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_24_review-endnote.hwpx",
               "sha256": "8569822ac64b1e8a677cbf1ac46b7976dffd49d0f6ecaf1b28bbfb28fe4d6972",
@@ -12236,7 +12308,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_24_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -12254,10 +12327,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -12270,7 +12343,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -12288,10 +12362,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -12304,7 +12378,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -12728,10 +12803,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "04270daaad81bf0b5400a565da3e859b4a6f7945d43baef0ce4e5da8be8e96c8",
-                "size": 143126
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "d57015f21b40a69a8b156ae28162469986b48e8e8b6ec0f0bb1e0f48d1ce99ba",
+                "size": 143136
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
               "sha256": "04270daaad81bf0b5400a565da3e859b4a6f7945d43baef0ce4e5da8be8e96c8",
@@ -12744,7 +12819,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -12762,10 +12838,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -12778,7 +12854,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -12796,10 +12873,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -12812,7 +12889,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -13237,10 +13315,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_26_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "15c17842e84d0bd52fdee8471e068b59055f17fbb7ce8b891971094945b2ef8b",
-                "size": 97507
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_26_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "c60a855b39693ba18c52e82676c227139363ac09e03a2922491504f9a33dcfaa",
+                "size": 97516
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_26_review-endnote.hwpx",
               "sha256": "15c17842e84d0bd52fdee8471e068b59055f17fbb7ce8b891971094945b2ef8b",
@@ -13253,7 +13331,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_26_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -13271,10 +13350,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -13287,7 +13366,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -13305,10 +13385,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -13321,7 +13401,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -13760,9 +13841,9 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "cad07e1c5c2d99acceef2868877a5f04d10a345ab6186e957482adc04d83588e",
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "edb6bcb6f80be3170cbd2ab845bd60aa4c1cbd217f92d2379f49586e18ca9ba6",
                 "size": 118961
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
@@ -13776,7 +13857,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -13794,10 +13876,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -13810,7 +13892,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -13828,10 +13911,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -13844,7 +13927,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -14270,10 +14354,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_28_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "529ac236f899986b7ca2ac79dff75f6ed8a2908fe726930601923cddaf52722d",
-                "size": 97727
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_28_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "46269402ac8b4448032b46bc74c2bba97d9542083ab54909fd4f8f627effea33",
+                "size": 97733
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_28_review-endnote.hwpx",
               "sha256": "529ac236f899986b7ca2ac79dff75f6ed8a2908fe726930601923cddaf52722d",
@@ -14286,7 +14370,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_28_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -14304,10 +14389,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -14320,7 +14405,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -14338,10 +14424,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -14354,7 +14440,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -14780,10 +14867,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_29_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "81132efd80a363b87c563a491ee9d11b6923a27f5743f3ae7698351691783d61",
-                "size": 98328
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_29_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "900d6cbbbebd9cb8df8be962532984b99b2f2cce795ed5c1de3267d5bfc4e36c",
+                "size": 98322
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_29_review-endnote.hwpx",
               "sha256": "81132efd80a363b87c563a491ee9d11b6923a27f5743f3ae7698351691783d61",
@@ -14796,7 +14883,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_29_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -14814,10 +14902,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -14830,7 +14918,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -14848,10 +14937,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -14864,7 +14953,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -15297,10 +15387,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_30_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "f6aa19231d5a878ebc8d3a624a1b7a7039892a750c571d895290608970a12515",
-                "size": 97655
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_30_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "735762f1040ff88e8f8db1927b9f855ffef0a480f494761965423a91ff17bf32",
+                "size": 97660
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_30_review-endnote.hwpx",
               "sha256": "f6aa19231d5a878ebc8d3a624a1b7a7039892a750c571d895290608970a12515",
@@ -15313,7 +15403,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_30_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -15331,10 +15422,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -15347,7 +15438,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -15365,10 +15457,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -15381,7 +15473,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -15809,10 +15902,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_23_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "533fca727a329f5c79a9f370bf976148b0f665acf54282cfb36d761c0a63d8a0",
-                "size": 96639
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_23_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "12dd16f5ef7e40d94cb483115f2fadd5bdd6445d5d6ee9995a9cc96e2036b8b3",
+                "size": 96644
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_23_review-endnote.hwpx",
               "sha256": "533fca727a329f5c79a9f370bf976148b0f665acf54282cfb36d761c0a63d8a0",
@@ -15825,7 +15918,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_23_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -15843,10 +15937,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -15859,7 +15953,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -15877,10 +15972,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -15893,7 +15988,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -16322,10 +16418,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_24_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "595a5537e578823a2c1ec7af7e04e1955091120d3b3e99ea7c83a0c4fc3f8c62",
-                "size": 96763
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_24_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "4116b57d6925aeb3570771e2d0d12092597fa3d151e27f9dd374c3f13bf0f09a",
+                "size": 96765
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_24_review-endnote.hwpx",
               "sha256": "595a5537e578823a2c1ec7af7e04e1955091120d3b3e99ea7c83a0c4fc3f8c62",
@@ -16338,7 +16434,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_24_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -16356,10 +16453,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -16372,7 +16469,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -16390,10 +16488,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -16406,7 +16504,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -16833,10 +16932,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "fdc58a4c20463152fdeec6597302d612d938d20f1bfac1a3433e6aa639dd4edf",
-                "size": 96964
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "b2b81bf7db083571a3cb41a3fbb8c019591dbdd6ee6fd5a19cb09427203b7258",
+                "size": 96969
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
               "sha256": "fdc58a4c20463152fdeec6597302d612d938d20f1bfac1a3433e6aa639dd4edf",
@@ -16849,7 +16948,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -16867,10 +16967,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -16883,7 +16983,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -16901,10 +17002,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -16917,7 +17018,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -17345,10 +17447,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_26_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "28ccd84ebf21605dea84e928df639b571e51367867c35b991b9ce671f327d4aa",
-                "size": 97117
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_26_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "fe58d92a5770716f8b65f4c767bb04425303dda8ecab6c786e976b2de4050554",
+                "size": 97114
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_26_review-endnote.hwpx",
               "sha256": "28ccd84ebf21605dea84e928df639b571e51367867c35b991b9ce671f327d4aa",
@@ -17361,7 +17463,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_26_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -17379,10 +17482,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -17395,7 +17498,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -17413,10 +17517,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -17429,7 +17533,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -17859,9 +17964,9 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_27_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "7867349b863cf286e70cc15d63c5f886589116ff7ea0121cc67d60f2974a43f9",
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_27_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "0ffbc44f1cbf889b0db3547f1e8107d7ea191e3a1757795859cd9276b91b149f",
                 "size": 97301
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_27_review-endnote.hwpx",
@@ -17875,7 +17980,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_27_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -17893,10 +17999,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -17909,7 +18015,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -17927,10 +18034,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -17943,7 +18050,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -18422,10 +18530,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_28_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ebfca575db0c45819ece347c8904a692c579e1d221e9a661a898d6455e1d3289",
-                "size": 98470
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_28_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "b30c5b594f15795aa510beb4140d20273da7f519d6930986f39ef34723463676",
+                "size": 98476
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_28_review-endnote.hwpx",
               "sha256": "ebfca575db0c45819ece347c8904a692c579e1d221e9a661a898d6455e1d3289",
@@ -18438,7 +18546,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_28_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -18456,10 +18565,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -18472,7 +18581,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -18490,10 +18600,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -18506,7 +18616,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -18944,10 +19055,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_29_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "3635641922ac309b48c0b23143a365646c203c5896bfd41f0c5080bb06e36040",
-                "size": 98262
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_29_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "4aa7df7010b514d04aa93fcef716553f7db95d7acfccf493ea9e85610f1a604a",
+                "size": 98275
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_29_review-endnote.hwpx",
               "sha256": "3635641922ac309b48c0b23143a365646c203c5896bfd41f0c5080bb06e36040",
@@ -18960,7 +19071,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_29_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -18978,10 +19090,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -18994,7 +19106,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -19012,10 +19125,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -19028,7 +19141,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -19515,10 +19629,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "d8f92f10758231875babf90ab383d65dd014a351d9afb569bf5de6fcac03b9c7",
-                "size": 98895
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "12f88d966822e7921bdbe57e55b196d7cb8d5df16268c100edc863241bded05b",
+                "size": 98898
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
               "sha256": "d8f92f10758231875babf90ab383d65dd014a351d9afb569bf5de6fcac03b9c7",
@@ -19531,7 +19645,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -19549,10 +19664,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -19565,7 +19680,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -19583,10 +19699,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -19599,7 +19715,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -20024,10 +20141,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_23_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "7881dc215f85bbe346ccc0df78b937285dd884615b30193509ab0086070cf8bf",
-                "size": 97029
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_23_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "2a574056b6c4085711953f2aeaa41f99fbfdf4cad325f3d6034ab03e7489838b",
+                "size": 97034
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_23_review-endnote.hwpx",
               "sha256": "7881dc215f85bbe346ccc0df78b937285dd884615b30193509ab0086070cf8bf",
@@ -20040,7 +20157,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_23_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -20058,10 +20176,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -20074,7 +20192,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -20092,10 +20211,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -20108,7 +20227,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -20530,10 +20650,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_24_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ffa06f63b8e40d76ed150c0ab51ec9cde5d5739aa37f516895e4d310c9e85ad1",
-                "size": 96851
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_24_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "96c16755d32752cc705fcbefff92a897ca975af7198972cde1579145e755d292",
+                "size": 96866
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_24_review-endnote.hwpx",
               "sha256": "ffa06f63b8e40d76ed150c0ab51ec9cde5d5739aa37f516895e4d310c9e85ad1",
@@ -20546,7 +20666,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_24_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -20564,10 +20685,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -20580,7 +20701,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -20598,10 +20720,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -20614,7 +20736,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -21038,10 +21161,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_25_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "6ba0388d52cd45256c2914b8ed35a3bc10ace2ac8e7381a499e4cf44f587fabf",
-                "size": 96876
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_25_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "0a8d420176f04940850dfadb95681dd0e89ca40f66aeb57ee6adf3f1ecb84143",
+                "size": 96892
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_25_review-endnote.hwpx",
               "sha256": "6ba0388d52cd45256c2914b8ed35a3bc10ace2ac8e7381a499e4cf44f587fabf",
@@ -21054,7 +21177,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_25_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -21072,10 +21196,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -21088,7 +21212,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -21106,10 +21231,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -21122,7 +21247,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -21548,10 +21674,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_26_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "5469c16b8506fd0d71a939e63476f24a7e0dc346cf823b3370fb2284a43494d6",
-                "size": 97015
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_26_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "40d46c6497f317ac4ed32818664a53c6dd69d4cd81e371f6a4898ccac7e54579",
+                "size": 97023
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_26_review-endnote.hwpx",
               "sha256": "5469c16b8506fd0d71a939e63476f24a7e0dc346cf823b3370fb2284a43494d6",
@@ -21564,7 +21690,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_26_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -21582,10 +21709,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -21598,7 +21725,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -21616,10 +21744,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -21632,7 +21760,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -22064,10 +22193,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_27_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "7b4b35d1c808303076bfaa1f286dcee7295b676459a9df4e7aad411fbff2bd52",
-                "size": 98025
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_27_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "1a708edf405b33faed3d0eee6cfe6609fc983a3d4fc16e8370e5411847a5f460",
+                "size": 98038
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_27_review-endnote.hwpx",
               "sha256": "7b4b35d1c808303076bfaa1f286dcee7295b676459a9df4e7aad411fbff2bd52",
@@ -22080,7 +22209,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_27_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -22098,10 +22228,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -22114,7 +22244,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -22132,10 +22263,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -22148,7 +22279,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -22630,10 +22762,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_28_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "c6c415ef18436071dabcf0559e8822621596eea243c99d1f4a1a86b5e7549e72",
-                "size": 98082
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_28_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "0f998b759995e16a1a877bf9e4e76c010f4f492507962110ed7ae73b77799971",
+                "size": 98100
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_28_review-endnote.hwpx",
               "sha256": "c6c415ef18436071dabcf0559e8822621596eea243c99d1f4a1a86b5e7549e72",
@@ -22646,7 +22778,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_28_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -22664,10 +22797,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -22680,7 +22813,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -22698,10 +22832,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -22714,7 +22848,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -23154,10 +23289,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_29_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "a4b2c25c1852f16140a846d32157b084d54f9914b82276432568cb473e0f41c7",
-                "size": 97964
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_29_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "533590faed7de898c692b2251e44ebfb5852dd55f10143c6c61104e1f5de73dc",
+                "size": 97978
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_29_review-endnote.hwpx",
               "sha256": "a4b2c25c1852f16140a846d32157b084d54f9914b82276432568cb473e0f41c7",
@@ -23170,7 +23305,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_29_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -23188,10 +23324,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -23204,7 +23340,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -23222,10 +23359,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -23238,7 +23375,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
@@ -23723,10 +23861,10 @@
                 "outputKey": "per-problem-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_30_review-endnote.hwpx",
-                "publicLabel": "학생용 미주형 HWPX",
-                "sha256": "ce657e18f0569f93cb161472b91014e18263a24f3638a0f3b620ab4313233416",
-                "size": 98798
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_30_review-endnote.hwpx",
+                "publicLabel": "이 문항 HWPX 열기",
+                "sha256": "ee2cec54807666f4923c9df1ebf46eefe6b097f736e367bf3e2f6ffa0617ea39",
+                "size": 98829
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_30_review-endnote.hwpx",
               "sha256": "ce657e18f0569f93cb161472b91014e18263a24f3638a0f3b620ab4313233416",
@@ -23739,7 +23877,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_30_review-endnote.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -23757,10 +23896,10 @@
                 "outputKey": "all-review-endnote"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 학생용 미주형 HWPX",
-                "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
-                "size": 324498
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
+                "publicLabel": "전체 HWPX 열기",
+                "sha256": "65e49e5404e2bd3b5fd414cec0989e395f95aed90ab654bb46a5adf731aa2927",
+                "size": 324512
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
               "sha256": "4174b6dc89f687f51c50c5a9b71b4d0c56a6d4617bc8ff0840e0d8b9a3e348c2",
@@ -23773,7 +23912,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx"
             },
             {
               "created_at": "2026-06-22T13:24:55.673766+00:00",
@@ -23791,10 +23931,10 @@
                 "outputKey": "per-problem-review-zip"
               },
               "metadata": {
-                "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-                "publicLabel": "문항별 HWPX zip",
-                "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
-                "size": 4942548
+                "publicUrl": "https://hanhobin1011-cmyk.github.io/handsolution-verK-review/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
+                "publicLabel": "전체 ZIP 열기",
+                "sha256": "f783f53f8d8956f5546d83908c3bb4a7d0b732283e744e0f4cb320bb60fad775",
+                "size": 4923767
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
               "sha256": "90a0ecaff2d1abda4587f3807a79f63ab15ccfb38a09f46fb8479488d154634c",
@@ -23807,7 +23947,8 @@
                 "status": "pass",
                 "errors": [],
                 "warnings": []
-              }
+              },
+              "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip"
             }
           ]
         },
