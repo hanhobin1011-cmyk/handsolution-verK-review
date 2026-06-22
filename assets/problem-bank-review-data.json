@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "kind": "problem-bank-review-snapshot",
-  "generatedAt": "2026-06-22T13:24:55.673766+00:00",
+  "generatedAt": "2026-06-22T13:46:54.657049+00:00",
   "title": "2025 시대인재 서바이벌 수학 3회 문제DB 검수 후보",
   "status": "candidate_not_db_written",
   "source": "survival-math-3",
@@ -22,9 +22,11 @@
     },
     "validationStatus": "pass",
     "dbWriteStatus": "not_written",
-    "reviewHwpxMode": "per_problem_endnote_review",
+    "reviewHwpxMode": "per_problem_student_endnote_review",
     "ocrHelperUserFacing": "excluded_internal_reference_only",
-    "perProblemReviewHwpxCount": 46
+    "perProblemReviewHwpxCount": 46,
+    "studentEndnotePolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
+    "internalNotesUserFacing": "excluded"
   },
   "artifacts": {
     "dbCandidate": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/db_candidates/20260622_survival_math_3_v1/problem_bank_db_candidate.json",
@@ -49,19 +51,19 @@
         "source": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1/hwpx/20260622_survival_math_3_all_46_review-endnotes.hwpx",
         "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
         "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-        "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-        "size": 398072,
-        "label": "전체 46문항 미주형 검수 HWPX",
-        "policy": "problem body + endnotes containing answer/문풀이 해설/Tip; OCR helper excluded"
+        "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+        "size": 324478,
+        "label": "전체 46문항 학생용 미주형 검수 HWPX",
+        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized"
       },
       "reviewEndnoteZip": {
         "source": "/opt/data/projects/handsolution-core/work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1/survival_math_3_review_endnote_hwpx_pack.zip",
         "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
         "absoluteOutputPath": "/opt/data/projects/handsolution-core/outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-        "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-        "size": 5102338,
-        "label": "문항별 미주형 HWPX 전체 zip",
-        "policy": "per-problem review pack; OCR helper excluded from user-facing HWPX"
+        "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+        "size": 4942443,
+        "label": "문항별 학생용 미주형 HWPX 전체 zip",
+        "policy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized"
       }
     },
     "internalReferenceOutputs": {
@@ -176,7 +178,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271033+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -314,7 +317,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -341,12 +344,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_01_review-endnote.hwpx",
-                "publicLabel": "1번 미주형 HWPX",
-                "sha256": "8f881caf704a81db67dac6431df7b25e44f4d816f07577911f2ed7dd7c50161b",
-                "size": 96829
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "298d95cea90bed7b8db47c064817fe74eadd1df1c06bcaca6b8715a8bdc3c250",
+                "size": 96382
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_01_review-endnote.hwpx",
-              "sha256": "8f881caf704a81db67dac6431df7b25e44f4d816f07577911f2ed7dd7c50161b",
+              "sha256": "298d95cea90bed7b8db47c064817fe74eadd1df1c06bcaca6b8715a8bdc3c250",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -375,12 +378,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -410,11 +413,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -681,7 +684,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271052+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -818,7 +822,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -845,12 +849,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_02_review-endnote.hwpx",
-                "publicLabel": "2번 미주형 HWPX",
-                "sha256": "600f0e65e3dc7be0a799526d6880ee60994fc9d7a26ca68e2092feccb0af733e",
-                "size": 96833
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "4d9ce5bc42e4f9f6cfc3f2f3eb07091ef3bbff5db5855f824be9ef129b15cc20",
+                "size": 96434
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_02_review-endnote.hwpx",
-              "sha256": "600f0e65e3dc7be0a799526d6880ee60994fc9d7a26ca68e2092feccb0af733e",
+              "sha256": "4d9ce5bc42e4f9f6cfc3f2f3eb07091ef3bbff5db5855f824be9ef129b15cc20",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -879,12 +883,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -914,11 +918,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1186,7 +1190,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271064+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -1326,7 +1331,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -1353,12 +1358,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
-                "publicLabel": "3번 미주형 HWPX",
-                "sha256": "6be754c85e13bd3b44463bd628ec7fc97c7ac5b5aa861e9218dcb5fc9e83007d",
-                "size": 97258
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "50f77af0e8067c281591d4e14ae522c765c35b06ab813aceb7c4c02e2d8c0680",
+                "size": 96669
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_03_review-endnote.hwpx",
-              "sha256": "6be754c85e13bd3b44463bd628ec7fc97c7ac5b5aa861e9218dcb5fc9e83007d",
+              "sha256": "50f77af0e8067c281591d4e14ae522c765c35b06ab813aceb7c4c02e2d8c0680",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1387,12 +1392,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1422,11 +1427,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1694,7 +1699,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271077+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -1834,7 +1840,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -1861,12 +1867,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
-                "publicLabel": "4번 미주형 HWPX",
-                "sha256": "aaf0c5eb84ab508b57b9a1fce89384ffd3e00a06e458cc6fe719b791274a9e47",
-                "size": 125350
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "1fb92d09f2d1f173ca5dd25b2f5cac4e93693609b43f33b10e85af4b197f010e",
+                "size": 124829
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_04_review-endnote.hwpx",
-              "sha256": "aaf0c5eb84ab508b57b9a1fce89384ffd3e00a06e458cc6fe719b791274a9e47",
+              "sha256": "1fb92d09f2d1f173ca5dd25b2f5cac4e93693609b43f33b10e85af4b197f010e",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1895,12 +1901,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -1930,11 +1936,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2201,7 +2207,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271086+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -2340,7 +2347,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -2367,12 +2374,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_05_review-endnote.hwpx",
-                "publicLabel": "5번 미주형 HWPX",
-                "sha256": "edcfd84adafb1b551eece13eaf0df0daec2c2edfecf02c3555ea6e2c5e07a2b1",
-                "size": 97324
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "7244ef9a36ef48e1f586c068fdbeb5440f7e2e3905b9fbafee279ce51d7a6647",
+                "size": 96716
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_05_review-endnote.hwpx",
-              "sha256": "edcfd84adafb1b551eece13eaf0df0daec2c2edfecf02c3555ea6e2c5e07a2b1",
+              "sha256": "7244ef9a36ef48e1f586c068fdbeb5440f7e2e3905b9fbafee279ce51d7a6647",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2401,12 +2408,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2436,11 +2443,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2708,7 +2715,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271098+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -2848,7 +2856,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -2875,12 +2883,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_06_review-endnote.hwpx",
-                "publicLabel": "6번 미주형 HWPX",
-                "sha256": "a814a8faa6347146817961892a2c76296b4ed69320c009948f8d3c74b89eace3",
-                "size": 97478
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "8db7bd6e78c3958e8fff99c7ff706b91f43cfd40810427ca78cd7951e0dca8ce",
+                "size": 96795
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_06_review-endnote.hwpx",
-              "sha256": "a814a8faa6347146817961892a2c76296b4ed69320c009948f8d3c74b89eace3",
+              "sha256": "8db7bd6e78c3958e8fff99c7ff706b91f43cfd40810427ca78cd7951e0dca8ce",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2909,12 +2917,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -2944,11 +2952,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3216,7 +3224,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271107+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -3356,7 +3365,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -3383,12 +3392,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_07_review-endnote.hwpx",
-                "publicLabel": "7번 미주형 HWPX",
-                "sha256": "8a6e8a635a6e5f75d3a3b9a4be2e750d2f79816ef72eaea33f8e1907ce22b194",
-                "size": 97248
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ee0f0cbb57cef7170a5509d1ca0fab38e144e5d988a60c5e75f5ba59719ac4ab",
+                "size": 96808
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_07_review-endnote.hwpx",
-              "sha256": "8a6e8a635a6e5f75d3a3b9a4be2e750d2f79816ef72eaea33f8e1907ce22b194",
+              "sha256": "ee0f0cbb57cef7170a5509d1ca0fab38e144e5d988a60c5e75f5ba59719ac4ab",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3417,12 +3426,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3452,11 +3461,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3723,7 +3732,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271117+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -3862,7 +3872,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -3889,12 +3899,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_08_review-endnote.hwpx",
-                "publicLabel": "8번 미주형 HWPX",
-                "sha256": "d47fdb6527ca3fb3fa70c1cb18054171322d46dc412868a863560469b7517578",
-                "size": 97716
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "68866f63c177538b919f223f104f8cd549f412424e934e8e29d9fabd26557171",
+                "size": 97057
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_08_review-endnote.hwpx",
-              "sha256": "d47fdb6527ca3fb3fa70c1cb18054171322d46dc412868a863560469b7517578",
+              "sha256": "68866f63c177538b919f223f104f8cd549f412424e934e8e29d9fabd26557171",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3923,12 +3933,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -3958,11 +3968,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4230,7 +4240,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271128+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -4370,7 +4381,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -4397,12 +4408,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_09_review-endnote.hwpx",
-                "publicLabel": "9번 미주형 HWPX",
-                "sha256": "d8b96727187b45a08f9d444089034a846dbdb0acac1997c88cd2929789624c52",
-                "size": 97415
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "da81a1034d217c7105a1362dc68e850624202df920c079435c7fe0acff7d9bd2",
+                "size": 96962
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_09_review-endnote.hwpx",
-              "sha256": "d8b96727187b45a08f9d444089034a846dbdb0acac1997c88cd2929789624c52",
+              "sha256": "da81a1034d217c7105a1362dc68e850624202df920c079435c7fe0acff7d9bd2",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4431,12 +4442,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4466,11 +4477,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4738,7 +4749,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271139+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -4879,7 +4891,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -4906,12 +4918,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
-                "publicLabel": "10번 미주형 HWPX",
-                "sha256": "61015131dcee94da54e6974cc505ca3e5f479ca8da0088a1526c619114c63d2a",
-                "size": 126615
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "9a879da94cbac43e77d1c4733076c85d6a111d7438dfd4ae026f0bf614d894ee",
+                "size": 126143
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_10_review-endnote.hwpx",
-              "sha256": "61015131dcee94da54e6974cc505ca3e5f479ca8da0088a1526c619114c63d2a",
+              "sha256": "9a879da94cbac43e77d1c4733076c85d6a111d7438dfd4ae026f0bf614d894ee",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4940,12 +4952,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -4975,11 +4987,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5248,7 +5260,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271151+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -5389,7 +5402,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -5416,12 +5429,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_11_review-endnote.hwpx",
-                "publicLabel": "11번 미주형 HWPX",
-                "sha256": "80c2d19137c9fab3a0e92b486c133f4451569a007c70f37b63e0c452b6680923",
-                "size": 98470
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "4ca3e2885853c5bbc4a75330b31a7ef013f44e32800b03a25dc91bf5f3397b50",
+                "size": 97420
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_11_review-endnote.hwpx",
-              "sha256": "80c2d19137c9fab3a0e92b486c133f4451569a007c70f37b63e0c452b6680923",
+              "sha256": "4ca3e2885853c5bbc4a75330b31a7ef013f44e32800b03a25dc91bf5f3397b50",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5450,12 +5463,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5485,11 +5498,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -5791,7 +5804,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271160+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -5949,7 +5963,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -5976,12 +5990,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_12_review-endnote.hwpx",
-                "publicLabel": "12번 미주형 HWPX",
-                "sha256": "2502ca69b24870d5f4299390de5a36dd1ef82ce917141f2dd29dbd7ce6b564b9",
-                "size": 99428
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "f822fbe2e735dc04715b27525e5334e51181be9296969b52b6f458987c736144",
+                "size": 97792
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_12_review-endnote.hwpx",
-              "sha256": "2502ca69b24870d5f4299390de5a36dd1ef82ce917141f2dd29dbd7ce6b564b9",
+              "sha256": "f822fbe2e735dc04715b27525e5334e51181be9296969b52b6f458987c736144",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6010,12 +6024,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6045,11 +6059,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6319,7 +6333,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271170+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -6462,7 +6477,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -6489,12 +6504,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_13_review-endnote.hwpx",
-                "publicLabel": "13번 미주형 HWPX",
-                "sha256": "4e48c288ed7371ded5f08579a13076c059bcf1751cbc7dfc47c81579a4b792cd",
-                "size": 100251
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ae0104fc2ae119b309144324bb423c49f50c38c460ccaa89370333800c273108",
+                "size": 98319
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_13_review-endnote.hwpx",
-              "sha256": "4e48c288ed7371ded5f08579a13076c059bcf1751cbc7dfc47c81579a4b792cd",
+              "sha256": "ae0104fc2ae119b309144324bb423c49f50c38c460ccaa89370333800c273108",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6523,12 +6538,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6558,11 +6573,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -6830,7 +6845,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271181+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -6972,7 +6988,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -6999,12 +7015,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_14_review-endnote.hwpx",
-                "publicLabel": "14번 미주형 HWPX",
-                "sha256": "e1a77a02d529c9e4047ff386851edc50914993f12cbb7f27529da9a75f9dd32b",
-                "size": 99667
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "f00b7d7282193564c75a425a85608917ebaed17f1707518b8d23f93fe62b1a93",
+                "size": 97537
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_14_review-endnote.hwpx",
-              "sha256": "e1a77a02d529c9e4047ff386851edc50914993f12cbb7f27529da9a75f9dd32b",
+              "sha256": "f00b7d7282193564c75a425a85608917ebaed17f1707518b8d23f93fe62b1a93",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7033,12 +7049,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7068,11 +7084,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7375,7 +7391,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271191+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -7535,7 +7552,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -7562,12 +7579,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_15_review-endnote.hwpx",
-                "publicLabel": "15번 미주형 HWPX",
-                "sha256": "7f74141a8c2b21e3e1e0031535ef5f25b14daea87b0b68be5952418a8063b930",
-                "size": 100221
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "d9c130514feac49d9ef71cb835d6b6d60dea2c5e17f77aab2de1c40d9344ad3b",
+                "size": 97738
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_15_review-endnote.hwpx",
-              "sha256": "7f74141a8c2b21e3e1e0031535ef5f25b14daea87b0b68be5952418a8063b930",
+              "sha256": "d9c130514feac49d9ef71cb835d6b6d60dea2c5e17f77aab2de1c40d9344ad3b",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7596,12 +7613,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7631,11 +7648,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -7902,7 +7919,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271202+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -8040,7 +8058,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -8067,12 +8085,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_16_review-endnote.hwpx",
-                "publicLabel": "16번 미주형 HWPX",
-                "sha256": "ebb54a0cf68f586f3053543c1232d6926dff5262704a802faebbf35b7a73bcb0",
-                "size": 97273
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "6ee1ebd182e4d2fd6e688bac4d744de54d84113344bd088c93db7f170ce4ae08",
+                "size": 96442
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_16_review-endnote.hwpx",
-              "sha256": "ebb54a0cf68f586f3053543c1232d6926dff5262704a802faebbf35b7a73bcb0",
+              "sha256": "6ee1ebd182e4d2fd6e688bac4d744de54d84113344bd088c93db7f170ce4ae08",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8101,12 +8119,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8136,11 +8154,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8408,7 +8426,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271215+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -8549,7 +8568,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -8576,12 +8595,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_17_review-endnote.hwpx",
-                "publicLabel": "17번 미주형 HWPX",
-                "sha256": "63a497e649f5a8e523810e3c86cdf04d06affa6cef34917f389f9f87f0f714b9",
-                "size": 97793
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ac1772bfa39f321b0dc60d3d68deb7bbdff862d60fcbab8078495119fe097934",
+                "size": 96676
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_17_review-endnote.hwpx",
-              "sha256": "63a497e649f5a8e523810e3c86cdf04d06affa6cef34917f389f9f87f0f714b9",
+              "sha256": "ac1772bfa39f321b0dc60d3d68deb7bbdff862d60fcbab8078495119fe097934",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8610,12 +8629,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8645,11 +8664,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -8916,7 +8935,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271226+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -9054,7 +9074,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -9081,12 +9101,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_18_review-endnote.hwpx",
-                "publicLabel": "18번 미주형 HWPX",
-                "sha256": "7af0506101add426a3746dc15547c32912ee005ef3d9d05e9a3f76cd45d30f94",
-                "size": 97296
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "f35f6c2f5f0549592d35539ec463431ad1a7d417ad5710ff467f048b0ae47e1b",
+                "size": 96646
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_18_review-endnote.hwpx",
-              "sha256": "7af0506101add426a3746dc15547c32912ee005ef3d9d05e9a3f76cd45d30f94",
+              "sha256": "f35f6c2f5f0549592d35539ec463431ad1a7d417ad5710ff467f048b0ae47e1b",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9115,12 +9135,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9150,11 +9170,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9423,7 +9443,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271237+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -9565,7 +9586,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -9592,12 +9613,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_19_review-endnote.hwpx",
-                "publicLabel": "19번 미주형 HWPX",
-                "sha256": "fac6b9607d2238a7df0d8db9462be064a8a28ca59cbfd41ce8585e68e8d191f9",
-                "size": 98721
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "9ec4057487bb006df39ee5dc0bfe1544cb4ee2c29f03f5d2419b4589b81b871a",
+                "size": 97292
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_19_review-endnote.hwpx",
-              "sha256": "fac6b9607d2238a7df0d8db9462be064a8a28ca59cbfd41ce8585e68e8d191f9",
+              "sha256": "9ec4057487bb006df39ee5dc0bfe1544cb4ee2c29f03f5d2419b4589b81b871a",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9626,12 +9647,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9661,11 +9682,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -9936,7 +9957,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271264+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -10081,7 +10103,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -10108,12 +10130,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
-                "publicLabel": "20번 미주형 HWPX",
-                "sha256": "a4e59ae1a52df6f40dc6873f8352c6ae0ee8d5228f007311790cc9c3620d649b",
-                "size": 128574
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "862aba83b46e4929be45bf831e1f31b0399a208538af2d35f9ed4cbbe1840f29",
+                "size": 126443
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_20_review-endnote.hwpx",
-              "sha256": "a4e59ae1a52df6f40dc6873f8352c6ae0ee8d5228f007311790cc9c3620d649b",
+              "sha256": "862aba83b46e4929be45bf831e1f31b0399a208538af2d35f9ed4cbbe1840f29",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10142,12 +10164,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10177,11 +10199,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10483,7 +10505,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271276+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -10642,7 +10665,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -10669,12 +10692,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_21_review-endnote.hwpx",
-                "publicLabel": "21번 미주형 HWPX",
-                "sha256": "80dd251506e602603fba523040eee4f38bb8e4483b250bb48a231a3b1f3c2fbd",
-                "size": 100979
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "bf501bdb286146ddc93b5f532b06d1695e4fc2b39f5e97dc97a9785f3012b25f",
+                "size": 98125
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_21_review-endnote.hwpx",
-              "sha256": "80dd251506e602603fba523040eee4f38bb8e4483b250bb48a231a3b1f3c2fbd",
+              "sha256": "bf501bdb286146ddc93b5f532b06d1695e4fc2b39f5e97dc97a9785f3012b25f",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10703,12 +10726,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -10738,11 +10761,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11010,7 +11033,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271285+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -11152,7 +11176,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -11179,12 +11203,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_22_review-endnote.hwpx",
-                "publicLabel": "22번 미주형 HWPX",
-                "sha256": "c40cf22a74a9122cf57630c432a0e4e04e4f155b8ea03f8998af3db4e8f940ab",
-                "size": 100205
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "21f0f660915ce276f713efd2bdffd3c692f8c3e8310295c4a320752f99593648",
+                "size": 97972
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_common_22_review-endnote.hwpx",
-              "sha256": "c40cf22a74a9122cf57630c432a0e4e04e4f155b8ea03f8998af3db4e8f940ab",
+              "sha256": "21f0f660915ce276f713efd2bdffd3c692f8c3e8310295c4a320752f99593648",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11213,12 +11237,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11248,11 +11272,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11519,7 +11543,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271294+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -11657,7 +11682,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -11684,12 +11709,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_23_review-endnote.hwpx",
-                "publicLabel": "23번 미주형 HWPX",
-                "sha256": "7b65b99aeeb5bcdaa6a1b6ab38c75895379d10fc94d0312bdb091bb15a557ef7",
-                "size": 97578
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ef9e2ee7eacaaac69975280855bb812a830bed82c1fab64a3cea105322a4a17b",
+                "size": 96606
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_23_review-endnote.hwpx",
-              "sha256": "7b65b99aeeb5bcdaa6a1b6ab38c75895379d10fc94d0312bdb091bb15a557ef7",
+              "sha256": "ef9e2ee7eacaaac69975280855bb812a830bed82c1fab64a3cea105322a4a17b",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11718,12 +11743,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -11753,11 +11778,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12026,7 +12051,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271304+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -12166,7 +12192,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -12193,12 +12219,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_24_review-endnote.hwpx",
-                "publicLabel": "24번 미주형 HWPX",
-                "sha256": "b1ddf560c00d1865b9acad76a9cd34b7047108c5371d896705b5c009d9b2c512",
-                "size": 97810
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "8569822ac64b1e8a677cbf1ac46b7976dffd49d0f6ecaf1b28bbfb28fe4d6972",
+                "size": 96940
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_24_review-endnote.hwpx",
-              "sha256": "b1ddf560c00d1865b9acad76a9cd34b7047108c5371d896705b5c009d9b2c512",
+              "sha256": "8569822ac64b1e8a677cbf1ac46b7976dffd49d0f6ecaf1b28bbfb28fe4d6972",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12227,12 +12253,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12262,11 +12288,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12533,7 +12559,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271313+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -12673,7 +12700,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -12700,12 +12727,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
-                "publicLabel": "25번 미주형 HWPX",
-                "sha256": "4fa95a4bf72d24ff35c63b1b81959f48da07f4cba1fdec549205de0916cb4466",
-                "size": 144794
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "968a2565c930b89710dc1f61cbd0613eaa4f2f1fb679ba66465c59d0ebb1ddbe",
+                "size": 143126
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_25_review-endnote.hwpx",
-              "sha256": "4fa95a4bf72d24ff35c63b1b81959f48da07f4cba1fdec549205de0916cb4466",
+              "sha256": "968a2565c930b89710dc1f61cbd0613eaa4f2f1fb679ba66465c59d0ebb1ddbe",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12734,12 +12761,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -12769,11 +12796,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13041,7 +13068,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271326+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -13181,7 +13209,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -13208,12 +13236,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_26_review-endnote.hwpx",
-                "publicLabel": "26번 미주형 HWPX",
-                "sha256": "6ee46b6c71fc6cb7e928d4898e8a09fd54fbcdc52de04a9bc0e92ebbc9a8c9d4",
-                "size": 99961
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "15c17842e84d0bd52fdee8471e068b59055f17fbb7ce8b891971094945b2ef8b",
+                "size": 97507
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_26_review-endnote.hwpx",
-              "sha256": "6ee46b6c71fc6cb7e928d4898e8a09fd54fbcdc52de04a9bc0e92ebbc9a8c9d4",
+              "sha256": "15c17842e84d0bd52fdee8471e068b59055f17fbb7ce8b891971094945b2ef8b",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13242,12 +13270,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13277,11 +13305,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13555,7 +13583,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271337+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -13703,7 +13732,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -13730,12 +13759,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
-                "publicLabel": "27번 미주형 HWPX",
-                "sha256": "1a2323769fb0b0bb8d760eb9f916bb16eccc80a139709dd3df8d3874782f1db7",
-                "size": 120184
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "1ff53868b6c3115bc87e8efab80b5a54d6e4696c0ff3dfa5700fab27a3367f7d",
+                "size": 118961
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_27_review-endnote.hwpx",
-              "sha256": "1a2323769fb0b0bb8d760eb9f916bb16eccc80a139709dd3df8d3874782f1db7",
+              "sha256": "1ff53868b6c3115bc87e8efab80b5a54d6e4696c0ff3dfa5700fab27a3367f7d",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13764,12 +13793,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -13799,11 +13828,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14071,7 +14100,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271347+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -14212,7 +14242,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -14239,12 +14269,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_28_review-endnote.hwpx",
-                "publicLabel": "28번 미주형 HWPX",
-                "sha256": "4f2b3f9768f571c581257753a84eb00f3c04e78565aa638980b4123f11b71e20",
-                "size": 100307
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "529ac236f899986b7ca2ac79dff75f6ed8a2908fe726930601923cddaf52722d",
+                "size": 97727
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_28_review-endnote.hwpx",
-              "sha256": "4f2b3f9768f571c581257753a84eb00f3c04e78565aa638980b4123f11b71e20",
+              "sha256": "529ac236f899986b7ca2ac79dff75f6ed8a2908fe726930601923cddaf52722d",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14273,12 +14303,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14308,11 +14338,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14580,7 +14610,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271357+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -14721,7 +14752,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -14748,12 +14779,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_29_review-endnote.hwpx",
-                "publicLabel": "29번 미주형 HWPX",
-                "sha256": "c95bcecfdd8970440969fad8994807bbd0e87acabd4884a8ecdde3e0bbf15151",
-                "size": 100133
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "81132efd80a363b87c563a491ee9d11b6923a27f5743f3ae7698351691783d61",
+                "size": 98328
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_29_review-endnote.hwpx",
-              "sha256": "c95bcecfdd8970440969fad8994807bbd0e87acabd4884a8ecdde3e0bbf15151",
+              "sha256": "81132efd80a363b87c563a491ee9d11b6923a27f5743f3ae7698351691783d61",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14782,12 +14813,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -14817,11 +14848,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15092,7 +15123,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271369+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -15237,7 +15269,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -15264,12 +15296,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_30_review-endnote.hwpx",
-                "publicLabel": "30번 미주형 HWPX",
-                "sha256": "57a61bc62ddc084d48b5178aec644d1f02a6ba9df6b0c4634b7123c2a6f48eda",
-                "size": 100463
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "f6aa19231d5a878ebc8d3a624a1b7a7039892a750c571d895290608970a12515",
+                "size": 97655
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_probability_30_review-endnote.hwpx",
-              "sha256": "57a61bc62ddc084d48b5178aec644d1f02a6ba9df6b0c4634b7123c2a6f48eda",
+              "sha256": "f6aa19231d5a878ebc8d3a624a1b7a7039892a750c571d895290608970a12515",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15298,12 +15330,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15333,11 +15365,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15607,7 +15639,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271381+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -15748,7 +15781,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -15775,12 +15808,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_23_review-endnote.hwpx",
-                "publicLabel": "23번 미주형 HWPX",
-                "sha256": "b5bd011ee9cd6b87623f26ae47ff323995a33c29f22475f573bf72b59fe7c01c",
-                "size": 97677
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "533fca727a329f5c79a9f370bf976148b0f665acf54282cfb36d761c0a63d8a0",
+                "size": 96639
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_23_review-endnote.hwpx",
-              "sha256": "b5bd011ee9cd6b87623f26ae47ff323995a33c29f22475f573bf72b59fe7c01c",
+              "sha256": "533fca727a329f5c79a9f370bf976148b0f665acf54282cfb36d761c0a63d8a0",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15809,12 +15842,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -15844,11 +15877,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16118,7 +16151,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271390+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -16260,7 +16294,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -16287,12 +16321,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_24_review-endnote.hwpx",
-                "publicLabel": "24번 미주형 HWPX",
-                "sha256": "9ec3299e18e43caa314fef2acc90e301a1e4d395ff6883a6006ab6920f4ec9ae",
-                "size": 98030
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "595a5537e578823a2c1ec7af7e04e1955091120d3b3e99ea7c83a0c4fc3f8c62",
+                "size": 96763
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_24_review-endnote.hwpx",
-              "sha256": "9ec3299e18e43caa314fef2acc90e301a1e4d395ff6883a6006ab6920f4ec9ae",
+              "sha256": "595a5537e578823a2c1ec7af7e04e1955091120d3b3e99ea7c83a0c4fc3f8c62",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16321,12 +16355,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16356,11 +16390,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16629,7 +16663,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271398+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -16770,7 +16805,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -16797,12 +16832,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
-                "publicLabel": "25번 미주형 HWPX",
-                "sha256": "30ddd4e3f15a2c7cb5d9227c0bf9c0547196cf40e780aa58aa7d9cc89884080c",
-                "size": 98250
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "77646056e2e2d8d454a45c6ed189846803e41776cede647b2c177923fbbefc49",
+                "size": 96969
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_25_review-endnote.hwpx",
-              "sha256": "30ddd4e3f15a2c7cb5d9227c0bf9c0547196cf40e780aa58aa7d9cc89884080c",
+              "sha256": "77646056e2e2d8d454a45c6ed189846803e41776cede647b2c177923fbbefc49",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16831,12 +16866,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -16866,11 +16901,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17138,7 +17173,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271412+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -17281,7 +17317,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -17308,12 +17344,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_26_review-endnote.hwpx",
-                "publicLabel": "26번 미주형 HWPX",
-                "sha256": "8d39dfa02d92d8d3f6038a1432d21e60bc7ebef7dd1496c0641e70fbbd0a3dec",
-                "size": 98536
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "28ccd84ebf21605dea84e928df639b571e51367867c35b991b9ce671f327d4aa",
+                "size": 97117
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_26_review-endnote.hwpx",
-              "sha256": "8d39dfa02d92d8d3f6038a1432d21e60bc7ebef7dd1496c0641e70fbbd0a3dec",
+              "sha256": "28ccd84ebf21605dea84e928df639b571e51367867c35b991b9ce671f327d4aa",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17342,12 +17378,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17377,11 +17413,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17651,7 +17687,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271421+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -17794,7 +17831,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -17821,12 +17858,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_27_review-endnote.hwpx",
-                "publicLabel": "27번 미주형 HWPX",
-                "sha256": "5abf3cdf74cb8858a880d7efa828378257ad804348cc5a3e8896d2595e151812",
-                "size": 99027
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "7867349b863cf286e70cc15d63c5f886589116ff7ea0121cc67d60f2974a43f9",
+                "size": 97301
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_27_review-endnote.hwpx",
-              "sha256": "5abf3cdf74cb8858a880d7efa828378257ad804348cc5a3e8896d2595e151812",
+              "sha256": "7867349b863cf286e70cc15d63c5f886589116ff7ea0121cc67d60f2974a43f9",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17855,12 +17892,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -17890,11 +17927,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18196,7 +18233,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271431+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -18356,7 +18394,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -18383,12 +18421,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_28_review-endnote.hwpx",
-                "publicLabel": "28번 미주형 HWPX",
-                "sha256": "8b2c24b43cded6146198e25686b33cede52bed974f99a791b2e6021f4644214f",
-                "size": 101518
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ebfca575db0c45819ece347c8904a692c579e1d221e9a661a898d6455e1d3289",
+                "size": 98470
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_28_review-endnote.hwpx",
-              "sha256": "8b2c24b43cded6146198e25686b33cede52bed974f99a791b2e6021f4644214f",
+              "sha256": "ebfca575db0c45819ece347c8904a692c579e1d221e9a661a898d6455e1d3289",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18417,12 +18455,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18452,11 +18490,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18729,7 +18767,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271441+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -18877,7 +18916,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -18904,12 +18943,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_29_review-endnote.hwpx",
-                "publicLabel": "29번 미주형 HWPX",
-                "sha256": "36786f910e92fd03ee0baef4847ffa29dbb270bd5f08233f22142cc462a0d79e",
-                "size": 100778
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "3635641922ac309b48c0b23143a365646c203c5896bfd41f0c5080bb06e36040",
+                "size": 98262
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_29_review-endnote.hwpx",
-              "sha256": "36786f910e92fd03ee0baef4847ffa29dbb270bd5f08233f22142cc462a0d79e",
+              "sha256": "3635641922ac309b48c0b23143a365646c203c5896bfd41f0c5080bb06e36040",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18938,12 +18977,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -18973,11 +19012,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19282,7 +19321,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271451+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -19447,7 +19487,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -19474,12 +19514,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
-                "publicLabel": "30번 미주형 HWPX",
-                "sha256": "d3ecc83c22beb966677cbd9de9e1b6f8ef38698ee3d9d06a0bbe4529ae84303f",
-                "size": 101952
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "92ccc8cb81178d568e990852049292d77a3d0be7b9575069eb2ff303d67a2a25",
+                "size": 98857
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_calculus_30_review-endnote.hwpx",
-              "sha256": "d3ecc83c22beb966677cbd9de9e1b6f8ef38698ee3d9d06a0bbe4529ae84303f",
+              "sha256": "92ccc8cb81178d568e990852049292d77a3d0be7b9575069eb2ff303d67a2a25",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19508,12 +19548,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19543,11 +19583,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -19815,7 +19855,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271463+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -19955,7 +19996,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -19982,12 +20023,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_23_review-endnote.hwpx",
-                "publicLabel": "23번 미주형 HWPX",
-                "sha256": "8a727b56c9bcce3fbed4a6f80c6b140115ffe20107f63877bf14fe825c8a8abe",
-                "size": 98140
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "7881dc215f85bbe346ccc0df78b937285dd884615b30193509ab0086070cf8bf",
+                "size": 97029
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_23_review-endnote.hwpx",
-              "sha256": "8a727b56c9bcce3fbed4a6f80c6b140115ffe20107f63877bf14fe825c8a8abe",
+              "sha256": "7881dc215f85bbe346ccc0df78b937285dd884615b30193509ab0086070cf8bf",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20016,12 +20057,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20051,11 +20092,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20322,7 +20363,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271472+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -20460,7 +20502,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -20487,12 +20529,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_24_review-endnote.hwpx",
-                "publicLabel": "24번 미주형 HWPX",
-                "sha256": "5f932b5d7bea05c2188d203cb1905f15bf0da25c5b8e06fb652f670fe278847f",
-                "size": 97767
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ffa06f63b8e40d76ed150c0ab51ec9cde5d5739aa37f516895e4d310c9e85ad1",
+                "size": 96851
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_24_review-endnote.hwpx",
-              "sha256": "5f932b5d7bea05c2188d203cb1905f15bf0da25c5b8e06fb652f670fe278847f",
+              "sha256": "ffa06f63b8e40d76ed150c0ab51ec9cde5d5739aa37f516895e4d310c9e85ad1",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20521,12 +20563,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20556,11 +20598,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -20828,7 +20870,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271482+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -20967,7 +21010,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -20994,12 +21037,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_25_review-endnote.hwpx",
-                "publicLabel": "25번 미주형 HWPX",
-                "sha256": "df0d0b8fe1ac8a70dac60a090a0582ab503ef7484b2abb4567d7c93b88192609",
-                "size": 97945
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "6ba0388d52cd45256c2914b8ed35a3bc10ace2ac8e7381a499e4cf44f587fabf",
+                "size": 96876
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_25_review-endnote.hwpx",
-              "sha256": "df0d0b8fe1ac8a70dac60a090a0582ab503ef7484b2abb4567d7c93b88192609",
+              "sha256": "6ba0388d52cd45256c2914b8ed35a3bc10ace2ac8e7381a499e4cf44f587fabf",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21028,12 +21071,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21063,11 +21106,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21335,7 +21378,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271493+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -21476,7 +21520,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -21503,12 +21547,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_26_review-endnote.hwpx",
-                "publicLabel": "26번 미주형 HWPX",
-                "sha256": "27ad67b2e084df81114167dcf7b4ef258f8494ab504abe473cc8044df6f9e86d",
-                "size": 97936
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "5469c16b8506fd0d71a939e63476f24a7e0dc346cf823b3370fb2284a43494d6",
+                "size": 97015
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_26_review-endnote.hwpx",
-              "sha256": "27ad67b2e084df81114167dcf7b4ef258f8494ab504abe473cc8044df6f9e86d",
+              "sha256": "5469c16b8506fd0d71a939e63476f24a7e0dc346cf823b3370fb2284a43494d6",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21537,12 +21581,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21572,11 +21616,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -21846,7 +21890,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271503+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -21991,7 +22036,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -22018,12 +22063,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_27_review-endnote.hwpx",
-                "publicLabel": "27번 미주형 HWPX",
-                "sha256": "cb73596443a6d61c025ac92532348c0bffe8ba6d3633fcd51547dac6ac220e18",
-                "size": 100495
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "7b4b35d1c808303076bfaa1f286dcee7295b676459a9df4e7aad411fbff2bd52",
+                "size": 98025
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_27_review-endnote.hwpx",
-              "sha256": "cb73596443a6d61c025ac92532348c0bffe8ba6d3633fcd51547dac6ac220e18",
+              "sha256": "7b4b35d1c808303076bfaa1f286dcee7295b676459a9df4e7aad411fbff2bd52",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22052,12 +22097,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22087,11 +22132,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22395,7 +22440,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271512+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -22556,7 +22602,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -22583,12 +22629,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_28_review-endnote.hwpx",
-                "publicLabel": "28번 미주형 HWPX",
-                "sha256": "1f1b07d4ec0f117040fdbb3da12dcda2058469df682ff6acd8ca5e10178ba5c3",
-                "size": 100337
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "c6c415ef18436071dabcf0559e8822621596eea243c99d1f4a1a86b5e7549e72",
+                "size": 98082
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_28_review-endnote.hwpx",
-              "sha256": "1f1b07d4ec0f117040fdbb3da12dcda2058469df682ff6acd8ca5e10178ba5c3",
+              "sha256": "c6c415ef18436071dabcf0559e8822621596eea243c99d1f4a1a86b5e7549e72",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22617,12 +22663,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22652,11 +22698,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -22930,7 +22976,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271522+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -23079,7 +23126,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -23106,12 +23153,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_29_review-endnote.hwpx",
-                "publicLabel": "29번 미주형 HWPX",
-                "sha256": "f79c34bc64aae34f6a0199edb556fed872e74eb7bc3aaddd9994d08f664ab8e0",
-                "size": 100435
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "a4b2c25c1852f16140a846d32157b084d54f9914b82276432568cb473e0f41c7",
+                "size": 97964
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_29_review-endnote.hwpx",
-              "sha256": "f79c34bc64aae34f6a0199edb556fed872e74eb7bc3aaddd9994d08f664ab8e0",
+              "sha256": "a4b2c25c1852f16140a846d32157b084d54f9914b82276432568cb473e0f41c7",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23140,12 +23187,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23175,11 +23222,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23484,7 +23531,8 @@
           "registeredBy": "kim-suseok",
           "registeredAt": "2026-06-22T12:33:34.271531+00:00"
         },
-        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/문풀이 해설/Tip을 연결. OCR helper는 내부 참고 전용."
+        "reviewHwpxPolicy": "문항별 HWPX 본문에는 문제, 미주에는 정답/학생용 문풀이 해설/Tip을 연결. 내부 검산/OCR/crop 로그는 제외.",
+        "reviewHwpxStudentFacing": "true"
       },
       "classifications": [
         {
@@ -23647,7 +23695,7 @@
             "metadata": {
               "contractVersion": "0.2",
               "localRunDir": "work/source-runs/2026-06-21_survival-math-3/review_hwpx_endnote/20260622_survival_math_3_v1",
-              "reviewPolicy": "문제 본문 + 문항 미주에 정답/문풀이 해설/Tip 연결; OCR helper excluded from user-facing output",
+              "reviewPolicy": "student-facing sections only; internal verification/OCR/crop notes excluded; geometry point/segment labels romanized",
               "supabasePlan": "store problem content, HWPX object metadata, source image refs, review state separately before final DB write approval"
             },
             "purpose": "per-problem HWPX review with endnotes",
@@ -23674,12 +23722,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_30_review-endnote.hwpx",
-                "publicLabel": "30번 미주형 HWPX",
-                "sha256": "ca210ab3e8c54c16b5df56ee3f44443b0c727ab3d55129ac3322801e172dedb9",
-                "size": 102845
+                "publicLabel": "학생용 미주형 HWPX",
+                "sha256": "ce657e18f0569f93cb161472b91014e18263a24f3638a0f3b620ab4313233416",
+                "size": 98798
               },
               "output_path": "outputs/survival_math_3_review_endnotes_per_problem/survival_math_3_geometry_30_review-endnote.hwpx",
-              "sha256": "ca210ab3e8c54c16b5df56ee3f44443b0c727ab3d55129ac3322801e172dedb9",
+              "sha256": "ce657e18f0569f93cb161472b91014e18263a24f3638a0f3b620ab4313233416",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23708,12 +23756,12 @@
               },
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-                "publicLabel": "전체 미주형 HWPX",
-                "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
-                "size": 398072
+                "publicLabel": "전체 학생용 미주형 HWPX",
+                "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
+                "size": 324478
               },
               "output_path": "outputs/20260622_survival_math_3_all_46_review-endnotes.hwpx",
-              "sha256": "c14b76163bed43e8b6613c81fda731f42999b9b1d16316143da33d2e80235931",
+              "sha256": "b252e2270fb207fa74d1925e5b2d1c1ba6488eb9c3686176fc015027e5b82b54",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
@@ -23743,11 +23791,11 @@
               "metadata": {
                 "publicUrl": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
                 "publicLabel": "문항별 HWPX zip",
-                "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
-                "size": 5102338
+                "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
+                "size": 4942443
               },
               "output_path": "outputs/20260622_survival_math_3_review_endnote_hwpx_pack.zip",
-              "sha256": "0dedc4123ec5a777d1c7354291a7f5bc3c0b36bcf4b1088822a4a3c6c5a7cdcc",
+              "sha256": "721079d8596c36e5d196d4f519cb20b9469fc0835157aa147f8d9f4960bf4138",
               "status": "validated",
               "storage_bucket": "static-review-output",
               "template_id": "academy-problem-bank-v1",
