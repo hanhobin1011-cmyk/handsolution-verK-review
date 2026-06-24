@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-20T13:01:18.791710+00:00",
-  "sourceReviewQueueGeneratedAt": "2026-06-20T13:01:18.768156+00:00",
+  "generatedAt": "2026-06-24T10:22:42.508502+00:00",
+  "sourceReviewQueueGeneratedAt": "2026-06-24T10:22:42.483787+00:00",
   "approvedCount": 51,
-  "reworkCount": 1,
+  "reworkCount": 0,
   "pendingReviewCount": 0,
   "approvedReferences": [
     {
@@ -33,7 +33,7 @@
       "explanationReviewResult": "pass",
       "visualKind": "graph",
       "visualSpecRef": "work/visual-specs/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q01-q02_work05_visual_spec.md",
-      "visualValidation": "scripts/validate_majeongo_g2_june_q01_q02_work05.py pass",
+      "visualValidation": "pass: y=cos x, y=√2/2, π/4, 7π/4, 해구간 π/4≤x≤7π/4 확인",
       "blindReviewRef": "work/reviews/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q01-q02_work05_blind_review.md",
       "blindReviewResult": "pass"
     },
@@ -1472,39 +1472,6 @@
       "registryPrimaryFile": "outputs/2026-06-11_Photo-1_18_상세형_작업08.png"
     }
   ],
-  "reworkQueue": [
-    {
-      "id": "2026-06-20_majeongo-g2-june_q10_상세형_작업04",
-      "fileName": "2026-06-20_majeongo-g2-june_q10_상세형_작업04.png",
-      "path": "outputs/2026-06-20_majeongo-g2-june_q10_상세형_작업04.png",
-      "title": "majeongo-g2-june · q10번 · 상세형 · 작업04",
-      "status": "수정 필요",
-      "action": "새 작업번호로 전체 재생성",
-      "date": "2026-06-20",
-      "source": "majeongo-g2-june",
-      "category": "기타",
-      "problem": "q10",
-      "mode": "상세형",
-      "work": "작업04",
-      "width": 1055,
-      "height": 1491,
-      "isPrintReady": false,
-      "isLatestInGroup": false,
-      "groupKey": "2026-06-20_majeongo-g2-june_q10_상세형",
-      "reviewGroupKey": "majeongo-g2-june_q10_상세형",
-      "registryId": "2026-06-20_majeongo-g2-june_q10_상세형_작업04",
-      "registryStatus": "수정 필요",
-      "registryPrimaryFile": "outputs/2026-06-20_majeongo-g2-june_q10_상세형_작업04.png",
-      "processGateVersion": "4",
-      "explanationMdRef": "inputs/explanations/2026-06-20_majeongo-g2-june_q10_work04_regeneration_packet.md",
-      "explanationReviewRef": "work/reviews/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q10_work04_blind_review.md",
-      "explanationReviewResult": "pass",
-      "visualKind": "figure",
-      "visualSpecRef": "work/visual-specs/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q10_work04_visual_spec.md",
-      "visualValidation": "scripts/validate_majeongo_g2_june_q10_work04.py pass",
-      "blindReviewRef": "work/reviews/majeongo-q10-q01q02-stabilized-regeneration-202606201134/q10_work04_blind_review.md",
-      "blindReviewResult": "pass"
-    }
-  ],
+  "reworkQueue": [],
   "pendingReview": []
 }

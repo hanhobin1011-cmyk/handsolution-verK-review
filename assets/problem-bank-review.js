@@ -41,7 +41,7 @@ const problemDecisionLabels = {
   approve_problem: "문제DB 승인",
   reject_problem: "반려",
   hold_problem: "보류",
-  request_handsolution: "손풀이 요청",
+  request_handsolution: "선택 문항 손풀이 요청",
   request_variant: "변형 요청",
 };
 
@@ -55,7 +55,7 @@ const dbDecisionMap = {
 
 async function initProblemBankReview() {
   const response = await fetch("assets/problem-bank-review-data.json", { cache: "no-store" });
-  if (!response.ok) throw new Error("문제DB 검수 데이터를 불러오지 못했습니다.");
+  if (!response.ok) throw new Error("문제은행 검수 데이터를 불러오지 못했습니다.");
   problemState.data = await response.json();
   problemState.problems = (problemState.data.problems ?? []).map(normalizeProblem);
 
@@ -307,7 +307,7 @@ function renderProblemDetail(problem) {
       </div>
       <label class="problem-review-note">
         <span>반려/수정/요청 사유</span>
-        <textarea data-problem-review-note rows="5" placeholder="예: 정답 검산 다시, 원본 해설과 다름, HWPX 줄바꿈 수정, 손풀이 요청 등">${escapeHtml(decision.note)}</textarea>
+        <textarea data-problem-review-note rows="5" placeholder="예: 정답 검산 다시, 원본 해설과 다름, HWPX 줄바꿈 수정, 선택 문항 손풀이 요청 등">${escapeHtml(decision.note)}</textarea>
       </label>
       <div class="problem-review-actions">
         ${problemReviewDbStatusTemplate(problem)}
@@ -325,7 +325,7 @@ function quickHwpxReviewTemplate(problem) {
     .map((entry) => {
       const drive = entry.hwpx.metadata?.drive ?? {};
       const publicUrl = entry.hwpx.metadata?.publicUrl || entry.hwpx.metadata?.public_url || "";
-      const viewLink = publicUrl || drive.webViewLink || drive.webContentLink || "";
+      const viewLink = safePublicHref(publicUrl) || safePublicHref(drive.webViewLink) || safePublicHref(drive.webContentLink);
       if (!viewLink) return "";
       return `<a class="button ${hwpxQuickPriority(entry, problem) === 0 ? "" : "secondary"}" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(hwpxQuickLabel(entry, problem))}</a>`;
     })
@@ -378,16 +378,17 @@ function hwpxExportsTemplate(problem) {
     .map((entry) => {
       const drive = entry.hwpx.metadata?.drive ?? {};
       const publicUrl = entry.hwpx.metadata?.publicUrl || entry.hwpx.metadata?.public_url || "";
-      const viewLink = publicUrl || drive.webViewLink || drive.webContentLink || "";
-      const linkLabel = publicUrl ? entry.hwpx.metadata?.publicLabel || "파일 열기" : "Drive 열기";
+      const safePublicUrl = safePublicHref(publicUrl);
+      const viewLink = safePublicUrl || safePublicHref(drive.webViewLink) || safePublicHref(drive.webContentLink);
+      const linkLabel = safePublicUrl ? entry.hwpx.metadata?.publicLabel || "파일 열기" : "Drive 열기";
       const downloadLink = drive.fileId ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(drive.fileId)}` : viewLink;
       const mode = entry.hwpx.manifest?.output?.mode || entry.exportSet.layout_template || entry.hwpx.template_id;
       const validation = entry.hwpx.validation_result?.status || entry.hwpx.manifest?.output?.validation?.status || entry.hwpx.status;
       return `<article class="hwpx-export-card">
-        <strong>${escapeHtml(drive.name || entry.hwpx.output_path)}</strong>
+        <strong>${escapeHtml(drive.name || entry.hwpx.output_path || entry.hwpx.id || "HWPX export")}</strong>
         <span>${escapeHtml(mode)} · ${escapeHtml(validation || "검증상태 미상")}</span>
         <div class="selected-action-row">
-          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(linkLabel)}</a>` : ""}
+          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(linkLabel)}</a>` : `<span class="review-db-status empty">비공개/사용 불가</span>`}
           ${downloadLink ? `<a class="button" href="${escapeHtml(downloadLink)}" target="_blank" rel="noreferrer">다운로드</a>` : ""}
         </div>
       </article>`;
@@ -595,13 +596,13 @@ function buildProblemReviewPayload(problem) {
 function nextActionForProblemDecision(decision) {
   if (decision === "approve_problem") return "문제은이 문제은행 확정 등록 및 LLM Wiki 등록";
   if (decision === "reject_problem") return "문풀이/원정리 반려 사유 확인 후 수정 루프 재진입";
-  if (decision === "request_handsolution") return "김수석이 손풀이 제작 큐로 분류";
+  if (decision === "request_handsolution") return "김수석이 선택 문항 손풀이 제작 큐로 분류";
   return "보류 사유 확인 후 재검수";
 }
 
 function problemFeedbackText(problem, decision) {
   return [
-    "[문제DB 검수 피드백]",
+    "[문제은행 검수 피드백]",
     `- 문항: ${problem.stable_problem_code}`,
     `- 현재 bank_status: ${problem.bank_status}`,
     `- 현재 solution_status: ${problem.solution_status}`,
@@ -690,14 +691,15 @@ function hwpxExportEntriesTemplate(exports) {
     .map((entry) => {
       const drive = entry.hwpx.metadata?.drive ?? {};
       const publicUrl = entry.hwpx.metadata?.publicUrl || entry.hwpx.metadata?.public_url || "";
-      const viewLink = publicUrl || drive.webViewLink || drive.webContentLink || "";
-      const linkLabel = publicUrl ? entry.hwpx.metadata?.publicLabel || "파일 열기" : "Drive 열기";
+      const safePublicUrl = safePublicHref(publicUrl);
+      const viewLink = safePublicUrl || safePublicHref(drive.webViewLink) || safePublicHref(drive.webContentLink);
+      const linkLabel = safePublicUrl ? entry.hwpx.metadata?.publicLabel || "파일 열기" : "Drive 열기";
       const downloadLink = drive.fileId ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(drive.fileId)}` : viewLink;
       return `<article class="hwpx-export-card">
-        <strong>${escapeHtml(drive.name || entry.hwpx.output_path)}</strong>
+        <strong>${escapeHtml(drive.name || entry.hwpx.output_path || entry.hwpx.id || "HWPX export")}</strong>
         <span>${escapeHtml(entry.problem.stable_problem_code)} · ${escapeHtml(entry.hwpx.status || "상태 미상")}</span>
         <div class="selected-action-row">
-          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(linkLabel)}</a>` : ""}
+          ${viewLink ? `<a class="button secondary" href="${escapeHtml(viewLink)}" target="_blank" rel="noreferrer">${escapeHtml(linkLabel)}</a>` : `<span class="review-db-status empty">비공개/사용 불가</span>`}
           ${downloadLink ? `<a class="button" href="${escapeHtml(downloadLink)}" target="_blank" rel="noreferrer">다운로드</a>` : ""}
         </div>
       </article>`;
@@ -734,6 +736,17 @@ function firstLine(text = "") {
 function asList(value) {
   if (Array.isArray(value)) return value.filter(Boolean).join(", ");
   return value || "";
+}
+
+function safePublicHref(value) {
+  const href = stringValue(value).trim();
+  if (!href) return "";
+  if (/^https?:\/\//i.test(href)) return href;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return "";
+  if (href.startsWith("/") || href.startsWith("\\") || href.includes("\\")) return "";
+  const pathOnly = href.split("#", 1)[0].split("?", 1)[0];
+  if (pathOnly.split("/").includes("..")) return "";
+  return href;
 }
 
 function stringValue(value) {
@@ -786,5 +799,5 @@ function saveProblemReviewSaves() {
 
 initProblemBankReview().catch((error) => {
   console.error(error);
-  problemEls.summary.textContent = `문제DB 검수 데이터를 불러오지 못했습니다: ${error.message ?? error}`;
+  problemEls.summary.textContent = `문제은행 검수 데이터를 불러오지 못했습니다: ${error.message ?? error}`;
 });

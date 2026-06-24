@@ -647,12 +647,12 @@ function reviewFlowPanelTemplate(item) {
     <section class="review-flow-panel" aria-label="작업 흐름 상태">
       <div>
         <strong>운영 상태</strong>
-        <p>문제은행에 들어간 모든 문항이 손풀이 제작 대상은 아닙니다. 이 화면에는 검수·보관 대상 산출물만 표시됩니다.</p>
+        <p>문제은행에 들어간 모든 문항이 손풀이 제작 대상은 아닙니다. 이 화면에는 선택 문항 손풀이 검수·보관 대상 산출물만 표시됩니다.</p>
       </div>
       <div class="flow-pills">
         <span>문제은행: ${escapeHtml(item.bank_status || item.bankStatus || "분리 관리")}</span>
         <span>풀이 설계: ${hasSolution ? "연결됨" : "미연결"}</span>
-        <span>손풀이: ${escapeHtml(item.status || "상태 없음")}</span>
+        <span>선택 문항 손풀이: ${escapeHtml(item.status || "상태 없음")}</span>
         <span>${escapeHtml(visualLabel)}</span>
         <span>${escapeHtml(latestLabel)}</span>
       </div>
@@ -1015,7 +1015,7 @@ function reviewFeedbackText(item, channel = "inbox") {
   const registryId = item.registryId || item.id || "";
   const route =
     channel === "db"
-      ? "Supabase handsolution_review_feedback"
+      ? "Supabase handsolution_review_feedback (문제은행/손풀이 피드백 테이블)"
       : "REVIEW_FEEDBACK_INBOX.md";
   return [
     "[검수 피드백]",

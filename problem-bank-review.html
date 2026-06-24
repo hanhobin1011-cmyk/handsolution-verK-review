@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>handsolution 문제DB 검수센터</title>
+    <title>문제은행 검수센터</title>
     <meta
       name="description"
-      content="DB화된 문항 정보와 HWPX export를 조회하고 승인/반려/손풀이 요청을 저장하는 문제은행 검수센터"
+      content="DB화된 문항 정보와 HWPX export를 조회하고 승인/반려/선택 문항 손풀이 요청을 저장하는 문제은행 검수센터"
     />
     <link rel="stylesheet" href="assets/site.css?v=20260622-mobile-review" />
   </head>
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">handsolution problem bank review</p>
-        <h1>문제DB 검수센터</h1>
+        <p class="eyebrow">Problem Bank Project review</p>
+        <h1>문제은행 검수센터</h1>
         <p id="problemBankSummary" class="summary">DB화된 문항 정보를 불러오는 중입니다.</p>
       </div>
       <div class="topbar-actions">
-        <a class="button secondary" href="index.html#review">손풀이 검수센터</a>
+        <a class="button secondary" href="index.html#review">선택 문항 손풀이 검수</a>
         <button id="copyProblemBankLink" class="button" type="button">현재 문항 링크 복사</button>
       </div>
     </header>
 
-    <nav class="problem-bank-mobile-nav" aria-label="문제DB 모바일 빠른 이동">
+    <nav class="problem-bank-mobile-nav" aria-label="문제은행 모바일 빠른 이동">
       <a href="#problemBankSidebar">목록</a>
       <a href="#problemBankDetail">상세</a>
       <a href="#problemBankHwpx">HWPX</a>
@@ -31,7 +31,7 @@
     </nav>
 
     <main class="problem-bank-layout">
-      <aside id="problemBankSidebar" class="problem-bank-sidebar" aria-label="문제DB 필터와 목록">
+      <aside id="problemBankSidebar" class="problem-bank-sidebar" aria-label="문제은행 필터와 목록">
         <label class="search-box">
           <span>검색</span>
           <input id="problemBankSearch" type="search" autocomplete="off" placeholder="문항코드, 단원, 유형, 발문" />
