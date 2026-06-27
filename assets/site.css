@@ -695,6 +695,19 @@ select {
   gap: 8px;
 }
 
+.review-position {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
 .review-db-status {
   display: inline-flex;
   min-height: 38px;
@@ -837,6 +850,63 @@ select {
   border-color: var(--accent);
   background: var(--accent);
   color: #fff;
+}
+
+.mobile-review-action-bar {
+  display: none;
+}
+
+.mobile-review-action {
+  min-height: 46px;
+  border: 1px solid var(--ink);
+  border-radius: 10px;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.mobile-review-action.secondary {
+  border-color: var(--line);
+  background: #fff;
+  color: var(--ink);
+}
+
+.mobile-review-action.approve {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.mobile-review-action.fix {
+  border-color: var(--red);
+  background: var(--red);
+}
+
+.mobile-review-action.hold {
+  border-color: var(--purple);
+  background: var(--purple);
+}
+
+.mobile-review-action:disabled {
+  cursor: not-allowed;
+  border-color: var(--line);
+  background: #f1f5f9;
+  color: #94a3b8;
+}
+
+.mobile-review-position {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
 }
 
 .card {
@@ -1096,6 +1166,32 @@ select {
   .review-image-button {
     min-height: 320px;
   }
+
+  .review-detail {
+    padding-bottom: 190px;
+  }
+
+  .decision-row {
+    display: none;
+  }
+
+  .mobile-review-action-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 15;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    margin: 14px -8px -8px;
+    padding: 10px 8px calc(10px + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid var(--line);
+    background: rgba(255, 253, 248, 0.96);
+    backdrop-filter: blur(14px);
+  }
+
+  .mobile-review-action.wide {
+    grid-column: 1 / -1;
+  }
 }
 
 /* Problem-bank review center */
@@ -1108,6 +1204,85 @@ select {
   grid-template-columns: minmax(300px, 380px) 1fr;
   gap: 24px;
   padding: 24px clamp(18px, 4vw, 48px) 56px;
+}
+
+.problem-bank-dashboard {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.problem-bank-ops-bar {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(260px, 1.5fr) auto;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f8fbff;
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+
+.problem-bank-ops-bar strong,
+.problem-bank-ops-bar span {
+  display: block;
+}
+
+.problem-filter-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.problem-filter-chip {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.problem-filter-chip.label {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff;
+}
+
+.problem-filter-chip.muted {
+  border-color: var(--line);
+  background: #fff;
+  color: var(--muted);
+}
+
+.problem-dashboard-card {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: 15px;
+}
+
+.problem-dashboard-card span,
+.problem-dashboard-card small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.problem-dashboard-card strong {
+  font-size: clamp(24px, 4vw, 34px);
+  line-height: 1;
 }
 
 .problem-bank-sidebar,
@@ -1173,6 +1348,32 @@ select {
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
+}
+
+.problem-bank-selection-bar {
+  display: none;
+}
+
+.problem-bank-selection-actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.problem-bank-selection-actions button {
+  min-height: 44px;
+  border: 1px solid var(--ink);
+  border-radius: 10px;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.problem-bank-selection-actions button:first-child {
+  border-color: var(--line);
+  background: #fff;
+  color: var(--ink);
 }
 
 .problem-select-box {
@@ -1307,21 +1508,33 @@ select {
   font-family: inherit;
 }
 
-.hwpx-export-list {
+.hwpx-export-list,
+.web-pdf-export-list {
   display: grid;
   gap: 10px;
 }
 
-.hwpx-export-card {
+.hwpx-export-card,
+.web-pdf-export-card {
   display: grid;
   gap: 8px;
   padding: 13px;
   box-shadow: none;
 }
 
-.hwpx-export-card span {
+.hwpx-export-card span,
+.web-pdf-export-card span {
   color: var(--muted);
   font-size: 13px;
+}
+
+.web-pdf-export-card strong,
+.web-pdf-export-card span {
+  display: block;
+}
+
+.web-pdf-export-card span {
+  margin-top: 4px;
 }
 
 .mobile-priority-actions {
@@ -1340,6 +1553,7 @@ select {
 
 .problem-bank-detail,
 #problemBankSidebar,
+#problemBankWebPdf,
 #problemBankHwpx,
 #problemBankReview {
   scroll-margin-top: 92px;
@@ -1415,6 +1629,26 @@ select {
   gap: 12px;
 }
 
+.web-pdf-request-form {
+  display: grid;
+  gap: 14px;
+}
+
+.web-pdf-request-form input,
+.web-pdf-request-form select {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 12px;
+  font-weight: 700;
+}
+
+.web-pdf-request-form .problem-bank-filter-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 @media (max-width: 980px) {
   body {
     padding-bottom: 76px;
@@ -1431,7 +1665,7 @@ select {
     left: 10px;
     z-index: 40;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 6px;
     padding: 8px;
     border: 1px solid rgba(222, 215, 202, 0.95);
@@ -1464,6 +1698,7 @@ select {
   .problem-bank-two-col,
   .problem-info-grid,
   .variant-request-grid,
+  .web-pdf-request-form .problem-bank-filter-grid,
   .problem-review-options {
     grid-template-columns: 1fr;
   }
@@ -1471,6 +1706,19 @@ select {
   .problem-bank-layout {
     gap: 14px;
     padding: 12px 10px 92px;
+  }
+
+  .problem-bank-dashboard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .problem-bank-ops-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-dashboard-card {
+    padding: 12px;
   }
 
   .problem-bank-sidebar {
@@ -1490,6 +1738,26 @@ select {
     margin-bottom: 10px;
     background: rgba(255, 253, 248, 0.97);
     backdrop-filter: blur(10px);
+  }
+
+  .problem-bank-selection-bar.active {
+    position: fixed;
+    right: 10px;
+    bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+    left: 10px;
+    z-index: 39;
+    display: grid;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid rgba(222, 215, 202, 0.95);
+    border-radius: 16px;
+    background: rgba(255, 253, 248, 0.98);
+    box-shadow: 0 10px 28px rgba(31, 36, 40, 0.2);
+    backdrop-filter: blur(12px);
+  }
+
+  .problem-bank-selection-bar strong {
+    font-size: 13px;
   }
 
   .problem-bank-list.review-list {
@@ -1562,6 +1830,14 @@ select {
   .problem-bank-mobile-nav a {
     min-height: 40px;
     font-size: 13px;
+  }
+
+  .problem-bank-selection-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .problem-bank-selection-actions button {
+    font-size: 14px;
   }
 
   .selected-action-row,

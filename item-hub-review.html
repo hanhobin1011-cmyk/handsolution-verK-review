@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>호빈T 문항허브 검수센터</title>
+    <meta
+      name="description"
+      content="DB화된 문항 정보와 HWPX export를 조회하고 승인/반려/선택 문항 손풀이 요청을 저장하는 호빈T 문항허브 검수센터"
+    />
+    <link rel="stylesheet" href="assets/site.css?v=20260624-webpdf-review-record" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">HobinT Item Hub review</p>
+        <h1>호빈T 문항허브 검수센터</h1>
+        <p id="problemBankSummary" class="summary">DB화된 문항 정보를 불러오는 중입니다.</p>
+      </div>
+      <div class="topbar-actions">
+        <a class="button secondary" href="index.html#review">선택 문항 손풀이 검수</a>
+        <button id="copyProblemBankLink" class="button" type="button">현재 문항 링크 복사</button>
+      </div>
+    </header>
+
+    <nav class="problem-bank-mobile-nav" aria-label="호빈T 문항허브 모바일 빠른 이동">
+      <a href="#problemBankSidebar">목록</a>
+      <a href="#problemBankDetail">상세</a>
+      <a href="#problemBankWebPdf">웹PDF</a>
+      <a href="#problemBankHwpx">HWPX</a>
+      <a href="#problemBankReview">검수</a>
+    </nav>
+
+    <main class="problem-bank-layout">
+      <section id="problemBankDashboard" class="problem-bank-dashboard" aria-label="호빈T 문항허브 운영 요약">
+        <p class="empty">호빈T 문항허브 운영 요약을 불러오는 중입니다.</p>
+      </section>
+
+      <section id="problemBankOperationsBar" class="problem-bank-ops-bar" aria-label="호빈T 문항허브 현재 필터와 선택 상태">
+        <p class="empty">필터 상태를 불러오는 중입니다.</p>
+      </section>
+
+      <aside id="problemBankSidebar" class="problem-bank-sidebar" aria-label="호빈T 문항허브 필터와 목록">
+        <label class="search-box">
+          <span>검색</span>
+          <input id="problemBankSearch" type="search" autocomplete="off" placeholder="문항코드, 단원, 유형, 발문" />
+        </label>
+        <div class="problem-bank-filter-grid">
+          <label>
+            <span>자료</span>
+            <select id="problemBankSourceFilter"></select>
+          </label>
+          <label>
+            <span>상태</span>
+            <select id="problemBankStatusFilter"></select>
+          </label>
+          <label>
+            <span>난이도</span>
+            <select id="problemBankDifficultyFilter"></select>
+          </label>
+        </div>
+        <section class="selected-review-actions" aria-label="선택 문항 작업">
+          <strong>선택 문항</strong>
+          <p id="selectedProblemSummary">0개 선택됨</p>
+          <div class="selected-action-row">
+            <button id="clearSelectedProblems" class="button secondary" type="button">선택 해제</button>
+            <button id="showSelectedExports" class="button secondary" type="button">HWPX 찾기</button>
+            <button id="showWebPdfRequest" class="button" type="button">웹 PDF 요청</button>
+          </div>
+        </section>
+        <div class="review-list-head">
+          <strong id="problemBankCount">0개</strong>
+          <span id="problemBankProgress"></span>
+        </div>
+        <div id="problemBankList" class="review-list problem-bank-list"></div>
+      </aside>
+
+      <section id="problemBankDetail" class="problem-bank-detail" aria-label="문항 상세 검수">
+        <p class="empty">검수할 문항을 선택하세요.</p>
+      </section>
+    </main>
+
+    <div id="problemBankMobileSelectionBar" class="problem-bank-selection-bar" aria-live="polite"></div>
+
+    <dialog id="selectedExportsDialog" class="viewer problem-bank-dialog">
+      <div class="viewer-panel">
+        <div class="viewer-head">
+          <div>
+            <p class="eyebrow">selected HWPX exports</p>
+            <h2>선택 문항 HWPX</h2>
+          </div>
+          <form method="dialog">
+            <button class="icon-button" aria-label="닫기" type="submit">×</button>
+          </form>
+        </div>
+        <div id="selectedExportsContent" class="problem-bank-dialog-content"></div>
+      </div>
+    </dialog>
+
+    <dialog id="webPdfRequestDialog" class="viewer problem-bank-dialog">
+      <div class="viewer-panel">
+        <div class="viewer-head">
+          <div>
+            <p class="eyebrow">web PDF request</p>
+            <h2>랜덤 웹 PDF 요청</h2>
+            <p class="summary">조건을 저장하면 서버/에이전트 processor가 문제지를 생성합니다.</p>
+          </div>
+          <form method="dialog">
+            <button class="icon-button" aria-label="닫기" type="submit">×</button>
+          </form>
+        </div>
+        <div class="web-pdf-request-form">
+          <label>
+            <span>제목</span>
+            <input data-web-pdf-title type="text" placeholder="예: 수열 랜덤 4문항" />
+          </label>
+          <div class="problem-bank-filter-grid">
+            <label>
+              <span>단원</span>
+              <input data-web-pdf-filter="unit" type="text" placeholder="예: 수열" />
+            </label>
+            <label>
+              <span>난이도 이상</span>
+              <select data-web-pdf-filter="difficulty">
+                <option value="">전체</option>
+                <option value="하">하</option>
+                <option value="중하">중하</option>
+                <option value="중">중</option>
+                <option value="중상">중상</option>
+                <option value="상">상</option>
+                <option value="최상">최상</option>
+              </select>
+            </label>
+            <label>
+              <span>문항수</span>
+              <input data-web-pdf-filter="count" type="number" min="1" max="60" value="4" />
+            </label>
+            <label>
+              <span>랜덤 seed</span>
+              <input data-web-pdf-filter="seed" type="number" min="0" value="7" />
+            </label>
+            <label>
+              <span>그래프 문항</span>
+              <select data-web-pdf-filter="graph">
+                <option value="">상관없음</option>
+                <option value="true">그래프 필요</option>
+                <option value="false">그래프 제외</option>
+              </select>
+            </label>
+            <label>
+              <span>레이아웃</span>
+              <select data-web-pdf-layout>
+                <option value="quad">A4 4칸 투명표</option>
+              </select>
+            </label>
+          </div>
+          <label class="problem-review-note">
+            <span>요청 메모</span>
+            <textarea data-web-pdf-note rows="3" placeholder="예: 숙제용, 정답지는 제외, 이번 주 수업 보충용"></textarea>
+          </label>
+          <div class="problem-review-actions">
+            <span id="webPdfRequestStatus" class="review-db-status empty">DB 저장 전</span>
+            <button id="saveWebPdfRequest" class="button" type="button">웹 PDF 요청 DB 저장</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="assets/db-config.js?v=20260624-webpdf-review-record" defer></script>
+    <script src="assets/item-hub-review.js?v=20260627-item-hub-route" defer></script>
+  </body>
+</html>

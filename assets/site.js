@@ -587,6 +587,7 @@ function reviewDetailTemplate(item) {
   const src = encodeURI(item.path);
   const decision = state.reviewDecisions[item.fileName] ?? {};
   const note = decision.note ?? "";
+  const nav = reviewNavigationState();
   return `
     <div class="review-detail-head">
       <div>
@@ -594,8 +595,9 @@ function reviewDetailTemplate(item) {
         <h2>${escapeHtml(item.title)}</h2>
       </div>
       <div class="review-nav">
-        <button class="button secondary" type="button" data-review-nav="prev">이전</button>
-        <button class="button secondary" type="button" data-review-nav="next">다음</button>
+        ${reviewNavButtonTemplate("prev", "이전", nav.atStart, "button secondary")}
+        ${reviewPositionTemplate(nav, "review-position")}
+        ${reviewNavButtonTemplate("next", "다음", nav.atEnd, "button secondary")}
         <button class="button" type="button" data-copy-item-link>이 후보 링크 복사</button>
       </div>
     </div>
@@ -634,9 +636,39 @@ function reviewDetailTemplate(item) {
           ${reviewDbButtonTemplate(item)}
           <button class="button" type="button" data-copy-feedback>피드백 복사</button>
         </div>
+        <div class="mobile-review-action-bar" aria-label="핸드폰 빠른 검수 액션">
+          ${reviewNavButtonTemplate("prev", "이전", nav.atStart, "mobile-review-action secondary", "data-mobile-review-action")}
+          <button class="mobile-review-action approve" type="button" data-mobile-review-action data-review-decision="approve">승인</button>
+          <button class="mobile-review-action fix" type="button" data-mobile-review-action data-review-decision="fix">수정</button>
+          <button class="mobile-review-action hold" type="button" data-mobile-review-action data-review-decision="hold">보류</button>
+          ${reviewPositionTemplate(nav, "mobile-review-position")}
+          <button class="mobile-review-action" type="button" data-mobile-review-action data-save-feedback>저장</button>
+          ${reviewNavButtonTemplate("next", "다음 후보", nav.atEnd, "mobile-review-action secondary wide", "data-mobile-review-action")}
+        </div>
       </div>
     </div>
   `;
+}
+
+function reviewNavigationState() {
+  const total = state.reviewFiltered.length;
+  return {
+    current: total ? state.reviewIndex + 1 : 0,
+    total,
+    atStart: state.reviewIndex <= 0,
+    atEnd: total === 0 || state.reviewIndex >= state.reviewFiltered.length - 1,
+  };
+}
+
+function reviewPositionTemplate(nav, className) {
+  const label = nav.total ? `${nav.current} / ${nav.total}` : "0 / 0";
+  return `<span class="${className}" data-review-position aria-current="step">${escapeHtml(label)}</span>`;
+}
+
+function reviewNavButtonTemplate(direction, label, disabled, className, extraAttributes = "") {
+  const disabledAttribute = disabled ? " disabled aria-disabled=\"true\"" : "";
+  const extra = extraAttributes ? ` ${extraAttributes}` : "";
+  return `<button class="${className}" type="button"${extra} data-review-nav="${direction}"${disabledAttribute}>${escapeHtml(label)}</button>`;
 }
 
 function reviewFlowPanelTemplate(item) {
@@ -647,10 +679,10 @@ function reviewFlowPanelTemplate(item) {
     <section class="review-flow-panel" aria-label="작업 흐름 상태">
       <div>
         <strong>운영 상태</strong>
-        <p>문제은행에 들어간 모든 문항이 손풀이 제작 대상은 아닙니다. 이 화면에는 선택 문항 손풀이 검수·보관 대상 산출물만 표시됩니다.</p>
+        <p>호빈T 문항허브에 들어간 모든 문항이 손풀이 제작 대상은 아닙니다. 이 화면에는 선택 문항 손풀이 검수·보관 대상 산출물만 표시됩니다.</p>
       </div>
       <div class="flow-pills">
-        <span>문제은행: ${escapeHtml(item.bank_status || item.bankStatus || "분리 관리")}</span>
+        <span>문항허브: ${escapeHtml(item.bank_status || item.bankStatus || "분리 관리")}</span>
         <span>풀이 설계: ${hasSolution ? "연결됨" : "미연결"}</span>
         <span>선택 문항 손풀이: ${escapeHtml(item.status || "상태 없음")}</span>
         <span>${escapeHtml(visualLabel)}</span>
@@ -1015,7 +1047,7 @@ function reviewFeedbackText(item, channel = "inbox") {
   const registryId = item.registryId || item.id || "";
   const route =
     channel === "db"
-      ? "Supabase handsolution_review_feedback (문제은행/손풀이 피드백 테이블)"
+      ? "Supabase 호빈T 문항허브 피드백 테이블 (handsolution_review_feedback)"
       : "REVIEW_FEEDBACK_INBOX.md";
   return [
     "[검수 피드백]",
@@ -1188,7 +1220,7 @@ function buildReviewDbPayload(item) {
   const feedbackImages = reviewFeedbackImages(item);
   const dbDecision = dbCompatibleReviewDecision(decision);
   return {
-    source_app: reviewDbConfig().sourceApp || "handsolution-verK-staging",
+    source_app: reviewDbConfig().sourceApp || "problem-bank-staging",
     target_path: item.path,
     target_file: item.fileName,
     current_status: item.status,

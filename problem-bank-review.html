@@ -3,90 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>문제은행 검수센터</title>
-    <meta
-      name="description"
-      content="DB화된 문항 정보와 HWPX export를 조회하고 승인/반려/선택 문항 손풀이 요청을 저장하는 문제은행 검수센터"
-    />
-    <link rel="stylesheet" href="assets/site.css?v=20260622-mobile-review" />
+    <title>호빈T 문항허브 검수센터로 이동</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="item-hub-review.html" />
+    <script>
+      const next = new URL("item-hub-review.html", window.location.href);
+      next.search = window.location.search;
+      next.hash = window.location.hash;
+      window.location.replace(next.href);
+    </script>
   </head>
   <body>
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">Problem Bank Project review</p>
-        <h1>문제은행 검수센터</h1>
-        <p id="problemBankSummary" class="summary">DB화된 문항 정보를 불러오는 중입니다.</p>
-      </div>
-      <div class="topbar-actions">
-        <a class="button secondary" href="index.html#review">선택 문항 손풀이 검수</a>
-        <button id="copyProblemBankLink" class="button" type="button">현재 문항 링크 복사</button>
-      </div>
-    </header>
-
-    <nav class="problem-bank-mobile-nav" aria-label="문제은행 모바일 빠른 이동">
-      <a href="#problemBankSidebar">목록</a>
-      <a href="#problemBankDetail">상세</a>
-      <a href="#problemBankHwpx">HWPX</a>
-      <a href="#problemBankReview">검수</a>
-    </nav>
-
-    <main class="problem-bank-layout">
-      <aside id="problemBankSidebar" class="problem-bank-sidebar" aria-label="문제은행 필터와 목록">
-        <label class="search-box">
-          <span>검색</span>
-          <input id="problemBankSearch" type="search" autocomplete="off" placeholder="문항코드, 단원, 유형, 발문" />
-        </label>
-        <div class="problem-bank-filter-grid">
-          <label>
-            <span>자료</span>
-            <select id="problemBankSourceFilter"></select>
-          </label>
-          <label>
-            <span>상태</span>
-            <select id="problemBankStatusFilter"></select>
-          </label>
-          <label>
-            <span>난이도</span>
-            <select id="problemBankDifficultyFilter"></select>
-          </label>
-        </div>
-        <section class="selected-review-actions" aria-label="선택 문항 작업">
-          <strong>선택 문항</strong>
-          <p id="selectedProblemSummary">0개 선택됨</p>
-          <div class="selected-action-row">
-            <button id="clearSelectedProblems" class="button secondary" type="button">선택 해제</button>
-            <button id="showSelectedExports" class="button secondary" type="button">HWPX 찾기</button>
-          </div>
-        </section>
-        <div class="review-list-head">
-          <strong id="problemBankCount">0개</strong>
-          <span id="problemBankProgress"></span>
-        </div>
-        <div id="problemBankList" class="review-list problem-bank-list"></div>
-      </aside>
-
-      <section id="problemBankDetail" class="problem-bank-detail" aria-label="문항 상세 검수">
-        <p class="empty">검수할 문항을 선택하세요.</p>
-      </section>
+    <main style="font-family: system-ui, sans-serif; padding: 24px; line-height: 1.6">
+      <h1>호빈T 문항허브 검수센터로 이동합니다</h1>
+      <p>이전 주소는 호환을 위해 남겨둔 shim입니다.</p>
+      <p><a href="item-hub-review.html">새 검수센터 열기</a></p>
     </main>
-
-    <dialog id="selectedExportsDialog" class="viewer problem-bank-dialog">
-      <div class="viewer-panel">
-        <div class="viewer-head">
-          <div>
-            <p class="eyebrow">selected HWPX exports</p>
-            <h2>선택 문항 HWPX</h2>
-          </div>
-          <form method="dialog">
-            <button class="icon-button" aria-label="닫기" type="submit">×</button>
-          </form>
-        </div>
-        <div id="selectedExportsContent" class="problem-bank-dialog-content"></div>
-      </div>
-    </dialog>
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-    <script src="assets/db-config.js?v=20260622-mobile-review" defer></script>
-    <script src="assets/problem-bank-review.js?v=20260622-mobile-review" defer></script>
   </body>
 </html>
