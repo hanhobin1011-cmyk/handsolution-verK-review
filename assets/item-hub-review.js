@@ -581,7 +581,7 @@ async function saveProblemReview(button) {
   try {
     const client = getProblemReviewDbClient();
     const payload = buildProblemReviewPayload(problem);
-    const { error } = await client.from(problemReviewDbConfig().table || "handsolution_review_feedback").insert(payload, { returning: "minimal" });
+    const { error } = await client.from(problemReviewDbConfig().table || "item_hub_review_feedback").insert(payload, { returning: "minimal" });
     if (error) throw error;
     problemState.saves[problem.id] = {
       savedAt: new Date().toISOString(),
@@ -626,7 +626,7 @@ async function saveVariantRequest(button) {
   try {
     const client = getProblemReviewDbClient();
     const payload = buildVariantRequestPayload(problem, counts);
-    const { error } = await client.from(problemReviewDbConfig().table || "handsolution_review_feedback").insert(payload, { returning: "minimal" });
+    const { error } = await client.from(problemReviewDbConfig().table || "item_hub_review_feedback").insert(payload, { returning: "minimal" });
     if (error) throw error;
     button.textContent = "변형 요청 저장 완료";
   } catch (error) {
@@ -663,8 +663,8 @@ function buildVariantRequestPayload(problem, counts) {
   const note = document.querySelector("[data-variant-request-note]")?.value?.trim() || "";
   const total = counts.A + counts.B + counts.C;
   return {
-    source_app: "problem-bank-review",
-    target_path: `handsolution_problems/${problem.id}/variant-request`,
+    source_app: "item-hub-review",
+    target_path: `item_hub_problems/${problem.id}/variant-request`,
     target_file: problem.stable_problem_code,
     current_status: problem.bank_status || "unknown",
     decision: "승인",
@@ -706,8 +706,8 @@ function buildProblemReviewPayload(problem) {
   const requestedLabel = problemDecisionLabels[decision.decision] ?? "보류";
   const selectedProblemIds = [...problemState.selectedProblemIds];
   return {
-    source_app: "problem-bank-review",
-    target_path: `handsolution_problems/${problem.id}`,
+    source_app: "item-hub-review",
+    target_path: `item_hub_problems/${problem.id}`,
     target_file: problem.stable_problem_code,
     current_status: problem.bank_status || "unknown",
     decision: dbDecision.label,
@@ -911,7 +911,7 @@ async function saveWebPdfRequest(button) {
   problemEls.webPdfRequestStatus.textContent = "저장 중";
   try {
     const client = getProblemReviewDbClient();
-    const { error } = await client.from(problemReviewDbConfig().table || "handsolution_review_feedback").insert(payload, { returning: "minimal" });
+    const { error } = await client.from(problemReviewDbConfig().table || "item_hub_review_feedback").insert(payload, { returning: "minimal" });
     if (error) throw error;
     button.textContent = "웹 PDF 요청 저장 완료";
     problemEls.webPdfRequestStatus.className = "review-db-status saved";
@@ -944,8 +944,8 @@ function buildWebPdfRequestPayload() {
   const note = document.querySelector("[data-web-pdf-note]")?.value?.trim() || "";
   const reviewer = problemReviewDbConfig().reviewer || "hanho";
   return {
-    source_app: "problem-bank-review",
-    target_path: "handsolution_export_sets/web-pdf-request",
+    source_app: "item-hub-review",
+    target_path: "item_hub_export_sets/web-pdf-request",
     target_file: title,
     current_status: "requested",
     decision: "승인",
