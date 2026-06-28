@@ -1,6 +1,236 @@
 {
-  "generatedAt": "2026-06-27T08:48:46.779236+00:00",
+  "generatedAt": "2026-06-28T12:45:59.946094+00:00",
   "problems": [
+    {
+      "answer": "58",
+      "assets": [
+        {
+          "difficultyRubric": "https://drive.google.com/file/d/10v0IVKXOr4TEM7DR99gksDtN65FMgk4q/view?usp=drivesdk",
+          "folder": "https://drive.google.com/drive/folders/1ZXETqeSMQl3Y-N4-h4_iuRjncsC-dqw1",
+          "html": "https://drive.google.com/file/d/1cQ4xwkH06KQZQ6Lm11IPdSInz3j8TS20/view?usp=drivesdk",
+          "markdown": "https://drive.google.com/file/d/1a3tOQbsCGk2TTU7TTH3_Vvysz_Y_obJB/view?usp=drivesdk",
+          "pdf": "https://drive.google.com/file/d/1AKkN7uVcm7ly1vLRlJWcxjLJnb4_M9yD/view?usp=drivesdk"
+        }
+      ],
+      "bank_status": "canonical_draft",
+      "classifications": [
+        {
+          "classification_version": "2026-06-28-q22-research-v1",
+          "classifier_agent": "kim-suseok-db-reflection",
+          "concept_tags": [
+            "수학II",
+            "삼차함수",
+            "도함수",
+            "극값",
+            "조각함수",
+            "실근 개수",
+            "불연속",
+            "수평선 교점"
+          ],
+          "confidence": 0.92,
+          "created_at": "2026-06-28T12:07:01.733964+00:00",
+          "difficulty": "상",
+          "estimated_time_sec": 900,
+          "graph_required": true,
+          "id": "63c6e8c0-5c20-4bac-812c-d4172407ca43",
+          "metadata": {
+            "difficultyModel": {
+              "eLevel": "E3",
+              "evidence": {
+                "executionBurden": "d 매개변수화와 M=8-d^3/2 계산은 길지 않지만 케이스 검증 누락 위험이 있다.",
+                "ideaBurden": "조각함수 자체보다 g(x)=0만 보고 수평선 교점/경계 포함을 분리해야 하므로 발상 부담이 높다."
+              },
+              "finalBand": "상",
+              "scale": "T1-T5 x E1-E5",
+              "tLevel": "T4"
+            },
+            "problem_key": "q22",
+            "reflectionStatus": "applied"
+          },
+          "problem_id": "2ce4c89d-e180-4a4c-af12-45547c2f2a6b",
+          "problem_type_tags": [
+            "평가원 22번",
+            "고난도",
+            "매개변수",
+            "그래프 해석",
+            "케이스 분류"
+          ],
+          "required_ideas": [
+            "g(x)=0만 보기",
+            "수평선 교점 해석",
+            "경계 포함 여부",
+            "극값 접촉",
+            "케이스 분류 검증"
+          ],
+          "review_status": "needs_review",
+          "subject": "수학",
+          "unit_path": "수학II/다항함수의 미분/삼차함수 그래프/실근 개수/불연속 조건",
+          "updated_at": "2026-06-28T12:07:01.733964+00:00"
+        }
+      ],
+      "concept_tags": [
+        "수학II",
+        "삼차함수",
+        "도함수",
+        "극값",
+        "조각함수",
+        "실근 개수",
+        "불연속",
+        "수평선 교점"
+      ],
+      "created_at": "2026-06-28T12:07:01.430096+00:00",
+      "curriculum_version": "2022",
+      "difficulty": "상",
+      "exports": [],
+      "handsolution_status": "not_requested",
+      "id": "2ce4c89d-e180-4a4c-af12-45547c2f2a6b",
+      "latestReviewFeedback": [],
+      "metadata": {
+        "appliedBy": "kim-suseok",
+        "difficultyModel": {
+          "eLevel": "E3",
+          "evidence": {
+            "executionBurden": "d 매개변수화와 M=8-d^3/2 계산은 길지 않지만 케이스 검증 누락 위험이 있다.",
+            "ideaBurden": "조각함수 자체보다 g(x)=0만 보고 수평선 교점/경계 포함을 분리해야 하므로 발상 부담이 높다."
+          },
+          "finalBand": "상",
+          "scale": "T1-T5 x E1-E5",
+          "tLevel": "T4"
+        },
+        "drive": {
+          "difficultyRubric": "https://drive.google.com/file/d/10v0IVKXOr4TEM7DR99gksDtN65FMgk4q/view?usp=drivesdk",
+          "folder": "https://drive.google.com/drive/folders/1ZXETqeSMQl3Y-N4-h4_iuRjncsC-dqw1",
+          "html": "https://drive.google.com/file/d/1cQ4xwkH06KQZQ6Lm11IPdSInz3j8TS20/view?usp=drivesdk",
+          "markdown": "https://drive.google.com/file/d/1a3tOQbsCGk2TTU7TTH3_Vvysz_Y_obJB/view?usp=drivesdk",
+          "pdf": "https://drive.google.com/file/d/1AKkN7uVcm7ly1vLRlJWcxjLJnb4_M9yD/view?usp=drivesdk"
+        },
+        "problem_key": "q22",
+        "reflectionStatus": "applied",
+        "researchLab": {
+          "latestHtml": "problem-reports/q22-v03-webpdf/q22-v03-idea-battle-report.html",
+          "latestMarkdown": "problem-reports/2026-06-28_2022-09-evaluation-q22_v03-idea-battle-report.md",
+          "latestPdf": "problem-reports/q22-v03-webpdf/q22-v03-idea-battle-report.pdf",
+          "latestReportId": "problem-reports/q22-v03-webpdf",
+          "pageCount": 16,
+          "versionCount": 4
+        },
+        "researchOnly": true,
+        "source": {
+          "problemNumber": "22",
+          "sourceLabel": "2022년 9월 평가원",
+          "sourcePage": "math-research-lab local report; original screenshot was used for research",
+          "sourceSlug": "2022-09-evaluation"
+        }
+      },
+      "pdf_check_status": "needs_human_check",
+      "problem_md": "# 2022년 9월 평가원 22번\n\n최고차항의 계수가 1이고 x=3에서 극댓값 8을 갖는 삼차함수 f(x)가 있다. 실수 t에 대하여\n\n```text\ng(x) = f(x)                (x ≥ t)\n     = -f(x) + 2f(t)       (x < t)\n```\n\n라 할 때, 방정식 g(x)=0의 서로 다른 실근의 개수를 h(t)라 하자. 함수 h(t)가 t=a에서 불연속인 a의 값이 두 개일 때, f(8)을 구한다.\n",
+      "problem_type": "평가원 22번, 수학연구소, 연구전용",
+      "solutionPackets": [
+        {
+          "agent_name": "math-research-lab",
+          "agent_profile": "q22-v03-idea-battle",
+          "answer_validation": {
+            "answer": "58",
+            "method": "research-lab q22 v03 report + final computation",
+            "status": "verified"
+          },
+          "core_conditions": [
+            {
+              "condition": "f is monic cubic and has local maximum 8 at x=3",
+              "whyItMatters": "lets us set f'(x)=3(x-3)(x-3-d) and compute the local minimum M"
+            },
+            {
+              "condition": "g(x)=0 root count h(t)",
+              "whyItMatters": "turns the problem into boundary/root-count changes rather than drawing g"
+            },
+            {
+              "condition": "h(t) has exactly two discontinuity points",
+              "whyItMatters": "forces M=4 after checking candidates"
+            }
+          ],
+          "core_idea": "g(x)=0만 보아 오른쪽은 f(x)=0, 왼쪽은 f(x)=2f(t)인 수평선 교점 개수로 바꾸고, 경계 포함 여부와 극값 접촉을 분리해 센다.",
+          "created_at": "2026-06-28T12:07:01.972762+00:00",
+          "graph_spec": {
+            "purpose": "horizontal-line/root-count interpretation",
+            "required": true,
+            "status": "available in research report; no student-facing handsolution requested"
+          },
+          "id": "f226af3b-cc8a-4e52-b04b-e1a08681fa75",
+          "metadata": {
+            "appliedBy": "kim-suseok",
+            "difficultyModel": {
+              "eLevel": "E3",
+              "evidence": {
+                "executionBurden": "d 매개변수화와 M=8-d^3/2 계산은 길지 않지만 케이스 검증 누락 위험이 있다.",
+                "ideaBurden": "조각함수 자체보다 g(x)=0만 보고 수평선 교점/경계 포함을 분리해야 하므로 발상 부담이 높다."
+              },
+              "finalBand": "상",
+              "scale": "T1-T5 x E1-E5",
+              "tLevel": "T4"
+            },
+            "drive": {
+              "difficultyRubric": "https://drive.google.com/file/d/10v0IVKXOr4TEM7DR99gksDtN65FMgk4q/view?usp=drivesdk",
+              "folder": "https://drive.google.com/drive/folders/1ZXETqeSMQl3Y-N4-h4_iuRjncsC-dqw1",
+              "html": "https://drive.google.com/file/d/1cQ4xwkH06KQZQ6Lm11IPdSInz3j8TS20/view?usp=drivesdk",
+              "markdown": "https://drive.google.com/file/d/1a3tOQbsCGk2TTU7TTH3_Vvysz_Y_obJB/view?usp=drivesdk",
+              "pdf": "https://drive.google.com/file/d/1AKkN7uVcm7ly1vLRlJWcxjLJnb4_M9yD/view?usp=drivesdk"
+            },
+            "problem_key": "q22",
+            "reflectionStatus": "applied",
+            "researchLab": {
+              "latestHtml": "problem-reports/q22-v03-webpdf/q22-v03-idea-battle-report.html",
+              "latestMarkdown": "problem-reports/2026-06-28_2022-09-evaluation-q22_v03-idea-battle-report.md",
+              "latestPdf": "problem-reports/q22-v03-webpdf/q22-v03-idea-battle-report.pdf",
+              "latestReportId": "problem-reports/q22-v03-webpdf",
+              "pageCount": 16,
+              "versionCount": 4
+            },
+            "researchOnly": true,
+            "source": {
+              "problemNumber": "22",
+              "sourceLabel": "2022년 9월 평가원",
+              "sourcePage": "math-research-lab local report; original screenshot was used for research",
+              "sourceSlug": "2022-09-evaluation"
+            }
+          },
+          "minimum_visible_solution": "f'(x)=3(x-3)(x-3-d), M=8-d^3/2, 불연속 후보 f(t)=0 / 2f(t)=8 / 2f(t)=M, M=4, f(8)=58",
+          "packet_md": "# 2022년 9월 평가원 22번 연구 요약 패킷\n\n## INTUITION\n- 조각함수 g 전체를 그리는 문제가 아니라 g(x)=0의 근 개수 h(t)를 보는 문제다.\n- x<t에서는 g(x)=0이 f(x)=2f(t)가 되어 원래 삼차함수 위의 수평선 교점 문제로 바뀐다.\n- f(t)=4 같은 값 조건만으로 불연속을 단정하지 말고 x<t, x≥t 영역 조건에서 실제 근 개수가 바뀌는지 확인해야 한다.\n\n## 메인 발상\n오른쪽 조각은 f(x)=0, 왼쪽 조각은 f(x)=2f(t)로 바꾸어 경계 포함 여부와 수평선-극값 접촉을 분리해 센다.\n\n## 풀이 후보 판단\n- 메인: 그래프/수평선 해석.\n- 보조: 정석 대수 매개변수화 f'(x)=3(x-3)(x-3-d).\n- 검증: M=8-d^3/2의 위치별 불연속 후보 케이스 분류.\n- 폐기: t가 움직이는 g 전체를 직접 그리기.\n\n## 최종 계산\nM=8-d^3/2이고 조건을 만족하는 유일한 경우는 M=4이다. 따라서 d=2,\n\nf(x)=(x-3)^3-3(x-3)^2+8,\n\nf(8)=125-75+8=58.\n\n## 호빈T Tip 후보\ng(x)=0은 새 조각함수를 그리는 문제가 아니다. 오른쪽은 f(x)=0, 왼쪽은 f(x)=2f(t)인 수평선 교점 개수 문제로 바꿔 읽는다. 불연속은 경계가 영점을 지나거나, 수평선이 극값에 닿을 때 생긴다.\n",
+          "packet_path": "problem-reports/2026-06-28_2022-09-evaluation-q22_v03-idea-battle-report.md",
+          "page_guidance": {
+            "policy": "research-only candidate",
+            "recommendedPageCount": "research report 16 pages",
+            "studentOutput": "not requested"
+          },
+          "problem_id": "2ce4c89d-e180-4a4c-af12-45547c2f2a6b",
+          "problem_version_id": null,
+          "review_result": "research report verified locally; DB reflection approved by Hobin and applied as research-only candidate",
+          "status": "needs_review",
+          "tip_plan": "g(x)=0은 새 조각함수를 그리는 문제가 아니다. 오른쪽은 f(x)=0, 왼쪽은 f(x)=2f(t)인 수평선 교점 개수 문제로 바꿔 읽는다.",
+          "updated_at": "2026-06-28T12:07:01.972762+00:00",
+          "why_explanation_blocks": [
+            {
+              "block": "INTUITION",
+              "summary": "조각함수 전체가 아니라 g(x)=0의 근 개수를 본다."
+            },
+            {
+              "block": "idea-battle",
+              "summary": "g 직접 그리기는 폐기, 수평선 교점 해석을 메인으로 선택."
+            },
+            {
+              "block": "verification",
+              "summary": "M 위치별 케이스 분류로 M=4 유일성을 확인."
+            }
+          ]
+        }
+      ],
+      "solution_status": "deep_solution_done",
+      "source_problem_id": null,
+      "source_solution_md": null,
+      "stable_problem_code": "eval-2022-09-q22",
+      "subject": "수학",
+      "unit_path": "수학II/다항함수의 미분/삼차함수 그래프/실근 개수/불연속 조건",
+      "updated_at": "2026-06-28T12:07:01.430096+00:00"
+    },
     {
       "answer": "⑤ 4π/3",
       "assets": [],
@@ -3242,7 +3472,7 @@
     "internalReferenceOutputs": {}
   },
   "summary": {
-    "problemCount": 12,
+    "problemCount": 13,
     "reviewHwpxMode": "not_public_in_core_checkpoint",
     "ocrHelperUserFacing": "excluded_internal_reference_only",
     "perProblemReviewHwpxCount": 0,
